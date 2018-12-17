@@ -152,7 +152,7 @@ public class Commander {
     }
     private static void paintCreature(String name,int rowPosition,int columnPosition)
     {
-        controller.paintImage("src/sample/gui/葫芦娃素材/" + name + ".jpg",rowPosition,columnPosition);
+        controller.paintImage( name,rowPosition,columnPosition);
     }
     public synchronized static int oneStep(Creature creature)
     {

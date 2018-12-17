@@ -34,7 +34,7 @@ public class LoadThread implements Runnable {
                         List<Element> elementsInit = elements.get(i).elements();
                         for(int j = 0;j < elementsInit.size();j++)
                         {
-                            String url = "src/sample/gui/葫芦娃素材/" + elementsInit.get(j).attributeValue("name") + ".jpg";
+                            String url = elementsInit.get(j).attributeValue("name");
                             controller.paintImage(url,Integer.parseInt(elementsInit.get(j).attributeValue("rowPosition")),Integer.parseInt(elementsInit.get(j).attributeValue("columnPosition")));
                         }
                         Thread.sleep(200);
@@ -42,7 +42,7 @@ public class LoadThread implements Runnable {
                     else if(elements.get(i).getName() == "move")
                     {
                         controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
-                        String url = "src/sample/gui/葫芦娃素材/" + elements.get(i).attributeValue("name") + ".jpg";
+                        String url = elements.get(i).attributeValue("name");
                         controller.paintImage(url,Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
                         Thread.sleep(200);
                     }
@@ -59,7 +59,7 @@ public class LoadThread implements Runnable {
                         else
                         {
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
-                            String url = "src/sample/gui/葫芦娃素材/" + name1 + ".jpg";
+                            String url = name1;
                             controller.paintImage(url,Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
                             controller.printText(name1 + " killed " + name2 + "\n");

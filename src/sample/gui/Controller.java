@@ -39,6 +39,7 @@ public class Controller {
     private double gapX,gapY;
 
     private List<String> savedFiles = new ArrayList<String>();
+    private List<String> landMap = new ArrayList<String>();
     private int runTimes = 0;
     private Stage primaryStage;
 
@@ -55,13 +56,58 @@ public class Controller {
     }
     public void initGame()
     {
+        //init land map
+        for(int i = 0;i < 400;i++)
+            landMap.add("null");
+
+        //refresh canvas
+        refreshCanvas();
+
         //init background
-        gc.setFill(colorBattleField);
-        gc.fillRect(0,0,canvas.getWidth(),canvas.getHeight());
+        //gc.setFill(colorBattleField);
+        //gc.fillRect(0,0,canvas.getWidth(),canvas.getHeight());
 
         //init line
-        refreshLine();
+        //refreshLine();
     }
+    private void paintBackground()
+    {
+        try {
+            File file = new File("src/sample/gui/葫芦娃素材/background.jpg");
+            Image image = new Image(file.toURI().toURL().toString());
+            gc.drawImage(image, 0, 0, canvas.getWidth(), canvas.getHeight());
+        }
+        catch (MalformedURLException e)
+        {
+            textArea.appendText("Error painting background" + "\n");
+            e.printStackTrace();
+        }
+    }
+    public void refreshCanvas()
+    {
+        paintBackground();
+        for(int i = 0;i < 400;i++)
+        {
+            if(!landMap.get(i).equals("null"))
+            {
+                String url = "src/sample/gui/葫芦娃素材/" + landMap.get(i) + ".jpg";
+                int rowPosition = i/20;
+                int columnPosition = i%20;
+                try {
+                    File file = new File(url);
+                    Image image = new Image(file.toURI().toURL().toString());
+                    gc.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+                }
+                catch (MalformedURLException e)
+                {
+                    textArea.appendText("Error painting " + url + "\n");
+                    e.printStackTrace();
+                }
+            }
+        }
+        //refreshLine();
+    }
+    /*
     private void refreshLine()
     {
         gc.setStroke(colorLine);
@@ -71,33 +117,34 @@ public class Controller {
             gc.strokeLine(0,i*gapY,canvas.getWidth(),i*gapY);
         }
     }
-    public void reportSavedFile(String filename)
-    {
-        savedFiles.add(filename);
-    }
+    */
     public int getRunTimes()
     {
         return runTimes;
     }
     public void clearRect(int rowPosition,int columnPosition)
     {
-        gc.setFill(colorBattleField);
-        gc.fillRect(rowPosition*gapY,columnPosition*gapX,gapY,gapX);
-        refreshLine();
+        landMap.set(rowPosition*20 + columnPosition,"null");
+        refreshCanvas();
+        //gc.setFill(colorBattleField);
+        //gc.fillRect(rowPosition*gapY,columnPosition*gapX,gapY,gapX);
+        //refreshLine();
     }
-    public void paintImage(String url,int rowPosition,int columnPosition)
+    public void paintImage(String name,int rowPosition,int columnPosition)
     {
-        try {
-            File file = new File(url);
-            Image image = new Image(file.toURI().toURL().toString());
-            gc.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
-        }
-        catch (MalformedURLException e)
-        {
-            textArea.appendText("Error painting " + url + "\n");
-            e.printStackTrace();
-        }
-        refreshLine();
+        landMap.set(rowPosition*20 + columnPosition,name);
+        refreshCanvas();
+        //try {
+        //    File file = new File(url);
+        //    Image image = new Image(file.toURI().toURL().toString());
+        //    gc.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+        //}
+        //catch (MalformedURLException e)
+        //{
+        //    textArea.appendText("Error painting " + url + "\n");
+        //    e.printStackTrace();
+        //}
+        //refreshLine();
     }
     public void printText(String text)
     {
