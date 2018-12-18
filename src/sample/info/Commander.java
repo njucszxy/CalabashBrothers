@@ -448,23 +448,27 @@ public class Commander {
         creatures.get(currentCreatureIndex).columnPosition = nextColumnPosition;
         paintCreature(creatures.get(currentCreatureIndex).name,nextRowPosition,nextColumnPosition);
 
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            printText("Error sleeping\n");
-            e.printStackTrace();
-        }
-
         return 2;
     }
     public static void runCommander()
     {
-        for(int i = 0;i < 16;i++)
-            threads.get(i).start();
+        //for(int i = 0;i < 16;i++)
+        //    threads.get(i).start();
+        threads.get(0).start();
+        threads.get(8).start();
+        threads.get(1).start();
+        threads.get(9).start();
+        threads.get(2).start();
+        threads.get(10).start();
+        threads.get(3).start();
+        threads.get(11).start();
+        threads.get(4).start();
+        threads.get(12).start();
+        threads.get(5).start();
+        threads.get(13).start();
+        threads.get(6).start();
+        threads.get(14).start();
+        threads.get(7).start();
+        threads.get(15).start();
     }
-    //public static void main(String[] args)
-    //{
-    //    Commander.initCommander();
-    //    Commander.runCommander();
-    //}
 }

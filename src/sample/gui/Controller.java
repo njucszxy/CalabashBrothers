@@ -1,10 +1,10 @@
 package sample.gui;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -37,6 +37,12 @@ public class Controller {
     Button buttonLoad;
     @FXML
     Button buttonNew;
+    @FXML
+    ChoiceBox choiceBox;
+    @FXML
+    RadioButton choiceCB;
+    @FXML
+    RadioButton choiceMO;
 
     private Color colorBattleField = Color.web("#FFFFFF",0);
     private GraphicsContext gc1;
@@ -52,6 +58,13 @@ public class Controller {
         layer1.toFront();
         gc1 = layer1.getGraphicsContext2D();
         gc2 = layer2.getGraphicsContext2D();
+
+        choiceBox.setItems(FXCollections.observableArrayList("长蛇","鹤翼","雁行","踟蹰","鱼鳞","方圆","偃月","锋矢"));
+        ToggleGroup toggleGroup = new ToggleGroup();
+        choiceCB.setToggleGroup(toggleGroup);
+        choiceMO.setToggleGroup(toggleGroup);
+        choiceCB.setSelected(true);
+
         /*
         TODO modify gapX and gapY
         */
@@ -117,6 +130,10 @@ public class Controller {
         //init canvas
         initGame();
         textArea.setText("new Game\n");
+        //init layer1
+        for(int i = 0;i < 20;i++)
+            for(int j = 0;j < 20;j++)
+                clearRect(i,j);
         Commander.initCommander(this);
         Commander.runCommander();
     }

@@ -50,6 +50,11 @@ public class Creature implements Runnable{
                 //System.out.println(this.name + " End With Game Over");
                 return;
             }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         //System.out.println(this.name + " End With isAlive == false");
     }
