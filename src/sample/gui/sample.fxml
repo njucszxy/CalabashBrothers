@@ -19,9 +19,14 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Canvas fx:id="canvas" height="600.0" width="600.0" />
       <TextArea fx:id="textArea" prefHeight="100.0" prefWidth="600.0" GridPane.rowIndex="1" />
       <Button fx:id="buttonNew" mnemonicParsing="false" onMouseClicked="#NewGame" text="New" GridPane.columnIndex="1" />
       <Button fx:id="buttonLoad" mnemonicParsing="false" onMouseClicked="#LoadGame" text="Load" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Pane fx:id="pane" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Canvas fx:id="layer1" height="600.0" width="600.0" />
+            <Canvas fx:id="layer2" height="600.0" width="600.0" />
+         </children>
+      </Pane>
    </children>
 </GridPane>

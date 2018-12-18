@@ -6,6 +6,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -25,7 +26,11 @@ import java.util.List;
 public class Controller {
 
     @FXML
-    Canvas canvas;
+    Pane pane;
+    @FXML
+    Canvas layer1;
+    @FXML
+    Canvas layer2;
     @FXML
     TextArea textArea;
     @FXML
@@ -33,49 +38,39 @@ public class Controller {
     @FXML
     Button buttonNew;
 
-    private Color colorBattleField = Color.valueOf("#FFFAFA");
-    private Color colorLine = Color.valueOf("#1C1C1C");
-    private GraphicsContext gc;
+    private Color colorBattleField = Color.web("#FFFFFF",0);
+    private GraphicsContext gc1;
+    private GraphicsContext gc2;
     private double gapX,gapY;
 
     private List<String> savedFiles = new ArrayList<String>();
-    private List<String> landMap = new ArrayList<String>();
     private int runTimes = 0;
     private Stage primaryStage;
 
     public void initController(Stage primaryStage)
     {
-        gc = canvas.getGraphicsContext2D();
+        layer1.toFront();
+        gc1 = layer1.getGraphicsContext2D();
+        gc2 = layer2.getGraphicsContext2D();
         /*
         TODO modify gapX and gapY
         */
-        gapX = canvas.getWidth() / 20;
-        gapY = canvas.getWidth() / 20;
+        gapX = layer1.getWidth() / 20;
+        gapY = layer1.getWidth() / 20;
 
         this.primaryStage = primaryStage;
+        paintBackground();
     }
     public void initGame()
     {
-        //init land map
-        for(int i = 0;i < 400;i++)
-            landMap.add("null");
-
-        //refresh canvas
-        refreshCanvas();
-
-        //init background
-        //gc.setFill(colorBattleField);
-        //gc.fillRect(0,0,canvas.getWidth(),canvas.getHeight());
-
-        //init line
-        //refreshLine();
+        paintBackground();
     }
     private void paintBackground()
     {
         try {
             File file = new File("src/sample/gui/葫芦娃素材/background.jpg");
             Image image = new Image(file.toURI().toURL().toString());
-            gc.drawImage(image, 0, 0, canvas.getWidth(), canvas.getHeight());
+            gc2.drawImage(image, 0, 0, layer2.getWidth(), layer2.getHeight());
         }
         catch (MalformedURLException e)
         {
@@ -83,68 +78,27 @@ public class Controller {
             e.printStackTrace();
         }
     }
-    public void refreshCanvas()
-    {
-        paintBackground();
-        for(int i = 0;i < 400;i++)
-        {
-            if(!landMap.get(i).equals("null"))
-            {
-                String url = "src/sample/gui/葫芦娃素材/" + landMap.get(i) + ".jpg";
-                int rowPosition = i/20;
-                int columnPosition = i%20;
-                try {
-                    File file = new File(url);
-                    Image image = new Image(file.toURI().toURL().toString());
-                    gc.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
-                }
-                catch (MalformedURLException e)
-                {
-                    textArea.appendText("Error painting " + url + "\n");
-                    e.printStackTrace();
-                }
-            }
-        }
-        //refreshLine();
-    }
-    /*
-    private void refreshLine()
-    {
-        gc.setStroke(colorLine);
-        for(int i = 0;i < 20;i++)
-        {
-            gc.strokeLine(i*gapX,0,i*gapX,canvas.getHeight());
-            gc.strokeLine(0,i*gapY,canvas.getWidth(),i*gapY);
-        }
-    }
-    */
     public int getRunTimes()
     {
         return runTimes;
     }
     public void clearRect(int rowPosition,int columnPosition)
     {
-        landMap.set(rowPosition*20 + columnPosition,"null");
-        refreshCanvas();
-        //gc.setFill(colorBattleField);
-        //gc.fillRect(rowPosition*gapY,columnPosition*gapX,gapY,gapX);
-        //refreshLine();
+        gc1.clearRect(rowPosition*gapY,columnPosition*gapX,gapY,gapX);
     }
     public void paintImage(String name,int rowPosition,int columnPosition)
     {
-        landMap.set(rowPosition*20 + columnPosition,name);
-        refreshCanvas();
-        //try {
-        //    File file = new File(url);
-        //    Image image = new Image(file.toURI().toURL().toString());
-        //    gc.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
-        //}
-        //catch (MalformedURLException e)
-        //{
-        //    textArea.appendText("Error painting " + url + "\n");
-        //    e.printStackTrace();
-        //}
-        //refreshLine();
+        String url = "src/sample/gui/葫芦娃素材/" + name + ".jpg";
+        try {
+            File file = new File(url);
+            Image image = new Image(file.toURI().toURL().toString());
+            gc1.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+        }
+        catch (MalformedURLException e)
+        {
+            textArea.appendText("Error painting " + url + "\n");
+            e.printStackTrace();
+        }
     }
     public void printText(String text)
     {
