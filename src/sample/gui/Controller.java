@@ -68,7 +68,7 @@ public class Controller {
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
 
                 //TODO delete test
-                printText("ChoiceBoxCB changed from " + oldValue.intValue() + " to " + newValue.intValue() + "\n");
+                //printText("ChoiceBoxCB changed from " + oldValue.intValue() + " to " + newValue.intValue() + "\n");
 
                 switch (newValue.intValue())
                 {
@@ -93,7 +93,7 @@ public class Controller {
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
 
                 //TODO delete test
-                printText("ChoiceBoxMO changed from " + oldValue.intValue() + " to " + newValue.intValue() + "\n");
+                //printText("ChoiceBoxMO changed from " + oldValue.intValue() + " to " + newValue.intValue() + "\n");
 
                 switch (newValue.intValue())
                 {
