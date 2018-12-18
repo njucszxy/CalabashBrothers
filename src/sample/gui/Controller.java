@@ -61,6 +61,8 @@ public class Controller {
         gc1 = layer1.getGraphicsContext2D();
         gc2 = layer2.getGraphicsContext2D();
 
+        textArea.setDisable(true);
+
         choiceBoxCB.setItems(FXCollections.observableArrayList("长蛇","鹤翼","雁行","踟蹰","鱼鳞","方圆","偃月","锋矢","随机"));
         choiceBoxCB.getSelectionModel().selectFirst();
         choiceBoxCB.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
