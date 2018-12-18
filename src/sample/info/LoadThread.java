@@ -37,14 +37,14 @@ public class LoadThread implements Runnable {
                             String url = elementsInit.get(j).attributeValue("name");
                             controller.paintImage(url,Integer.parseInt(elementsInit.get(j).attributeValue("rowPosition")),Integer.parseInt(elementsInit.get(j).attributeValue("columnPosition")));
                         }
-                        Thread.sleep(200);
+                        Thread.sleep(50);
                     }
                     else if(elements.get(i).getName() == "move")
                     {
                         controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
                         String url = elements.get(i).attributeValue("name");
                         controller.paintImage(url,Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
-                        Thread.sleep(200);
+                        Thread.sleep(50);
                     }
                     else if(elements.get(i).getName() == "kill")
                     {
@@ -64,7 +64,7 @@ public class LoadThread implements Runnable {
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
                             controller.printText(name1 + " killed " + name2 + "\n");
                         }
-                        Thread.sleep(200);
+                        Thread.sleep(50);
                     }
                     else if(elements.get(i).getName() == "end")
                     {

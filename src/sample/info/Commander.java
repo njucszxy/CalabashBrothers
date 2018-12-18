@@ -27,7 +27,7 @@ public class Commander {
 
     private static int currentRunTime = -1;
 
-    public static void initCommander(Controller c)
+    public static void initCommander(Controller c,FormationType formationTypeCB,FormationType formationTypeMO)
     {
         //init Controller
         controller = c;
@@ -38,73 +38,102 @@ public class Commander {
         //init battlefield
         battleField = new BattleField();
 
+        List<PositionInfo> positionInfos = new ArrayList<>();
+        for(int i = 0;i < 16;i++)
+            positionInfos.add(new PositionInfo(-1,-1));
+
+        switch (formationTypeCB)
+        {
+            case Zig:Formation.getZigFormation(positionInfos,Camp.CB);break;
+            case Fish:Formation.getFishFormation(positionInfos,Camp.CB);break;
+            case Moon:Formation.getMoonFormation(positionInfos,Camp.CB);break;
+            case Wing:Formation.getWingFormation(positionInfos,Camp.CB);break;
+            case Arrow:Formation.getArrowFormation(positionInfos,Camp.CB);break;
+            case Goose:Formation.getGooseFormation(positionInfos,Camp.CB);break;
+            case Snake:Formation.getSnakeFormation(positionInfos,Camp.CB);break;
+            case Square:Formation.getSquareFormation(positionInfos,Camp.CB);break;
+            default:Formation.getRandomFormation(positionInfos,Camp.CB);break;
+        }
+        switch (formationTypeMO)
+        {
+            case Zig:Formation.getZigFormation(positionInfos,Camp.MO);break;
+            case Fish:Formation.getFishFormation(positionInfos,Camp.MO);break;
+            case Moon:Formation.getMoonFormation(positionInfos,Camp.MO);break;
+            case Wing:Formation.getWingFormation(positionInfos,Camp.MO);break;
+            case Arrow:Formation.getArrowFormation(positionInfos,Camp.MO);break;
+            case Goose:Formation.getGooseFormation(positionInfos,Camp.MO);break;
+            case Snake:Formation.getSnakeFormation(positionInfos,Camp.MO);break;
+            case Square:Formation.getSquareFormation(positionInfos,Camp.MO);break;
+            default:Formation.getRandomFormation(positionInfos,Camp.MO);break;
+        }
+
         //init creatures
         creatures = new ArrayList<Creature>();
-        creatures.add(new GrandPa(6,5));
-        creatures.add(new RedBoy(7,5));
-        creatures.add(new OrangeBoy(8,5));
-        creatures.add(new YellowBoy(9,5));
-        creatures.add(new GreenBoy(10,5));
-        creatures.add(new CyanBoy(11,5));
-        creatures.add(new BlueBoy(12,5));
-        creatures.add(new PurpleBoy(13,5));
-        creatures.add(new Snake(6,14));
-        creatures.add(new Scorpion(7,14));
-        creatures.add(new Footman(8,14));
-        creatures.add(new Footman(9,14));
-        creatures.add(new Footman(10,14));
-        creatures.add(new Footman(11,14));
-        creatures.add(new Footman(12,14));
-        creatures.add(new Footman(13,14));
+        creatures.add(new GrandPa(positionInfos.get(0).RowPosition,positionInfos.get(0).columnPosition));
+        creatures.add(new RedBoy(positionInfos.get(1).RowPosition,positionInfos.get(1).columnPosition));
+        creatures.add(new OrangeBoy(positionInfos.get(2).RowPosition,positionInfos.get(2).columnPosition));
+        creatures.add(new YellowBoy(positionInfos.get(3).RowPosition,positionInfos.get(3).columnPosition));
+        creatures.add(new GreenBoy(positionInfos.get(4).RowPosition,positionInfos.get(4).columnPosition));
+        creatures.add(new CyanBoy(positionInfos.get(5).RowPosition,positionInfos.get(5).columnPosition));
+        creatures.add(new BlueBoy(positionInfos.get(6).RowPosition,positionInfos.get(6).columnPosition));
+        creatures.add(new PurpleBoy(positionInfos.get(7).RowPosition,positionInfos.get(7).columnPosition));
+        creatures.add(new Snake(positionInfos.get(8).RowPosition,positionInfos.get(8).columnPosition));
+        creatures.add(new Scorpion(positionInfos.get(9).RowPosition,positionInfos.get(9).columnPosition));
+        creatures.add(new Footman(positionInfos.get(10).RowPosition,positionInfos.get(10).columnPosition));
+        creatures.add(new Footman(positionInfos.get(11).RowPosition,positionInfos.get(11).columnPosition));
+        creatures.add(new Footman(positionInfos.get(12).RowPosition,positionInfos.get(12).columnPosition));
+        creatures.add(new Footman(positionInfos.get(13).RowPosition,positionInfos.get(13).columnPosition));
+        creatures.add(new Footman(positionInfos.get(14).RowPosition,positionInfos.get(14).columnPosition));
+        creatures.add(new Footman(positionInfos.get(15).RowPosition,positionInfos.get(15 ).columnPosition));
 
-        battleField.lands.get(6*20 + 5).isUsed = true;
-        battleField.lands.get(6*20 + 5).creatureIndex = 0;
-        paintCreature("爷爷",6,5);
-        battleField.lands.get(7*20 + 5).isUsed = true;
-        battleField.lands.get(7*20 + 5).creatureIndex = 1;
-        paintCreature("大娃",7,5);
-        battleField.lands.get(8*20 + 5).isUsed = true;
-        battleField.lands.get(8*20 + 5).creatureIndex = 2;
-        paintCreature("二娃",8,5);
-        battleField.lands.get(9*20 + 5).isUsed = true;
-        battleField.lands.get(9*20 + 5).creatureIndex = 3;
-        paintCreature("三娃",9,5);
-        battleField.lands.get(10*20 + 5).isUsed = true;
-        battleField.lands.get(10*20 + 5).creatureIndex = 4;
-        paintCreature("四娃",10,5);
-        battleField.lands.get(11*20 + 5).isUsed = true;
-        battleField.lands.get(11*20 + 5).creatureIndex = 5;
-        paintCreature("五娃",11,5);
-        battleField.lands.get(12*20 + 5).isUsed = true;
-        battleField.lands.get(12*20 + 5).creatureIndex = 6;
-        paintCreature("六娃",12,5);
-        battleField.lands.get(13*20 + 5).isUsed = true;
-        battleField.lands.get(13*20 + 5).creatureIndex = 7;
-        paintCreature("七娃",13,5);
-        battleField.lands.get(6*20 + 14).isUsed = true;
-        battleField.lands.get(6*20 + 14).creatureIndex = 8;
-        paintCreature("蛇精",6,14);
-        battleField.lands.get(7*20 + 14).isUsed = true;
-        battleField.lands.get(7*20 + 14).creatureIndex = 9;
-        paintCreature("蝎子精",7,14);
-        battleField.lands.get(8*20 + 14).isUsed = true;
-        battleField.lands.get(8*20 + 14).creatureIndex = 10;
-        paintCreature("小喽啰",8,14);
-        battleField.lands.get(9*20 + 14).isUsed = true;
-        battleField.lands.get(9*20 + 14).creatureIndex = 11;
-        paintCreature("小喽啰",9,14);
-        battleField.lands.get(10*20 + 14).isUsed = true;
-        battleField.lands.get(10*20 + 14).creatureIndex = 12;
-        paintCreature("小喽啰",10,14);
-        battleField.lands.get(11*20 + 14).isUsed = true;
-        battleField.lands.get(11*20 + 14).creatureIndex = 13;
-        paintCreature("小喽啰",11,14);
-        battleField.lands.get(12*20 + 14).isUsed = true;
-        battleField.lands.get(12*20 + 14).creatureIndex = 14;
-        paintCreature("小喽啰",12,14);
-        battleField.lands.get(13*20 + 14).isUsed = true;
-        battleField.lands.get(13*20 + 14).creatureIndex = 15;
-        paintCreature("小喽啰",13,14);
+        battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).creatureIndex = 0;
+        paintCreature("爷爷",positionInfos.get(0).RowPosition,positionInfos.get(0).columnPosition);
+        battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).creatureIndex = 1;
+        paintCreature("大娃",positionInfos.get(1).RowPosition,positionInfos.get(1).columnPosition);
+        battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).creatureIndex = 2;
+        paintCreature("二娃",positionInfos.get(2).RowPosition,positionInfos.get(2).columnPosition);
+        battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).creatureIndex = 3;
+        paintCreature("三娃",positionInfos.get(3).RowPosition,positionInfos.get(3).columnPosition);
+        battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).creatureIndex = 4;
+        paintCreature("四娃",positionInfos.get(4).RowPosition,positionInfos.get(4).columnPosition);
+        battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).creatureIndex = 5;
+        paintCreature("五娃",positionInfos.get(5).RowPosition,positionInfos.get(5).columnPosition);
+        battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).creatureIndex = 6;
+        paintCreature("六娃",positionInfos.get(6).RowPosition,positionInfos.get(6).columnPosition);
+        battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).creatureIndex = 7;
+        paintCreature("七娃",positionInfos.get(7).RowPosition,positionInfos.get(7).columnPosition);
+        battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).creatureIndex = 8;
+        paintCreature("蛇精",positionInfos.get(8).RowPosition,positionInfos.get(8).columnPosition);
+        battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).creatureIndex = 9;
+        paintCreature("蝎子精",positionInfos.get(9).RowPosition,positionInfos.get(9).columnPosition);
+        battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).creatureIndex = 10;
+        paintCreature("小喽啰",positionInfos.get(10).RowPosition,positionInfos.get(10).columnPosition);
+        battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).creatureIndex = 11;
+        paintCreature("小喽啰",positionInfos.get(11).RowPosition,positionInfos.get(11).columnPosition);
+        battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).creatureIndex = 12;
+        paintCreature("小喽啰",positionInfos.get(12).RowPosition,positionInfos.get(12).columnPosition);
+        battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).creatureIndex = 13;
+        paintCreature("小喽啰",positionInfos.get(13).RowPosition,positionInfos.get(13).columnPosition);
+        battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).creatureIndex = 14;
+        paintCreature("小喽啰",positionInfos.get(14).RowPosition,positionInfos.get(14).columnPosition);
+        battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).isUsed = true;
+        battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).creatureIndex = 15;
+        paintCreature("小喽啰",positionInfos.get(15).RowPosition,positionInfos.get(15).columnPosition);
 
         //record position
         try{
