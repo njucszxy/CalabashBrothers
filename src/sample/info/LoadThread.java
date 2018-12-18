@@ -54,11 +54,13 @@ public class LoadThread implements Runnable {
                         if(name1.equals(killedName))
                         {
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
+                            controller.paintRemains(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));
                             controller.printText(name2 + " killed " + name1 + "\n");
                         }
                         else
                         {
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
+                            controller.paintRemains(Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
                             String url = name1;
                             controller.paintImage(url,Integer.parseInt(elements.get(i).attributeValue("rowPosition2")),Integer.parseInt(elements.get(i).attributeValue("columnPosition2")));
                             controller.clearRect(Integer.parseInt(elements.get(i).attributeValue("rowPosition1")),Integer.parseInt(elements.get(i).attributeValue("columnPosition1")));

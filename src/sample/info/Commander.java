@@ -373,6 +373,7 @@ public class Commander {
                 printText(creatures.get(currentCreatureIndex).name + " attack " + creatures.get(enemyIndex).name + " : " + creatures.get(enemyIndex).name + " died, " + myPower + " vs " + enemyPower + "\n");
                 battleField.lands.get(creatures.get(enemyIndex).rowPosition*20 + creatures.get(enemyIndex).columnPosition).isUsed = false;
                 clearLand(nextRowPosition,nextColumnPosition);
+                controller.paintRemains(nextRowPosition,nextColumnPosition);
             }
             else
             {
@@ -380,6 +381,7 @@ public class Commander {
                 printText(creatures.get(currentCreatureIndex).name + " attack " + creatures.get(enemyIndex).name + " : " + creatures.get(currentCreatureIndex).name + " died, " + myPower + " vs " + enemyPower + "\n");
                 battleField.lands.get(creatures.get(currentCreatureIndex).rowPosition*20 + creatures.get(currentCreatureIndex).columnPosition).isUsed = false;
                 clearLand(creatures.get(currentCreatureIndex).rowPosition,creatures.get(currentCreatureIndex).columnPosition);
+                controller.paintRemains(creatures.get(currentCreatureIndex).rowPosition,creatures.get(currentCreatureIndex).columnPosition);
             }
 
             //record battle

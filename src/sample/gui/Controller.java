@@ -124,10 +124,15 @@ public class Controller {
     }
     public void initGame()
     {
+        //init layer2
+        for(int i = 0;i < 20;i++)
+            for(int j = 0;j < 20;j++)
+                gc2.clearRect(i*gapY,j*gapX,gapY,gapX);
         paintBackground();
     }
     private void paintFormation()
     {
+        initGame();
         List<PositionInfo> positionInfos = new ArrayList<>();
         for(int i = 0;i < 16;i++)
             positionInfos.add(new PositionInfo(-1,-1));
@@ -218,6 +223,20 @@ public class Controller {
             File file = new File(url);
             Image image = new Image(file.toURI().toURL().toString());
             gc1.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+        }
+        catch (MalformedURLException e)
+        {
+            textArea.appendText("Error painting " + url + "\n");
+            e.printStackTrace();
+        }
+    }
+    public void paintRemains(int rowPosition,int columnPosition)
+    {
+        String url = "src/sample/gui/葫芦娃素材/尸体.jpg";
+        try {
+            File file = new File(url);
+            Image image = new Image(file.toURI().toURL().toString());
+            gc2.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
         }
         catch (MalformedURLException e)
         {
