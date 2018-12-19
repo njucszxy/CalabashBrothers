@@ -1,8 +1,10 @@
 package gui;
 
+import com.sun.javafx.runtime.SystemProperties;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -18,8 +20,13 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import info.*;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -188,11 +195,10 @@ public class Controller {
     private void paintBackground()
     {
         try {
-            File file = new File("src/main/java/gui/葫芦娃素材/background.jpg");
-            Image image = new Image(file.toURI().toURL().toString());
-            gc2.drawImage(image, 0, 0, layer2.getWidth(), layer2.getHeight());
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/background.jpg"));
+            gc2.drawImage(SwingFXUtils.toFXImage(image,null), 0, 0, layer2.getWidth(), layer2.getHeight());
         }
-        catch (MalformedURLException e)
+        catch (IOException e)
         {
             textArea.appendText("Error painting background" + "\n");
             e.printStackTrace();
@@ -208,29 +214,25 @@ public class Controller {
     }
     public void paintImage(String name,int rowPosition,int columnPosition)
     {
-        String url = "src/main/java/gui/葫芦娃素材/" + name + ".jpg";
         try {
-            File file = new File(url);
-            Image image = new Image(file.toURI().toURL().toString());
-            gc1.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/" + name + ".jpg"));
+            gc1.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
         }
-        catch (MalformedURLException e)
+        catch (IOException e)
         {
-            textArea.appendText("Error painting " + url + "\n");
+            textArea.appendText("Error painting background" + "\n");
             e.printStackTrace();
         }
     }
     public void paintRemains(int rowPosition,int columnPosition)
     {
-        String url = "src/main/java/gui/葫芦娃素材/尸体.jpg";
         try {
-            File file = new File(url);
-            Image image = new Image(file.toURI().toURL().toString());
-            gc2.drawImage(image, rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/尸体.jpg"));
+            gc2.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
         }
-        catch (MalformedURLException e)
+        catch (IOException e)
         {
-            textArea.appendText("Error painting " + url + "\n");
+            textArea.appendText("Error painting background" + "\n");
             e.printStackTrace();
         }
     }
@@ -242,11 +244,12 @@ public class Controller {
     public void NewGame()
     {
         //init runTimes
-        File file = new File("src/main/java/info/" + runTimes + ".xml");
+        String currentDir = System.getProperty("user.dir");
+        File file = new File(currentDir + runTimes + ".xml");
         while(file.exists())
         {
             runTimes++;
-            file = new File("src/main/java/info/" + runTimes + ".xml");
+            file = new File(currentDir + runTimes + ".xml");
         }
         //init canvas
         initGame();
@@ -262,7 +265,7 @@ public class Controller {
     {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Game Record File");
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.dir") + "/src/main/java/info/"));
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("XML","*.xml"));
         File destFile = fileChooser.showOpenDialog(primaryStage);
         if(destFile.exists())

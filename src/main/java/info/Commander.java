@@ -1,5 +1,6 @@
 package info;
 
+import com.sun.javafx.runtime.SystemProperties;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -151,7 +152,13 @@ public class Commander {
             }
             OutputFormat format = OutputFormat.createPrettyPrint();
             format.setEncoding("UTF-8");
-            File file = new File("src/main/java/info/" + currentRunTime + ".xml");
+            String currentDir = System.getProperty("user.dir");
+
+            //TODO delete println
+            System.out.println(currentDir + "/" + currentRunTime + ".xml");
+
+            File file = new File(currentDir + "/" + currentRunTime + ".xml");
+
             XMLWriter writer = new XMLWriter(new FileOutputStream(file),format);
             writer.write(document);
         }
@@ -227,7 +234,8 @@ public class Commander {
             try
             {
                 SAXReader reader = new SAXReader();
-                File file = new File("src/main/java/info/" + currentRunTime + ".xml");
+                String currentDir = System.getProperty("user.dir");
+                File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
                 //if(!file.exists())
                 //    printText("File dosen't exist\n");
                 Document document = reader.read(file);
@@ -389,7 +397,8 @@ public class Commander {
             try
             {
                 SAXReader reader = new SAXReader();
-                File file = new File("src/main/java/info/" + currentRunTime + ".xml");
+                String currentDir = System.getProperty("user.dir");
+                File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
                 //if(!file.exists())
                 //    printText("File dosen't exist\n");
                 Document document = reader.read(file);
@@ -437,7 +446,8 @@ public class Commander {
         try
         {
             SAXReader reader = new SAXReader();
-            File file = new File("src/main/java/info/" + currentRunTime + ".xml");
+            String currentDir = System.getProperty("user.dir");
+            File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
             //if(!file.exists())
             //    printText("File dosen't exist\n");
             Document document = reader.read(file);
