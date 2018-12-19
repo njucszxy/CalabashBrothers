@@ -154,9 +154,6 @@ public class Commander {
             format.setEncoding("UTF-8");
             String currentDir = System.getProperty("user.dir");
 
-            //TODO delete println
-            System.out.println(currentDir + "/" + currentRunTime + ".xml");
-
             File file = new File(currentDir + "/" + currentRunTime + ".xml");
 
             XMLWriter writer = new XMLWriter(new FileOutputStream(file),format);
