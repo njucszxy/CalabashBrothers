@@ -1,6 +1,5 @@
 package gui;
 
-import com.sun.javafx.runtime.SystemProperties;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -9,24 +8,15 @@ import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
 import info.*;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -195,7 +185,7 @@ public class Controller {
     private void paintBackground()
     {
         try {
-            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/background.jpg"));
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/background.jpg"));
             gc2.drawImage(SwingFXUtils.toFXImage(image,null), 0, 0, layer2.getWidth(), layer2.getHeight());
         }
         catch (IOException e)
@@ -215,7 +205,7 @@ public class Controller {
     public void paintImage(String name,int rowPosition,int columnPosition)
     {
         try {
-            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/" + name + ".jpg"));
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/" + name + ".jpg"));
             gc1.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
         }
         catch (IOException e)
@@ -227,7 +217,7 @@ public class Controller {
     public void paintRemains(int rowPosition,int columnPosition)
     {
         try {
-            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/葫芦娃素材/尸体.jpg"));
+            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/尸体.jpg"));
             gc2.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
         }
         catch (IOException e)

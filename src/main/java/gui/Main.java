@@ -10,12 +10,10 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import javax.media.Manager;
 import javax.media.Player;
 import java.io.*;
-import java.net.URI;
 import java.net.URL;
 
 public class Main extends Application {
@@ -46,7 +44,7 @@ public class Main extends Application {
         });
 
         File file = null;
-        String resource = "/葫芦娃素材/bgm2.wav";
+        String resource = "/resource/bgm2.wav";
         URL res = getClass().getResource(resource);
         if (res.toString().startsWith("jar:")) {
             try {
