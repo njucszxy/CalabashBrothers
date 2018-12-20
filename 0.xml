@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <init> 
+    <creature id="0" name="爷爷" rowPosition="6" columnPosition="2"/>  
+    <creature id="1" name="大娃" rowPosition="7" columnPosition="3"/>  
+    <creature id="2" name="二娃" rowPosition="8" columnPosition="4"/>  
+    <creature id="3" name="三娃" rowPosition="9" columnPosition="5"/>  
+    <creature id="4" name="四娃" rowPosition="10" columnPosition="6"/>  
+    <creature id="5" name="五娃" rowPosition="11" columnPosition="7"/>  
+    <creature id="6" name="六娃" rowPosition="12" columnPosition="8"/>  
+    <creature id="7" name="七娃" rowPosition="13" columnPosition="9"/>  
+    <creature id="8" name="蛇精" rowPosition="6" columnPosition="17"/>  
+    <creature id="9" name="蝎子精" rowPosition="7" columnPosition="16"/>  
+    <creature id="10" name="小喽啰" rowPosition="8" columnPosition="15"/>  
+    <creature id="11" name="小喽啰" rowPosition="9" columnPosition="14"/>  
+    <creature id="12" name="小喽啰" rowPosition="9" columnPosition="15"/>  
+    <creature id="13" name="小喽啰" rowPosition="10" columnPosition="15"/>  
+    <creature id="14" name="小喽啰" rowPosition="11" columnPosition="16"/>  
+    <creature id="15" name="小喽啰" rowPosition="12" columnPosition="17"/> 
+  </init>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
+  <move name="七娃" id="7" rowPosition1="13" columnPosition1="9" rowPosition2="12" columnPosition2="9"/>  
+  <move name="小喽啰" id="14" rowPosition1="11" columnPosition1="16" rowPosition2="12" columnPosition2="16"/>  
+  <move name="小喽啰" id="13" rowPosition1="10" columnPosition1="15" rowPosition2="11" columnPosition2="15"/>  
+  <move name="五娃" id="5" rowPosition1="11" columnPosition1="7" rowPosition2="11" columnPosition2="8"/>  
+  <move name="小喽啰" id="12" rowPosition1="9" columnPosition1="15" rowPosition2="10" columnPosition2="15"/>  
+  <move name="四娃" id="4" rowPosition1="10" columnPosition1="6" rowPosition2="9" columnPosition2="6"/>  
+  <move name="二娃" id="2" rowPosition1="8" columnPosition1="4" rowPosition2="8" columnPosition2="5"/>  
+  <move name="小喽啰" id="10" rowPosition1="8" columnPosition1="15" rowPosition2="8" columnPosition2="14"/>  
+  <move name="蝎子精" id="9" rowPosition1="7" columnPosition1="16" rowPosition2="8" columnPosition2="16"/>  
+  <move name="大娃" id="1" rowPosition1="7" columnPosition1="3" rowPosition2="8" columnPosition2="3"/>  
+  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="16"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="4"/>  
+  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="16" rowPosition2="12" columnPosition2="15"/>  
+  <move name="七娃" id="7" rowPosition1="12" columnPosition1="9" rowPosition2="12" columnPosition2="10"/>  
+  <move name="五娃" id="5" rowPosition1="11" columnPosition1="8" rowPosition2="10" columnPosition2="8"/>  
+  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="17" rowPosition2="12" columnPosition2="16"/>  
+  <move name="四娃" id="4" rowPosition1="9" columnPosition1="6" rowPosition2="9" columnPosition2="7"/>  
+  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="15" rowPosition2="10" columnPosition2="14"/>  
+  <move name="三娃" id="3" rowPosition1="9" columnPosition1="5" rowPosition2="9" columnPosition2="6"/>  
+  <move name="小喽啰" id="10" rowPosition1="8" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
+  <move name="二娃" id="2" rowPosition1="8" columnPosition1="5" rowPosition2="9" columnPosition2="5"/>  
+  <move name="大娃" id="1" rowPosition1="8" columnPosition1="3" rowPosition2="9" columnPosition2="3"/>  
+  <move name="蝎子精" id="9" rowPosition1="8" columnPosition1="16" rowPosition2="9" columnPosition2="16"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="16" rowPosition2="6" columnPosition2="15"/>  
+  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="13" rowPosition2="9" columnPosition2="12"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="4" rowPosition2="6" columnPosition2="5"/>  
+  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <move name="六娃" id="6" rowPosition1="12" columnPosition1="8" rowPosition2="12" columnPosition2="9"/>  
+  <move name="四娃" id="4" rowPosition1="9" columnPosition1="7" rowPosition2="9" columnPosition2="8"/>  
+  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="14" rowPosition2="10" columnPosition2="13"/>  
+  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="16" rowPosition2="12" columnPosition2="15"/>  
+  <move name="七娃" id="7" rowPosition1="12" columnPosition1="10" rowPosition2="12" columnPosition2="11"/>  
+  <move name="大娃" id="1" rowPosition1="9" columnPosition1="3" rowPosition2="9" columnPosition2="4"/>  
+  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
+  <move name="三娃" id="3" rowPosition1="9" columnPosition1="6" rowPosition2="9" columnPosition2="7"/>  
+  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="11"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="15" rowPosition2="6" columnPosition2="14"/>  
+  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="16" rowPosition2="9" columnPosition2="15"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="5" rowPosition2="6" columnPosition2="6"/>  
+  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="13"/>  
+  <move name="六娃" id="6" rowPosition1="12" columnPosition1="9" rowPosition2="12" columnPosition2="10"/>  
+  <move name="四娃" id="4" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
+  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="13" rowPosition2="11" columnPosition2="13"/>  
+  <move name="五娃" id="5" rowPosition1="10" columnPosition1="8" rowPosition2="9" columnPosition2="8"/>  
+  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <move name="小喽啰" id="13" rowPosition1="11" columnPosition1="15" rowPosition2="12" columnPosition2="15"/>  
+  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="13" rowPosition2="9" columnPosition2="12"/>  
+  <move name="二娃" id="2" rowPosition1="9" columnPosition1="5" rowPosition2="9" columnPosition2="6"/>  
+  <move name="七娃" id="7" rowPosition1="12" columnPosition1="11" rowPosition2="12" columnPosition2="12"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="14" rowPosition2="6" columnPosition2="13"/>  
+  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="11" rowPosition2="9" columnPosition2="10"/>  
+  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="15" rowPosition2="9" columnPosition2="14"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="6" rowPosition2="6" columnPosition2="7"/>  
+  <kill creature1="小喽啰" id1="14" rowPosition1="12" columnPosition1="13" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="12" killed="小喽啰"/>  
+  <move name="六娃" id="6" rowPosition1="12" columnPosition1="10" rowPosition2="11" columnPosition2="10"/>  
+  <kill creature1="四娃" id1="4" rowPosition1="9" columnPosition1="9" creature2="小喽啰" id2="11" rowPosition2="9" columnPosition2="10" killed="四娃"/>  
+  <move name="小喽啰" id="12" rowPosition1="11" columnPosition1="13" rowPosition2="12" columnPosition2="13"/>  
+  <move name="五娃" id="5" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
+  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="11"/>  
+  <move name="大娃" id="1" rowPosition1="9" columnPosition1="4" rowPosition2="9" columnPosition2="5"/>  
+  <kill creature1="七娃" id1="7" rowPosition1="12" columnPosition1="12" creature2="小喽啰" id2="12" rowPosition2="12" columnPosition2="13" killed="小喽啰"/>  
+  <move name="七娃" id="7" rowPosition1="12" columnPosition1="12" rowPosition2="12" columnPosition2="13"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="13" rowPosition2="6" columnPosition2="12"/>  
+  <move name="三娃" id="3" rowPosition1="9" columnPosition1="7" rowPosition2="9" columnPosition2="8"/>  
+  <kill creature1="小喽啰" id1="11" rowPosition1="9" columnPosition1="10" creature2="五娃" id2="5" rowPosition2="9" columnPosition2="9" killed="小喽啰"/>  
+  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="7" rowPosition2="6" columnPosition2="8"/>  
+  <move name="六娃" id="6" rowPosition1="11" columnPosition1="10" rowPosition2="10" columnPosition2="10"/>  
+  <move name="五娃" id="5" rowPosition1="9" columnPosition1="9" rowPosition2="9" columnPosition2="10"/>  
+  <kill creature1="小喽啰" id1="15" rowPosition1="12" columnPosition1="14" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="13" killed="小喽啰"/>  
+  <kill creature1="小喽啰" id1="10" rowPosition1="9" columnPosition1="11" creature2="五娃" id2="5" rowPosition2="9" columnPosition2="10" killed="小喽啰"/>  
+  <move name="大娃" id="1" rowPosition1="9" columnPosition1="5" rowPosition2="8" columnPosition2="5"/>  
+  <move name="二娃" id="2" rowPosition1="9" columnPosition1="6" rowPosition2="8" columnPosition2="6"/>  
+  <move name="七娃" id="7" rowPosition1="12" columnPosition1="13" rowPosition2="12" columnPosition2="14"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="12" rowPosition2="6" columnPosition2="11"/>  
+  <move name="三娃" id="3" rowPosition1="9" columnPosition1="8" rowPosition2="8" columnPosition2="8"/>  
+  <move name="蝎子精" id="9" rowPosition1="10" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="8" rowPosition2="6" columnPosition2="9"/>  
+  <kill creature1="小喽啰" id1="13" rowPosition1="12" columnPosition1="15" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="14" killed="七娃"/>  
+  <move name="小喽啰" id="13" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <move name="五娃" id="5" rowPosition1="9" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <move name="大娃" id="1" rowPosition1="8" columnPosition1="5" rowPosition2="7" columnPosition2="5"/>  
+  <move name="二娃" id="2" rowPosition1="8" columnPosition1="6" rowPosition2="7" columnPosition2="6"/>  
+  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="11" rowPosition2="6" columnPosition2="10"/>  
+  <move name="三娃" id="3" rowPosition1="8" columnPosition1="8" rowPosition2="7" columnPosition2="8"/>  
+  <move name="蝎子精" id="9" rowPosition1="11" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
+  <kill creature1="爷爷" id1="0" rowPosition1="6" columnPosition1="9" creature2="蛇精" id2="8" rowPosition2="6" columnPosition2="10" killed="爷爷"/>  
+  <move name="六娃" id="6" rowPosition1="10" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
+  <move name="小喽啰" id="13" rowPosition1="12" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <move name="五娃" id="5" rowPosition1="8" columnPosition1="10" rowPosition2="7" columnPosition2="10"/>  
+  <move name="大娃" id="1" rowPosition1="7" columnPosition1="5" rowPosition2="6" columnPosition2="5"/>  
+  <move name="二娃" id="2" rowPosition1="7" columnPosition1="6" rowPosition2="6" columnPosition2="6"/>  
+  <kill creature1="蛇精" id1="8" rowPosition1="6" columnPosition1="10" creature2="五娃" id2="5" rowPosition2="7" columnPosition2="10" killed="蛇精"/>  
+  <move name="三娃" id="3" rowPosition1="7" columnPosition1="8" rowPosition2="8" columnPosition2="8"/>  
+  <move name="蝎子精" id="9" rowPosition1="10" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
+  <move name="六娃" id="6" rowPosition1="9" columnPosition1="10" rowPosition2="9" columnPosition2="11"/>  
+  <move name="小喽啰" id="13" rowPosition1="11" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
+  <move name="五娃" id="5" rowPosition1="7" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <move name="大娃" id="1" rowPosition1="6" columnPosition1="5" rowPosition2="7" columnPosition2="5"/>  
+  <move name="二娃" id="2" rowPosition1="6" columnPosition1="6" rowPosition2="7" columnPosition2="6"/>  
+  <move name="三娃" id="3" rowPosition1="8" columnPosition1="8" rowPosition2="9" columnPosition2="8"/>  
+  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
+  <move name="六娃" id="6" rowPosition1="9" columnPosition1="11" rowPosition2="9" columnPosition2="12"/>  
+  <move name="小喽啰" id="13" rowPosition1="10" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
+  <move name="五娃" id="5" rowPosition1="8" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
+  <move name="大娃" id="1" rowPosition1="7" columnPosition1="5" rowPosition2="8" columnPosition2="5"/>  
+  <move name="二娃" id="2" rowPosition1="7" columnPosition1="6" rowPosition2="8" columnPosition2="6"/>  
+  <move name="三娃" id="3" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
+  <kill creature1="蝎子精" id1="9" rowPosition1="9" columnPosition1="13" creature2="六娃" id2="6" rowPosition2="9" columnPosition2="12" killed="蝎子精"/>  
+  <move name="六娃" id="6" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="13"/>  
+  <kill creature1="小喽啰" id1="13" rowPosition1="9" columnPosition1="14" creature2="六娃" id2="6" rowPosition2="9" columnPosition2="13" killed="小喽啰"/>  
+  <end winner="五娃" id="5"/>  
+  <end winner="大娃" id="1"/>  
+  <end winner="二娃" id="2"/>  
+  <end winner="三娃" id="3"/>  
+  <end winner="六娃" id="6"/>
+</root>
