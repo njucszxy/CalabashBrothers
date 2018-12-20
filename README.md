@@ -138,11 +138,11 @@
 
 + 效果
   <div align=center>
-    <img src = "效果图\0.jpg" width='100%'>
-  </div>
-  <div align=center>
     <img src = "效果图\1.jpg" width='100%'>
   </div>
   <div align=center>
     <img src = "效果图\2.jpg" width='100%'>
+  </div>
+  <div align=center>
+    <img src = "效果图\3.jpg" width='100%'>
   </div>
