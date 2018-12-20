@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact name="JavaFXTest3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFXTest3_jar</output-path>
+    <root id="root">
+      <element id="archive" name="JavaFXTest3.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="JavaFXTest3" />
+      </element>
+      <element id="library" level="project" name="Maven: org.dom4j:dom4j:2.0.2" />
+      <element id="library" level="project" name="Maven: jaxen:jaxen:1.1.6" />
+      <element id="library" level="project" name="Maven: javax.media:jmf:2.1.1e" />
+    </root>
+  </artifact>
+</component>

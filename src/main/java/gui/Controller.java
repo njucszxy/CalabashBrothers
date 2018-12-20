@@ -245,11 +245,11 @@ public class Controller {
     {
         //init runTimes
         String currentDir = System.getProperty("user.dir");
-        File file = new File(currentDir + runTimes + ".xml");
+        File file = new File(currentDir +"/"+ runTimes + ".xml");
         while(file.exists())
         {
             runTimes++;
-            file = new File(currentDir + runTimes + ".xml");
+            file = new File(currentDir +"/" + runTimes + ".xml");
         }
         //init canvas
         initGame();
