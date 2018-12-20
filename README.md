@@ -24,7 +24,7 @@
   项目由.idea文件夹、src文件夹以及JavaFXTest3.iml、pom.xml组成
 
   项目结构如下
-
+```
   │  JavaFXTest3.iml
   │  pom.xml
   │
@@ -116,7 +116,7 @@
   │          └─info
   │                  PowerPatternTest.java
 
-
+```
 
   其中battlefield包用于定义战场及其属性；
 
