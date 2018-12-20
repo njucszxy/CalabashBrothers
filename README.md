@@ -137,3 +137,12 @@
   在项目目录下执行mvn clean test package，在目录下target文件夹中将生成可执行jar包，其中分为两个jar包，分别为带依赖版与不带依赖版，使用java -jar 命令即可运行程序
 
 + 效果
+  <div align=center>
+    <img src = "效果图\0.jpg" width='100%'>
+  </div>
+  <div align=center>
+    <img src = "效果图\1.jpg" width='100%'>
+  </div>
+  <div align=center>
+    <img src = "效果图\2.jpg" width='100%'>
+  </div>
