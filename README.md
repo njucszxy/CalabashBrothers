@@ -25,99 +25,229 @@
 
   项目结构如下
 ```
-  │  JavaFXTest3.iml
-  │  pom.xml
-  │
-  ├─.idea
-  │  │  compiler.xml
-  │  │  description.html
-  │  │  encodings.xml
-  │  │  gradle.xml
-  │  │  misc.xml
-  │  │  modules.xml
-  │  │  uiDesigner.xml
-  │  │  vcs.xml
-  │  │  workspace.xml
-  │  │
-  │  ├─artifacts
-  │  │      JavaFXTest3_jar.xml
-  │  │
-  │  └─libraries
-  │          Maven__javax_media_jmf_2_1_1e.xml
-  │          Maven__jaxen_jaxen_1_1_6.xml
-  │          Maven__junit_junit_4_12.xml
-  │          Maven__org_dom4j_dom4j_2_0_2.xml
-  │          Maven__org_hamcrest_hamcrest_core_1_3.xml
 
-  ├─src
-  │  ├─main
-  │  │  ├─java
-  │  │  │  ├─battlefield
-  │  │  │  │      BattleField.java
-  │  │  │  │      Land.java
-  │  │  │  │
-  │  │  │  ├─gui
-  │  │  │  │      Controller.java
-  │  │  │  │      Main.java
-  │  │  │  │      sample.fxml
-  │  │  │  │
-  │  │  │  ├─info
-  │  │  │  │      Camp.java
-  │  │  │  │      Commander.java
-  │  │  │  │      Formation.java
-  │  │  │  │      FormationType.java
-  │  │  │  │      LoadThread.java
-  │  │  │  │      PositionInfo.java
-  │  │  │  │      PowerPattern.java
-  │  │  │  │
-  │  │  │  ├─lives
-  │  │  │  │  │  Creature.java
-  │  │  │  │  │
-  │  │  │  │  ├─CB
-  │  │  │  │  │      BlueBoy.java
-  │  │  │  │  │      CyanBoy.java
-  │  │  │  │  │      GrandPa.java
-  │  │  │  │  │      GreenBoy.java
-  │  │  │  │  │      OrangeBoy.java
-  │  │  │  │  │      PurpleBoy.java
-  │  │  │  │  │      RedBoy.java
-  │  │  │  │  │      YellowBoy.java
-  │  │  │  │  │
-  │  │  │  │  └─MO
-  │  │  │  │          Footman.java
-  │  │  │  │          Scorpion.java
-  │  │  │  │          Snake.java
-  │  │  │  │
-  │  │  │  └─META-INF
-  │  │  │          MANIFEST.MF
-  │  │  │
-  │  │  └─resources
-  │  │      ├─META-INF
-  │  │      │      MANIFEST.MF
-  │  │      │
-  │  │      └─resource
-  │  │              background.jpg
-  │  │              bgm2.wav
-  │  │              七娃.jpg
-  │  │              三娃.jpg
-  │  │              二娃.jpg
-  │  │              五娃.jpg
-  │  │              六娃.jpg
-  │  │              四娃.jpg
-  │  │              大娃.jpg
-  │  │              小喽啰.jpg
-  │  │              尸体.jpg
-  │  │              爷爷.jpg
-  │  │              蛇精.jpg
-  │  │              蝎子精.jpg
-  │  │
-  │  └─test
-  │      └─java
-  │          └─info
-  │                  PowerPatternTest.java
+│  JavaFXTest3.iml
+│  pom.xml
+│  README.md
+│
+├─.idea
+│  │  compiler.xml
+│  │  description.html
+│  │  encodings.xml
+│  │  gradle.xml
+│  │  misc.xml
+│  │  modules.xml
+│  │  uiDesigner.xml
+│  │  vcs.xml
+│  │  workspace.xml
+│  │
+│  ├─artifacts
+│  │      JavaFXTest3_jar.xml
+│  │
+│  └─libraries
+│          Maven__javax_media_jmf_2_1_1e.xml
+│          Maven__jaxen_jaxen_1_1_6.xml
+│          Maven__junit_junit_4_12.xml
+│          Maven__org_dom4j_dom4j_2_0_2.xml
+│          Maven__org_hamcrest_hamcrest_core_1_3.xml
+│
+├─out
+│  └─artifacts
+│      └─JavaFXTest3_jar
+│              dom4j-2.0.2.jar
+│              JavaFXTest3.jar
+│              jaxen-1.1.6.jar
+│              jmf-2.1.1e.jar
+│
+├─src
+│  ├─main
+│  │  ├─java
+│  │  │  ├─battlefield
+│  │  │  │      BattleField.java
+│  │  │  │      Land.java
+│  │  │  │
+│  │  │  ├─gui
+│  │  │  │      Controller.java
+│  │  │  │      FreshThread.java
+│  │  │  │      Main.java
+│  │  │  │      sample.fxml
+│  │  │  │
+│  │  │  ├─info
+│  │  │  │      Bullet.java
+│  │  │  │      Camp.java
+│  │  │  │      Commander.java
+│  │  │  │      Database.java
+│  │  │  │      Formation.java
+│  │  │  │      FormationType.java
+│  │  │  │      ImageManager.java
+│  │  │  │      LoadThread.java
+│  │  │  │      MoveInfo.java
+│  │  │  │      PositionInfo.java
+│  │  │  │      PowerPattern.java
+│  │  │  │
+│  │  │  ├─lives
+│  │  │  │  │  Creature.java
+│  │  │  │  │
+│  │  │  │  ├─CB
+│  │  │  │  │      BlueBoy.java
+│  │  │  │  │      CyanBoy.java
+│  │  │  │  │      GrandPa.java
+│  │  │  │  │      GreenBoy.java
+│  │  │  │  │      OrangeBoy.java
+│  │  │  │  │      PurpleBoy.java
+│  │  │  │  │      RedBoy.java
+│  │  │  │  │      YellowBoy.java
+│  │  │  │  │
+│  │  │  │  └─MO
+│  │  │  │          Footman.java
+│  │  │  │          Scorpion.java
+│  │  │  │          Snake.java
+│  │  │  │
+│  │  │  └─META-INF
+│  │  │          MANIFEST.MF
+│  │  │
+│  │  └─resources
+│  │      ├─META-INF
+│  │      │      MANIFEST.MF
+│  │      │
+│  │      └─resource
+│  │              background.jpg
+│  │              bgm2.wav
+│  │              七娃.jpg
+│  │              三娃.jpg
+│  │              二娃.jpg
+│  │              五娃.jpg
+│  │              六娃.jpg
+│  │              四娃.jpg
+│  │              大娃.jpg
+│  │              小喽啰.jpg
+│  │              尸体.jpg
+│  │              爷爷.jpg
+│  │              蛇精.jpg
+│  │              蝎子精.jpg
+│  │
+│  └─test
+│      └─java
+│          └─info
+│                  PowerPatternTest.java
+│
+├─target
+│  │  JavaFXTest3-1.0-SNAPSHOT-jar-with-dependencies.jar
+│  │  JavaFXTest3-1.0-SNAPSHOT.jar
+│  │
+│  ├─archive-tmp
+│  ├─classes
+│  │  ├─battlefield
+│  │  │      BattleField.class
+│  │  │      Land.class
+│  │  │
+│  │  ├─gui
+│  │  │      Controller$1.class
+│  │  │      Controller$2.class
+│  │  │      Controller$3.class
+│  │  │      Controller.class
+│  │  │      FreshThread.class
+│  │  │      Main$1.class
+│  │  │      Main$2.class
+│  │  │      Main.class
+│  │  │      sample.fxml
+│  │  │
+│  │  ├─info
+│  │  │      Bullet.class
+│  │  │      Camp.class
+│  │  │      Commander$1.class
+│  │  │      Commander.class
+│  │  │      Database.class
+│  │  │      Formation.class
+│  │  │      FormationType.class
+│  │  │      ImageManager.class
+│  │  │      LoadThread.class
+│  │  │      MoveInfo.class
+│  │  │      PositionInfo.class
+│  │  │      PowerPattern.class
+│  │  │
+│  │  ├─lives
+│  │  │  │  Creature.class
+│  │  │  │
+│  │  │  ├─CB
+│  │  │  │      BlueBoy.class
+│  │  │  │      CyanBoy.class
+│  │  │  │      GrandPa.class
+│  │  │  │      GreenBoy.class
+│  │  │  │      OrangeBoy.class
+│  │  │  │      PurpleBoy.class
+│  │  │  │      RedBoy.class
+│  │  │  │      YellowBoy.class
+│  │  │  │
+│  │  │  └─MO
+│  │  │          Footman.class
+│  │  │          Scorpion.class
+│  │  │          Snake.class
+│  │  │
+│  │  ├─META-INF
+│  │  │      JavaFXTest3.kotlin_module
+│  │  │
+│  │  └─resource
+│  │          background.jpg
+│  │          bgm2.wav
+│  │          七娃.jpg
+│  │          三娃.jpg
+│  │          二娃.jpg
+│  │          五娃.jpg
+│  │          六娃.jpg
+│  │          四娃.jpg
+│  │          大娃.jpg
+│  │          小喽啰.jpg
+│  │          尸体.jpg
+│  │          爷爷.jpg
+│  │          蛇精.jpg
+│  │          蝎子精.jpg
+│  │
+│  ├─generated-sources
+│  │  └─annotations
+│  ├─generated-test-sources
+│  │  └─test-annotations
+│  ├─lib
+│  │      dom4j-2.0.2.jar
+│  │      hamcrest-core-1.3.jar
+│  │      jaxen-1.1.6.jar
+│  │      jmf-2.1.1e.jar
+│  │      junit-4.12.jar
+│  │
+│  ├─maven-archiver
+│  │      pom.properties
+│  │
+│  ├─maven-status
+│  │  └─maven-compiler-plugin
+│  │      ├─compile
+│  │      │  └─default-compile
+│  │      │          createdFiles.lst
+│  │      │          inputFiles.lst
+│  │      │
+│  │      └─testCompile
+│  │          └─default-testCompile
+│  │                  createdFiles.lst
+│  │                  inputFiles.lst
+│  │
+│  ├─surefire-reports
+│  │      info.PowerPatternTest.txt
+│  │      TEST-info.PowerPatternTest.xml
+│  │
+│  └─test-classes
+│      └─info
+│              PowerPatternTest.class
+│
+├─存档
+│      0.xml
+│      1.xml
+│      2.xml
+│
+└─效果图
+        1.jpg
+        2.jpg
+        3.jpg
 
 ```
-
   其中battlefield包用于定义战场及其属性；
 
   gui包用于生成图形化界面；
@@ -149,4 +279,4 @@
 
 + 存档
 
-  见“存档”文件夹下xml文件（随便存的）
+  见“存档”文件夹下xml文件
