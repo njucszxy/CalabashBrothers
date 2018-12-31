@@ -2,139 +2,1237 @@
 
 <root> 
   <init> 
-    <creature id="0" name="爷爷" rowPosition="6" columnPosition="2"/>  
-    <creature id="1" name="大娃" rowPosition="7" columnPosition="3"/>  
-    <creature id="2" name="二娃" rowPosition="8" columnPosition="4"/>  
+    <creature id="0" name="爷爷" rowPosition="6" columnPosition="5"/>  
+    <creature id="1" name="大娃" rowPosition="7" columnPosition="5"/>  
+    <creature id="2" name="二娃" rowPosition="8" columnPosition="5"/>  
     <creature id="3" name="三娃" rowPosition="9" columnPosition="5"/>  
-    <creature id="4" name="四娃" rowPosition="10" columnPosition="6"/>  
-    <creature id="5" name="五娃" rowPosition="11" columnPosition="7"/>  
-    <creature id="6" name="六娃" rowPosition="12" columnPosition="8"/>  
-    <creature id="7" name="七娃" rowPosition="13" columnPosition="9"/>  
-    <creature id="8" name="蛇精" rowPosition="6" columnPosition="17"/>  
-    <creature id="9" name="蝎子精" rowPosition="7" columnPosition="16"/>  
-    <creature id="10" name="小喽啰" rowPosition="8" columnPosition="15"/>  
+    <creature id="4" name="四娃" rowPosition="10" columnPosition="5"/>  
+    <creature id="5" name="五娃" rowPosition="11" columnPosition="5"/>  
+    <creature id="6" name="六娃" rowPosition="12" columnPosition="5"/>  
+    <creature id="7" name="七娃" rowPosition="13" columnPosition="5"/>  
+    <creature id="8" name="蛇精" rowPosition="6" columnPosition="14"/>  
+    <creature id="9" name="蝎子精" rowPosition="7" columnPosition="14"/>  
+    <creature id="10" name="小喽啰" rowPosition="8" columnPosition="14"/>  
     <creature id="11" name="小喽啰" rowPosition="9" columnPosition="14"/>  
-    <creature id="12" name="小喽啰" rowPosition="9" columnPosition="15"/>  
-    <creature id="13" name="小喽啰" rowPosition="10" columnPosition="15"/>  
-    <creature id="14" name="小喽啰" rowPosition="11" columnPosition="16"/>  
-    <creature id="15" name="小喽啰" rowPosition="12" columnPosition="17"/> 
+    <creature id="12" name="小喽啰" rowPosition="10" columnPosition="14"/>  
+    <creature id="13" name="小喽啰" rowPosition="11" columnPosition="14"/>  
+    <creature id="14" name="小喽啰" rowPosition="12" columnPosition="14"/>  
+    <creature id="15" name="小喽啰" rowPosition="13" columnPosition="14"/> 
   </init>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
-  <move name="七娃" id="7" rowPosition1="13" columnPosition1="9" rowPosition2="12" columnPosition2="9"/>  
-  <move name="小喽啰" id="14" rowPosition1="11" columnPosition1="16" rowPosition2="12" columnPosition2="16"/>  
-  <move name="小喽啰" id="13" rowPosition1="10" columnPosition1="15" rowPosition2="11" columnPosition2="15"/>  
-  <move name="五娃" id="5" rowPosition1="11" columnPosition1="7" rowPosition2="11" columnPosition2="8"/>  
-  <move name="小喽啰" id="12" rowPosition1="9" columnPosition1="15" rowPosition2="10" columnPosition2="15"/>  
-  <move name="四娃" id="4" rowPosition1="10" columnPosition1="6" rowPosition2="9" columnPosition2="6"/>  
-  <move name="二娃" id="2" rowPosition1="8" columnPosition1="4" rowPosition2="8" columnPosition2="5"/>  
-  <move name="小喽啰" id="10" rowPosition1="8" columnPosition1="15" rowPosition2="8" columnPosition2="14"/>  
-  <move name="蝎子精" id="9" rowPosition1="7" columnPosition1="16" rowPosition2="8" columnPosition2="16"/>  
-  <move name="大娃" id="1" rowPosition1="7" columnPosition1="3" rowPosition2="8" columnPosition2="3"/>  
-  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="16"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="4"/>  
-  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="16" rowPosition2="12" columnPosition2="15"/>  
-  <move name="七娃" id="7" rowPosition1="12" columnPosition1="9" rowPosition2="12" columnPosition2="10"/>  
-  <move name="五娃" id="5" rowPosition1="11" columnPosition1="8" rowPosition2="10" columnPosition2="8"/>  
-  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="17" rowPosition2="12" columnPosition2="16"/>  
-  <move name="四娃" id="4" rowPosition1="9" columnPosition1="6" rowPosition2="9" columnPosition2="7"/>  
-  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="15" rowPosition2="10" columnPosition2="14"/>  
-  <move name="三娃" id="3" rowPosition1="9" columnPosition1="5" rowPosition2="9" columnPosition2="6"/>  
-  <move name="小喽啰" id="10" rowPosition1="8" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
-  <move name="二娃" id="2" rowPosition1="8" columnPosition1="5" rowPosition2="9" columnPosition2="5"/>  
-  <move name="大娃" id="1" rowPosition1="8" columnPosition1="3" rowPosition2="9" columnPosition2="3"/>  
-  <move name="蝎子精" id="9" rowPosition1="8" columnPosition1="16" rowPosition2="9" columnPosition2="16"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="16" rowPosition2="6" columnPosition2="15"/>  
-  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="13" rowPosition2="9" columnPosition2="12"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="4" rowPosition2="6" columnPosition2="5"/>  
-  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
-  <move name="六娃" id="6" rowPosition1="12" columnPosition1="8" rowPosition2="12" columnPosition2="9"/>  
-  <move name="四娃" id="4" rowPosition1="9" columnPosition1="7" rowPosition2="9" columnPosition2="8"/>  
-  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="14" rowPosition2="10" columnPosition2="13"/>  
-  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="16" rowPosition2="12" columnPosition2="15"/>  
-  <move name="七娃" id="7" rowPosition1="12" columnPosition1="10" rowPosition2="12" columnPosition2="11"/>  
-  <move name="大娃" id="1" rowPosition1="9" columnPosition1="3" rowPosition2="9" columnPosition2="4"/>  
-  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
-  <move name="三娃" id="3" rowPosition1="9" columnPosition1="6" rowPosition2="9" columnPosition2="7"/>  
-  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="11"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="15" rowPosition2="6" columnPosition2="14"/>  
-  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="16" rowPosition2="9" columnPosition2="15"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="5" rowPosition2="6" columnPosition2="6"/>  
-  <move name="小喽啰" id="14" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="13"/>  
-  <move name="六娃" id="6" rowPosition1="12" columnPosition1="9" rowPosition2="12" columnPosition2="10"/>  
-  <move name="四娃" id="4" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
-  <move name="小喽啰" id="12" rowPosition1="10" columnPosition1="13" rowPosition2="11" columnPosition2="13"/>  
-  <move name="五娃" id="5" rowPosition1="10" columnPosition1="8" rowPosition2="9" columnPosition2="8"/>  
-  <move name="小喽啰" id="15" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
-  <move name="小喽啰" id="13" rowPosition1="11" columnPosition1="15" rowPosition2="12" columnPosition2="15"/>  
-  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="13" rowPosition2="9" columnPosition2="12"/>  
-  <move name="二娃" id="2" rowPosition1="9" columnPosition1="5" rowPosition2="9" columnPosition2="6"/>  
-  <move name="七娃" id="7" rowPosition1="12" columnPosition1="11" rowPosition2="12" columnPosition2="12"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="14" rowPosition2="6" columnPosition2="13"/>  
-  <move name="小喽啰" id="11" rowPosition1="9" columnPosition1="11" rowPosition2="9" columnPosition2="10"/>  
-  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="15" rowPosition2="9" columnPosition2="14"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="6" rowPosition2="6" columnPosition2="7"/>  
-  <kill creature1="小喽啰" id1="14" rowPosition1="12" columnPosition1="13" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="12" killed="小喽啰"/>  
-  <move name="六娃" id="6" rowPosition1="12" columnPosition1="10" rowPosition2="11" columnPosition2="10"/>  
-  <kill creature1="四娃" id1="4" rowPosition1="9" columnPosition1="9" creature2="小喽啰" id2="11" rowPosition2="9" columnPosition2="10" killed="四娃"/>  
-  <move name="小喽啰" id="12" rowPosition1="11" columnPosition1="13" rowPosition2="12" columnPosition2="13"/>  
-  <move name="五娃" id="5" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
-  <move name="小喽啰" id="10" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="11"/>  
-  <move name="大娃" id="1" rowPosition1="9" columnPosition1="4" rowPosition2="9" columnPosition2="5"/>  
-  <kill creature1="七娃" id1="7" rowPosition1="12" columnPosition1="12" creature2="小喽啰" id2="12" rowPosition2="12" columnPosition2="13" killed="小喽啰"/>  
-  <move name="七娃" id="7" rowPosition1="12" columnPosition1="12" rowPosition2="12" columnPosition2="13"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="13" rowPosition2="6" columnPosition2="12"/>  
-  <move name="三娃" id="3" rowPosition1="9" columnPosition1="7" rowPosition2="9" columnPosition2="8"/>  
-  <kill creature1="小喽啰" id1="11" rowPosition1="9" columnPosition1="10" creature2="五娃" id2="5" rowPosition2="9" columnPosition2="9" killed="小喽啰"/>  
-  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="7" rowPosition2="6" columnPosition2="8"/>  
-  <move name="六娃" id="6" rowPosition1="11" columnPosition1="10" rowPosition2="10" columnPosition2="10"/>  
-  <move name="五娃" id="5" rowPosition1="9" columnPosition1="9" rowPosition2="9" columnPosition2="10"/>  
-  <kill creature1="小喽啰" id1="15" rowPosition1="12" columnPosition1="14" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="13" killed="小喽啰"/>  
-  <kill creature1="小喽啰" id1="10" rowPosition1="9" columnPosition1="11" creature2="五娃" id2="5" rowPosition2="9" columnPosition2="10" killed="小喽啰"/>  
-  <move name="大娃" id="1" rowPosition1="9" columnPosition1="5" rowPosition2="8" columnPosition2="5"/>  
-  <move name="二娃" id="2" rowPosition1="9" columnPosition1="6" rowPosition2="8" columnPosition2="6"/>  
-  <move name="七娃" id="7" rowPosition1="12" columnPosition1="13" rowPosition2="12" columnPosition2="14"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="12" rowPosition2="6" columnPosition2="11"/>  
-  <move name="三娃" id="3" rowPosition1="9" columnPosition1="8" rowPosition2="8" columnPosition2="8"/>  
-  <move name="蝎子精" id="9" rowPosition1="10" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
-  <move name="爷爷" id="0" rowPosition1="6" columnPosition1="8" rowPosition2="6" columnPosition2="9"/>  
-  <kill creature1="小喽啰" id1="13" rowPosition1="12" columnPosition1="15" creature2="七娃" id2="7" rowPosition2="12" columnPosition2="14" killed="七娃"/>  
-  <move name="小喽啰" id="13" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
-  <move name="五娃" id="5" rowPosition1="9" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
-  <move name="大娃" id="1" rowPosition1="8" columnPosition1="5" rowPosition2="7" columnPosition2="5"/>  
-  <move name="二娃" id="2" rowPosition1="8" columnPosition1="6" rowPosition2="7" columnPosition2="6"/>  
-  <move name="蛇精" id="8" rowPosition1="6" columnPosition1="11" rowPosition2="6" columnPosition2="10"/>  
-  <move name="三娃" id="3" rowPosition1="8" columnPosition1="8" rowPosition2="7" columnPosition2="8"/>  
-  <move name="蝎子精" id="9" rowPosition1="11" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
-  <kill creature1="爷爷" id1="0" rowPosition1="6" columnPosition1="9" creature2="蛇精" id2="8" rowPosition2="6" columnPosition2="10" killed="爷爷"/>  
-  <move name="六娃" id="6" rowPosition1="10" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
-  <move name="小喽啰" id="13" rowPosition1="12" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
-  <move name="五娃" id="5" rowPosition1="8" columnPosition1="10" rowPosition2="7" columnPosition2="10"/>  
-  <move name="大娃" id="1" rowPosition1="7" columnPosition1="5" rowPosition2="6" columnPosition2="5"/>  
-  <move name="二娃" id="2" rowPosition1="7" columnPosition1="6" rowPosition2="6" columnPosition2="6"/>  
-  <kill creature1="蛇精" id1="8" rowPosition1="6" columnPosition1="10" creature2="五娃" id2="5" rowPosition2="7" columnPosition2="10" killed="蛇精"/>  
-  <move name="三娃" id="3" rowPosition1="7" columnPosition1="8" rowPosition2="8" columnPosition2="8"/>  
-  <move name="蝎子精" id="9" rowPosition1="10" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
-  <move name="六娃" id="6" rowPosition1="9" columnPosition1="10" rowPosition2="9" columnPosition2="11"/>  
-  <move name="小喽啰" id="13" rowPosition1="11" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
-  <move name="五娃" id="5" rowPosition1="7" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
-  <move name="大娃" id="1" rowPosition1="6" columnPosition1="5" rowPosition2="7" columnPosition2="5"/>  
-  <move name="二娃" id="2" rowPosition1="6" columnPosition1="6" rowPosition2="7" columnPosition2="6"/>  
-  <move name="三娃" id="3" rowPosition1="8" columnPosition1="8" rowPosition2="9" columnPosition2="8"/>  
-  <move name="蝎子精" id="9" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
-  <move name="六娃" id="6" rowPosition1="9" columnPosition1="11" rowPosition2="9" columnPosition2="12"/>  
-  <move name="小喽啰" id="13" rowPosition1="10" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
-  <move name="五娃" id="5" rowPosition1="8" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
-  <move name="大娃" id="1" rowPosition1="7" columnPosition1="5" rowPosition2="8" columnPosition2="5"/>  
-  <move name="二娃" id="2" rowPosition1="7" columnPosition1="6" rowPosition2="8" columnPosition2="6"/>  
-  <move name="三娃" id="3" rowPosition1="9" columnPosition1="8" rowPosition2="9" columnPosition2="9"/>  
-  <kill creature1="蝎子精" id1="9" rowPosition1="9" columnPosition1="13" creature2="六娃" id2="6" rowPosition2="9" columnPosition2="12" killed="蝎子精"/>  
-  <move name="六娃" id="6" rowPosition1="9" columnPosition1="12" rowPosition2="9" columnPosition2="13"/>  
-  <kill creature1="小喽啰" id1="13" rowPosition1="9" columnPosition1="14" creature2="六娃" id2="6" rowPosition2="9" columnPosition2="13" killed="小喽啰"/>  
-  <end winner="五娃" id="5"/>  
-  <end winner="大娃" id="1"/>  
-  <end winner="二娃" id="2"/>  
-  <end winner="三娃" id="3"/>  
-  <end winner="六娃" id="6"/>
+  <move name="爷爷" id="0" time="107" rowPosition1="6" columnPosition1="5" rowPosition2="5" columnPosition2="5"/>  
+  <shoot name="爷爷" id="0" time="115" damage="1" myRowPosition="5" myColumnPosition="5" enemyRowPosition="6" enemyColumnPosition="14"/>  
+  <shoot name="小喽啰" id="14" time="121" damage="64" myRowPosition="12" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="七娃" id="7" time="127" rowPosition1="13" columnPosition1="5" rowPosition2="13" columnPosition2="4"/>  
+  <shoot name="七娃" id="7" time="132" damage="87" myRowPosition="13" myColumnPosition="4" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="138" rowPosition1="13" columnPosition1="14" rowPosition2="14" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="145" damage="65" myRowPosition="14" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="小喽啰" id="11" time="150" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="11" time="156" damage="68" myRowPosition="9" myColumnPosition="13" enemyRowPosition="9" enemyColumnPosition="5"/>  
+  <move name="六娃" id="6" time="162" rowPosition1="12" columnPosition1="5" rowPosition2="13" columnPosition2="5"/>  
+  <shoot name="六娃" id="6" time="167" damage="52" myRowPosition="13" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="173" rowPosition1="11" columnPosition1="5" rowPosition2="11" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="178" damage="64" myRowPosition="11" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="13" time="183" rowPosition1="11" columnPosition1="14" rowPosition2="11" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="13" time="189" damage="58" myRowPosition="11" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="5"/>  
+  <move name="小喽啰" id="12" time="195" rowPosition1="10" columnPosition1="14" rowPosition2="10" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="12" time="200" damage="70" myRowPosition="10" myColumnPosition="15" enemyRowPosition="10" enemyColumnPosition="5"/>  
+  <move name="四娃" id="4" time="206" rowPosition1="10" columnPosition1="5" rowPosition2="10" columnPosition2="4"/>  
+  <shoot name="四娃" id="4" time="211" damage="20" myRowPosition="10" myColumnPosition="4" enemyRowPosition="9" enemyColumnPosition="13"/>  
+  <move name="三娃" id="3" time="217" rowPosition1="9" columnPosition1="5" rowPosition2="10" columnPosition2="5"/>  
+  <shoot name="三娃" id="3" time="224" damage="67" myRowPosition="10" myColumnPosition="5" enemyRowPosition="9" enemyColumnPosition="13"/>  
+  <move name="蝎子精" id="9" time="230" rowPosition1="7" columnPosition1="14" rowPosition2="7" columnPosition2="13"/>  
+  <shoot name="蝎子精" id="9" time="236" damage="13" myRowPosition="7" myColumnPosition="13" enemyRowPosition="7" enemyColumnPosition="5"/>  
+  <move name="蛇精" id="8" time="241" rowPosition1="6" columnPosition1="14" rowPosition2="5" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="245" damage="15" myRowPosition="5" myColumnPosition="14" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="251" rowPosition1="7" columnPosition1="5" rowPosition2="6" columnPosition2="5"/>  
+  <shoot name="大娃" id="1" time="256" damage="52" myRowPosition="6" myColumnPosition="5" enemyRowPosition="7" enemyColumnPosition="13"/>  
+  <move name="二娃" id="2" time="261" rowPosition1="8" columnPosition1="5" rowPosition2="7" columnPosition2="5"/>  
+  <shoot name="二娃" id="2" time="266" damage="30" myRowPosition="7" myColumnPosition="5" enemyRowPosition="7" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="10" time="271" rowPosition1="8" columnPosition1="14" rowPosition2="9" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="276" damage="62" myRowPosition="9" myColumnPosition="14" enemyRowPosition="7" enemyColumnPosition="5"/>  
+  <move name="爷爷" id="0" time="1125" rowPosition1="5" columnPosition1="5" rowPosition2="4" columnPosition2="5"/>  
+  <shoot name="爷爷" id="0" time="1131" damage="1" myRowPosition="4" myColumnPosition="5" enemyRowPosition="5" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="14" time="1136" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="14" time="1142" damage="69" myRowPosition="12" myColumnPosition="13" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <shoot name="七娃" id="7" time="1147" damage="83" myRowPosition="13" myColumnPosition="4" enemyRowPosition="12" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="15" time="1153" rowPosition1="14" columnPosition1="14" rowPosition2="14" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="1158" damage="59" myRowPosition="14" myColumnPosition="15" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <shoot name="小喽啰" id="11" time="1165" damage="73" myRowPosition="9" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="5"/>  
+  <shoot name="六娃" id="6" time="1175" damage="68" myRowPosition="13" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="13"/>  
+  <move name="五娃" id="5" time="1184" rowPosition1="11" columnPosition1="4" rowPosition2="11" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="1189" damage="64" myRowPosition="11" myColumnPosition="5" enemyRowPosition="11" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="13" time="1194" rowPosition1="11" columnPosition1="13" rowPosition2="10" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="13" time="1199" damage="50" myRowPosition="10" myColumnPosition="13" enemyRowPosition="11" enemyColumnPosition="5"/>  
+  <move name="小喽啰" id="12" time="1206" rowPosition1="10" columnPosition1="15" rowPosition2="10" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="1211" damage="52" myRowPosition="10" myColumnPosition="16" enemyRowPosition="10" enemyColumnPosition="5"/>  
+  <shoot name="四娃" id="4" time="1217" damage="20" myRowPosition="10" myColumnPosition="4" enemyRowPosition="10" enemyColumnPosition="13"/>  
+  <move name="三娃" id="3" time="1230" rowPosition1="10" columnPosition1="5" rowPosition2="10" columnPosition2="6"/>  
+  <shoot name="三娃" id="3" time="1235" damage="75" myRowPosition="10" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="13"/>  
+  <move name="蝎子精" id="9" time="1241" rowPosition1="7" columnPosition1="13" rowPosition2="6" columnPosition2="13"/>  
+  <shoot name="蝎子精" id="9" time="1248" damage="13" myRowPosition="6" myColumnPosition="13" enemyRowPosition="7" enemyColumnPosition="5"/>  
+  <move name="蛇精" id="8" time="1254" rowPosition1="5" columnPosition1="14" rowPosition2="5" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="1259" damage="14" myRowPosition="5" myColumnPosition="13" enemyRowPosition="4" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="1267" rowPosition1="6" columnPosition1="5" rowPosition2="5" columnPosition2="5"/>  
+  <shoot name="大娃" id="1" time="1290" damage="57" myRowPosition="5" myColumnPosition="5" enemyRowPosition="6" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="10" time="1295" rowPosition1="9" columnPosition1="14" rowPosition2="8" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="1300" damage="72" myRowPosition="8" myColumnPosition="14" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="二娃" id="2" time="1306" rowPosition1="7" columnPosition1="5" rowPosition2="7" columnPosition2="4"/>  
+  <shoot name="二娃" id="2" time="1311" damage="33" myRowPosition="7" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="2138" rowPosition1="4" columnPosition1="5" rowPosition2="4" columnPosition2="4"/>  
+  <shoot name="爷爷" id="0" time="2144" damage="16" myRowPosition="4" myColumnPosition="4" enemyRowPosition="5" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="2149" rowPosition1="12" columnPosition1="13" rowPosition2="13" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="14" time="2155" damage="70" myRowPosition="13" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <shoot name="七娃" id="7" time="2160" damage="47" myRowPosition="13" myColumnPosition="4" enemyRowPosition="13" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="15" time="2166" rowPosition1="14" columnPosition1="15" rowPosition2="14" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="15" time="2171" damage="71" myRowPosition="14" myColumnPosition="16" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <move name="小喽啰" id="11" time="2178" rowPosition1="9" columnPosition1="13" rowPosition2="8" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="11" time="2183" damage="61" myRowPosition="8" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <shoot name="六娃" id="6" time="2188" damage="74" myRowPosition="13" myColumnPosition="5" enemyRowPosition="13" enemyColumnPosition="13"/>  
+  <move name="五娃" id="5" time="2195" rowPosition1="11" columnPosition1="5" rowPosition2="11" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="2200" damage="64" myRowPosition="11" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="13" time="2206" rowPosition1="10" columnPosition1="13" rowPosition2="10" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="13" time="2211" damage="64" myRowPosition="10" myColumnPosition="12" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="小喽啰" id="12" time="2218" rowPosition1="10" columnPosition1="16" rowPosition2="11" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="2223" damage="60" myRowPosition="11" myColumnPosition="16" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="2228" rowPosition1="10" columnPosition1="4" rowPosition2="11" columnPosition2="4"/>  
+  <shoot name="四娃" id="4" time="2233" damage="20" myRowPosition="11" myColumnPosition="4" enemyRowPosition="10" enemyColumnPosition="12"/>  
+  <move name="三娃" id="3" time="2241" rowPosition1="10" columnPosition1="6" rowPosition2="10" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="2246" damage="66" myRowPosition="10" myColumnPosition="7" enemyRowPosition="10" enemyColumnPosition="12"/>  
+  <shoot name="蝎子精" id="9" time="2254" damage="13" myRowPosition="6" myColumnPosition="13" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <shoot name="蛇精" id="8" time="2265" damage="14" myRowPosition="5" myColumnPosition="13" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="2296" rowPosition1="5" columnPosition1="5" rowPosition2="6" columnPosition2="5"/>  
+  <shoot name="大娃" id="1" time="2302" damage="48" myRowPosition="6" myColumnPosition="5" enemyRowPosition="5" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="10" time="2310" rowPosition1="8" columnPosition1="14" rowPosition2="7" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="2315" damage="56" myRowPosition="7" myColumnPosition="14" enemyRowPosition="10" enemyColumnPosition="7"/>  
+  <move name="二娃" id="2" time="2321" rowPosition1="7" columnPosition1="4" rowPosition2="7" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="2327" damage="28" myRowPosition="7" myColumnPosition="3" enemyRowPosition="6" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="3152" rowPosition1="4" columnPosition1="4" rowPosition2="4" columnPosition2="5"/>  
+  <shoot name="爷爷" id="0" time="3158" damage="9" myRowPosition="4" myColumnPosition="5" enemyRowPosition="5" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="3163" rowPosition1="13" columnPosition1="13" rowPosition2="14" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="14" time="3169" damage="56" myRowPosition="14" myColumnPosition="13" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <move name="七娃" id="7" time="3177" rowPosition1="13" columnPosition1="4" rowPosition2="13" columnPosition2="3"/>  
+  <shoot name="七娃" id="7" time="3182" damage="78" myRowPosition="13" myColumnPosition="3" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="15" time="3187" rowPosition1="14" columnPosition1="16" rowPosition2="13" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="15" time="3192" damage="67" myRowPosition="13" myColumnPosition="16" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <move name="六娃" id="6" time="3197" rowPosition1="13" columnPosition1="5" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="六娃" id="6" time="3202" damage="66" myRowPosition="12" myColumnPosition="5" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="11" time="3208" rowPosition1="8" columnPosition1="13" rowPosition2="9" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="11" time="3213" damage="57" myRowPosition="9" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="13" time="3218" rowPosition1="10" columnPosition1="12" rowPosition2="11" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="13" time="3223" damage="58" myRowPosition="11" myColumnPosition="12" enemyRowPosition="10" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="3229" rowPosition1="11" columnPosition1="6" rowPosition2="11" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="3234" damage="100" myRowPosition="11" myColumnPosition="5" enemyRowPosition="11" enemyColumnPosition="12"/>  
+  <move name="四娃" id="4" time="3240" rowPosition1="11" columnPosition1="4" rowPosition2="11" columnPosition2="3"/>  
+  <shoot name="四娃" id="4" time="3245" damage="54" myRowPosition="11" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="12" time="3250" rowPosition1="11" columnPosition1="16" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="12" time="3255" damage="58" myRowPosition="11" myColumnPosition="15" enemyRowPosition="10" enemyColumnPosition="7"/>  
+  <move name="蝎子精" id="9" time="3261" rowPosition1="6" columnPosition1="13" rowPosition2="6" columnPosition2="12"/>  
+  <shoot name="蝎子精" id="9" time="3266" damage="13" myRowPosition="6" myColumnPosition="12" enemyRowPosition="6" enemyColumnPosition="5"/>  
+  <move name="三娃" id="3" time="3271" rowPosition1="10" columnPosition1="7" rowPosition2="11" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="3276" damage="63" myRowPosition="11" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="12"/>  
+  <move name="蛇精" id="8" time="3281" rowPosition1="5" columnPosition1="13" rowPosition2="5" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="3286" damage="14" myRowPosition="5" myColumnPosition="12" enemyRowPosition="4" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="3309" rowPosition1="6" columnPosition1="5" rowPosition2="5" columnPosition2="5"/>  
+  <shoot name="大娃" id="1" time="3314" damage="41" myRowPosition="5" myColumnPosition="5" enemyRowPosition="6" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="10" time="3321" rowPosition1="7" columnPosition1="14" rowPosition2="7" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="3326" damage="72" myRowPosition="7" myColumnPosition="15" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <move name="二娃" id="2" time="3333" rowPosition1="7" columnPosition1="3" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="二娃" id="2" time="3338" damage="49" myRowPosition="7" myColumnPosition="2" enemyRowPosition="6" enemyColumnPosition="12"/>  
+  <shoot name="爷爷" id="0" time="4165" damage="4" myRowPosition="4" myColumnPosition="5" enemyRowPosition="5" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="14" time="4175" rowPosition1="14" columnPosition1="13" rowPosition2="14" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="4181" damage="67" myRowPosition="14" myColumnPosition="12" enemyRowPosition="11" enemyColumnPosition="7"/>  
+  <move name="七娃" id="7" time="4187" rowPosition1="13" columnPosition1="3" rowPosition2="14" columnPosition2="3"/>  
+  <shoot name="七娃" id="7" time="4193" damage="27" myRowPosition="14" myColumnPosition="3" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="15" time="4198" rowPosition1="13" columnPosition1="16" rowPosition2="12" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="15" time="4204" damage="55" myRowPosition="12" myColumnPosition="16" enemyRowPosition="11" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="4212" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="六娃" id="6" time="4218" damage="79" myRowPosition="12" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="11" time="4225" rowPosition1="9" columnPosition1="13" rowPosition2="10" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="11" time="4230" damage="58" myRowPosition="10" myColumnPosition="13" enemyRowPosition="11" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="13" time="4236" rowPosition1="11" columnPosition1="12" rowPosition2="11" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="13" time="4242" damage="55" myRowPosition="11" myColumnPosition="11" enemyRowPosition="11" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="4247" rowPosition1="11" columnPosition1="5" rowPosition2="11" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="4253" damage="81" myRowPosition="11" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="四娃" id="4" time="4258" rowPosition1="11" columnPosition1="3" rowPosition2="11" columnPosition2="4"/>  
+  <shoot name="四娃" id="4" time="4263" damage="54" myRowPosition="11" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="12" time="4269" rowPosition1="11" columnPosition1="15" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="12" time="4274" damage="73" myRowPosition="11" myColumnPosition="14" enemyRowPosition="11" enemyColumnPosition="7"/>  
+  <move name="蝎子精" id="9" time="4280" rowPosition1="6" columnPosition1="12" rowPosition2="7" columnPosition2="12"/>  
+  <shoot name="蝎子精" id="9" time="4285" damage="14" myRowPosition="7" myColumnPosition="12" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <move name="三娃" id="3" time="4292" rowPosition1="11" columnPosition1="7" rowPosition2="12" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="4297" damage="74" myRowPosition="12" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="蛇精" id="8" time="4302" rowPosition1="5" columnPosition1="12" rowPosition2="6" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="4307" damage="13" myRowPosition="6" myColumnPosition="12" enemyRowPosition="5" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="4323" rowPosition1="5" columnPosition1="5" rowPosition2="5" columnPosition2="4"/>  
+  <shoot name="大娃" id="1" time="4329" damage="58" myRowPosition="5" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="10" time="4334" rowPosition1="7" columnPosition1="15" rowPosition2="6" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="4340" damage="61" myRowPosition="6" myColumnPosition="15" enemyRowPosition="4" enemyColumnPosition="5"/>  
+  <move name="二娃" id="2" time="4345" rowPosition1="7" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="二娃" id="2" time="4350" damage="21" myRowPosition="6" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="12"/>  
+  <move name="爷爷" id="0" time="5173" rowPosition1="4" columnPosition1="5" rowPosition2="4" columnPosition2="4"/>  
+  <shoot name="爷爷" id="0" time="5178" damage="1" myRowPosition="4" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="14" time="5186" rowPosition1="14" columnPosition1="12" rowPosition2="13" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="5192" damage="68" myRowPosition="13" myColumnPosition="12" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="七娃" id="7" time="5198" rowPosition1="14" columnPosition1="3" rowPosition2="15" columnPosition2="3"/>  
+  <shoot name="七娃" id="7" time="5204" damage="65" myRowPosition="15" myColumnPosition="3" enemyRowPosition="13" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="15" time="5211" rowPosition1="12" columnPosition1="16" rowPosition2="12" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="5216" damage="74" myRowPosition="12" myColumnPosition="15" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="5225" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="5231" damage="68" myRowPosition="12" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="11" time="5236" rowPosition1="10" columnPosition1="13" rowPosition2="10" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="11" time="5242" damage="50" myRowPosition="10" myColumnPosition="12" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="13" time="5247" rowPosition1="11" columnPosition1="11" rowPosition2="12" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="13" time="5252" damage="61" myRowPosition="12" myColumnPosition="11" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="5258" rowPosition1="11" columnPosition1="6" rowPosition2="11" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="5264" damage="49" myRowPosition="11" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="11"/>  
+  <move name="四娃" id="4" time="5269" rowPosition1="11" columnPosition1="4" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="四娃" id="4" time="5275" damage="20" myRowPosition="12" myColumnPosition="4" enemyRowPosition="12" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="12" time="5280" rowPosition1="11" columnPosition1="14" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="12" time="5285" damage="67" myRowPosition="11" myColumnPosition="15" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="蝎子精" id="9" time="5292" rowPosition1="7" columnPosition1="12" rowPosition2="7" columnPosition2="11"/>  
+  <shoot name="蝎子精" id="9" time="5297" damage="13" myRowPosition="7" myColumnPosition="11" enemyRowPosition="5" enemyColumnPosition="4"/>  
+  <move name="三娃" id="3" time="5303" rowPosition1="12" columnPosition1="7" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="5309" damage="70" myRowPosition="13" myColumnPosition="7" enemyRowPosition="12" enemyColumnPosition="11"/>  
+  <move name="蛇精" id="8" time="5315" rowPosition1="6" columnPosition1="12" rowPosition2="7" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="5321" damage="15" myRowPosition="7" myColumnPosition="12" enemyRowPosition="5" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="5336" rowPosition1="5" columnPosition1="4" rowPosition2="6" columnPosition2="4"/>  
+  <shoot name="大娃" id="1" time="5342" damage="44" myRowPosition="6" myColumnPosition="4" enemyRowPosition="7" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="10" time="5348" rowPosition1="6" columnPosition1="15" rowPosition2="6" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="5355" damage="68" myRowPosition="6" myColumnPosition="14" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="二娃" id="2" time="5360" rowPosition1="6" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="二娃" id="2" time="5366" damage="26" myRowPosition="7" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="11"/>  
+  <move name="爷爷" id="0" time="6185" rowPosition1="4" columnPosition1="4" rowPosition2="4" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="6191" damage="1" myRowPosition="4" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="14" time="6197" rowPosition1="13" columnPosition1="12" rowPosition2="14" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="6202" damage="69" myRowPosition="14" myColumnPosition="12" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="七娃" id="7" time="6208" rowPosition1="15" columnPosition1="3" rowPosition2="15" columnPosition2="2"/>  
+  <shoot name="七娃" id="7" time="6214" damage="19" myRowPosition="15" myColumnPosition="2" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="15" time="6223" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="6228" damage="70" myRowPosition="12" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="6235" rowPosition1="12" columnPosition1="3" rowPosition2="12" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="6241" damage="55" myRowPosition="12" myColumnPosition="2" enemyRowPosition="12" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="11" time="6247" rowPosition1="10" columnPosition1="12" rowPosition2="9" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="11" time="6252" damage="58" myRowPosition="9" myColumnPosition="12" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="13" time="6258" rowPosition1="12" columnPosition1="11" rowPosition2="11" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="13" time="6263" damage="50" myRowPosition="11" myColumnPosition="11" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="6269" rowPosition1="11" columnPosition1="5" rowPosition2="10" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="6275" damage="49" myRowPosition="10" myColumnPosition="5" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="四娃" id="4" time="6281" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="四娃" id="4" time="6286" damage="54" myRowPosition="12" myColumnPosition="5" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="12" time="6292" rowPosition1="11" columnPosition1="15" rowPosition2="11" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="6297" damage="63" myRowPosition="11" myColumnPosition="16" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="蝎子精" id="9" time="6303" rowPosition1="7" columnPosition1="11" rowPosition2="7" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="6308" damage="14" myRowPosition="7" myColumnPosition="10" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="三娃" id="3" time="6314" rowPosition1="13" columnPosition1="7" rowPosition2="13" columnPosition2="8"/>  
+  <shoot name="三娃" id="3" time="6320" damage="68" myRowPosition="13" myColumnPosition="8" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="蛇精" id="8" time="6327" rowPosition1="7" columnPosition1="12" rowPosition2="7" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="6332" damage="14" myRowPosition="7" myColumnPosition="13" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="6347" rowPosition1="6" columnPosition1="4" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="6353" damage="49" myRowPosition="6" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="6359" rowPosition1="6" columnPosition1="14" rowPosition2="6" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="6366" damage="67" myRowPosition="6" myColumnPosition="15" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="6372" rowPosition1="7" columnPosition1="2" rowPosition2="8" columnPosition2="2"/>  
+  <shoot name="二娃" id="2" time="6379" damage="47" myRowPosition="8" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="7203" rowPosition1="4" columnPosition1="3" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="7218" damage="4" myRowPosition="4" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="七娃" id="7" time="7222" rowPosition1="15" columnPosition1="2" rowPosition2="14" columnPosition2="2"/>  
+  <shoot name="七娃" id="7" time="7225" damage="98" myRowPosition="14" myColumnPosition="2" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="14" time="7228" rowPosition1="14" columnPosition1="12" rowPosition2="13" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="7234" damage="53" myRowPosition="13" myColumnPosition="12" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="15" time="7240" rowPosition1="12" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="7245" damage="58" myRowPosition="11" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="六娃" id="6" time="7251" rowPosition1="12" columnPosition1="2" rowPosition2="12" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="7257" damage="73" myRowPosition="12" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="11" time="7262" rowPosition1="9" columnPosition1="12" rowPosition2="10" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="11" time="7269" damage="52" myRowPosition="10" myColumnPosition="12" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="13" time="7275" rowPosition1="11" columnPosition1="11" rowPosition2="11" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="13" time="7281" damage="53" myRowPosition="11" myColumnPosition="10" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="五娃" id="5" time="7287" rowPosition1="10" columnPosition1="5" rowPosition2="10" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="7293" damage="64" myRowPosition="10" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="10"/>  
+  <move name="四娃" id="4" time="7298" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="四娃" id="4" time="7304" damage="20" myRowPosition="12" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="12" time="7310" rowPosition1="11" columnPosition1="16" rowPosition2="11" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="7315" damage="55" myRowPosition="11" myColumnPosition="17" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="蝎子精" id="9" time="7321" rowPosition1="7" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="7327" damage="13" myRowPosition="8" myColumnPosition="10" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="三娃" id="3" time="7333" rowPosition1="13" columnPosition1="8" rowPosition2="14" columnPosition2="8"/>  
+  <shoot name="三娃" id="3" time="7339" damage="70" myRowPosition="14" myColumnPosition="8" enemyRowPosition="11" enemyColumnPosition="10"/>  
+  <move name="蛇精" id="8" time="7345" rowPosition1="7" columnPosition1="13" rowPosition2="6" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="7351" damage="14" myRowPosition="6" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="大娃" id="1" time="7359" rowPosition1="6" columnPosition1="3" rowPosition2="7" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="7365" damage="53" myRowPosition="7" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="7371" rowPosition1="6" columnPosition1="15" rowPosition2="5" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="7376" damage="50" myRowPosition="5" myColumnPosition="15" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="7384" rowPosition1="8" columnPosition1="2" rowPosition2="8" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="7390" damage="27" myRowPosition="8" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="8229" rowPosition1="4" columnPosition1="2" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="8235" damage="16" myRowPosition="3" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="14" time="8241" rowPosition1="13" columnPosition1="12" rowPosition2="13" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="14" time="8247" damage="54" myRowPosition="13" myColumnPosition="11" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="8253" rowPosition1="14" columnPosition1="2" rowPosition2="14" columnPosition2="3"/>  
+  <shoot name="七娃" id="7" time="8259" damage="93" myRowPosition="14" myColumnPosition="3" enemyRowPosition="13" enemyColumnPosition="11"/>  
+  <move name="六娃" id="6" time="8265" rowPosition1="12" columnPosition1="3" rowPosition2="11" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="8271" damage="59" myRowPosition="11" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="8278" rowPosition1="11" columnPosition1="14" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="8284" damage="66" myRowPosition="11" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="13" time="8290" rowPosition1="11" columnPosition1="10" rowPosition2="10" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="13" time="8296" damage="69" myRowPosition="10" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="11" time="8302" rowPosition1="10" columnPosition1="12" rowPosition2="10" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="8308" damage="56" myRowPosition="10" myColumnPosition="11" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="8314" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="四娃" id="4" time="8320" damage="54" myRowPosition="12" myColumnPosition="5" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="8326" rowPosition1="10" columnPosition1="6" rowPosition2="10" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="8332" damage="81" myRowPosition="10" myColumnPosition="5" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="蝎子精" id="9" time="8339" rowPosition1="8" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="8345" damage="14" myRowPosition="9" myColumnPosition="10" enemyRowPosition="10" enemyColumnPosition="5"/>  
+  <move name="小喽啰" id="12" time="8351" rowPosition1="11" columnPosition1="17" rowPosition2="10" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="8357" damage="53" myRowPosition="10" myColumnPosition="17" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="蛇精" id="8" time="8363" rowPosition1="6" columnPosition1="13" rowPosition2="5" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="8369" damage="14" myRowPosition="5" myColumnPosition="13" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="三娃" id="3" time="8375" rowPosition1="14" columnPosition1="8" rowPosition2="14" columnPosition2="9"/>  
+  <shoot name="三娃" id="3" time="8381" damage="76" myRowPosition="14" myColumnPosition="9" enemyRowPosition="13" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="10" time="8387" rowPosition1="5" columnPosition1="15" rowPosition2="4" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="8393" damage="61" myRowPosition="4" myColumnPosition="15" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="8399" rowPosition1="7" columnPosition1="3" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="8405" damage="50" myRowPosition="7" myColumnPosition="2" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="二娃" id="2" time="8411" rowPosition1="8" columnPosition1="1" rowPosition2="9" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="8416" damage="42" myRowPosition="9" myColumnPosition="1" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="9246" rowPosition1="3" columnPosition1="2" rowPosition2="2" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="9253" damage="4" myRowPosition="2" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="9259" rowPosition1="13" columnPosition1="11" rowPosition2="14" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="14" time="9265" damage="54" myRowPosition="14" myColumnPosition="11" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="9271" rowPosition1="14" columnPosition1="3" rowPosition2="15" columnPosition2="3"/>  
+  <shoot name="七娃" id="7" time="9277" damage="26" myRowPosition="15" myColumnPosition="3" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="六娃" id="6" time="9283" rowPosition1="11" columnPosition1="3" rowPosition2="10" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="9289" damage="72" myRowPosition="10" myColumnPosition="3" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="9295" rowPosition1="11" columnPosition1="15" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="9301" damage="58" myRowPosition="11" myColumnPosition="14" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="11" time="9314" rowPosition1="10" columnPosition1="11" rowPosition2="10" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="9320" damage="73" myRowPosition="10" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="四娃" id="4" time="9326" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="6"/>  
+  <shoot name="四娃" id="4" time="9332" damage="20" myRowPosition="12" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="9338" rowPosition1="10" columnPosition1="5" rowPosition2="10" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="9344" damage="100" myRowPosition="10" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <shoot name="蝎子精" id="9" time="9350" damage="14" myRowPosition="9" myColumnPosition="10" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="小喽啰" id="12" time="9363" rowPosition1="10" columnPosition1="17" rowPosition2="9" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="9369" damage="63" myRowPosition="9" myColumnPosition="17" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="蛇精" id="8" time="9375" rowPosition1="5" columnPosition1="13" rowPosition2="4" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="9381" damage="15" myRowPosition="4" myColumnPosition="13" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="三娃" id="3" time="9387" rowPosition1="14" columnPosition1="9" rowPosition2="15" columnPosition2="9"/>  
+  <shoot name="三娃" id="3" time="9393" damage="62" myRowPosition="15" myColumnPosition="9" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="10" time="9400" rowPosition1="4" columnPosition1="15" rowPosition2="4" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="9406" damage="71" myRowPosition="4" myColumnPosition="14" enemyRowPosition="2" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="9412" rowPosition1="7" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="9418" damage="49" myRowPosition="6" myColumnPosition="2" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="二娃" id="2" time="9424" rowPosition1="9" columnPosition1="1" rowPosition2="8" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="9430" damage="29" myRowPosition="8" myColumnPosition="1" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="10262" rowPosition1="2" columnPosition1="2" rowPosition2="2" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="10268" damage="9" myRowPosition="2" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="10275" rowPosition1="14" columnPosition1="11" rowPosition2="14" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="10281" damage="67" myRowPosition="14" myColumnPosition="12" enemyRowPosition="15" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="10287" rowPosition1="15" columnPosition1="3" rowPosition2="15" columnPosition2="4"/>  
+  <shoot name="七娃" id="7" time="10293" damage="43" myRowPosition="15" myColumnPosition="4" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="六娃" id="6" time="10299" rowPosition1="10" columnPosition1="3" rowPosition2="10" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="10306" damage="51" myRowPosition="10" myColumnPosition="2" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="10312" rowPosition1="11" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="10318" damage="73" myRowPosition="12" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="9"/>  
+  <shoot name="小喽啰" id="11" time="10326" damage="60" myRowPosition="10" myColumnPosition="10" enemyRowPosition="10" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="10338" rowPosition1="12" columnPosition1="6" rowPosition2="13" columnPosition2="6"/>  
+  <shoot name="四娃" id="4" time="10344" damage="54" myRowPosition="13" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="10350" rowPosition1="10" columnPosition1="6" rowPosition2="11" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="10357" damage="49" myRowPosition="11" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="蝎子精" id="9" time="10363" rowPosition1="9" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="10369" damage="13" myRowPosition="8" myColumnPosition="10" enemyRowPosition="11" enemyColumnPosition="6"/>  
+  <move name="小喽啰" id="12" time="10376" rowPosition1="9" columnPosition1="17" rowPosition2="9" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="10382" damage="72" myRowPosition="9" myColumnPosition="16" enemyRowPosition="11" enemyColumnPosition="6"/>  
+  <move name="蛇精" id="8" time="10388" rowPosition1="4" columnPosition1="13" rowPosition2="3" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="10394" damage="13" myRowPosition="3" myColumnPosition="13" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="三娃" id="3" time="10401" rowPosition1="15" columnPosition1="9" rowPosition2="14" columnPosition2="9"/>  
+  <shoot name="三娃" id="3" time="10407" damage="66" myRowPosition="14" myColumnPosition="9" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="10" time="10413" rowPosition1="4" columnPosition1="14" rowPosition2="4" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="10419" damage="55" myRowPosition="4" myColumnPosition="15" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="10425" rowPosition1="6" columnPosition1="2" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="10432" damage="43" myRowPosition="5" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="二娃" id="2" time="10438" rowPosition1="8" columnPosition1="1" rowPosition2="8" columnPosition2="0"/>  
+  <shoot name="二娃" id="2" time="10444" damage="45" myRowPosition="8" myColumnPosition="0" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="11277" rowPosition1="2" columnPosition1="1" rowPosition2="2" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="11283" damage="16" myRowPosition="2" myColumnPosition="0" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="11290" rowPosition1="14" columnPosition1="12" rowPosition2="14" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="14" time="11296" damage="58" myRowPosition="14" myColumnPosition="13" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="11303" rowPosition1="15" columnPosition1="4" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="七娃" id="7" time="11309" damage="27" myRowPosition="15" myColumnPosition="5" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="11316" rowPosition1="10" columnPosition1="2" rowPosition2="9" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="11323" damage="67" myRowPosition="9" myColumnPosition="2" enemyRowPosition="10" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="11329" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="11336" damage="59" myRowPosition="12" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="11" time="11343" rowPosition1="10" columnPosition1="10" rowPosition2="9" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="11349" damage="73" myRowPosition="9" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="四娃" id="4" time="11355" rowPosition1="13" columnPosition1="6" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="11362" damage="54" myRowPosition="13" myColumnPosition="7" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="11369" rowPosition1="11" columnPosition1="6" rowPosition2="11" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="11375" damage="100" myRowPosition="11" myColumnPosition="5" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="蝎子精" id="9" time="11382" rowPosition1="8" columnPosition1="10" rowPosition2="7" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="11389" damage="14" myRowPosition="7" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="12" time="11395" rowPosition1="9" columnPosition1="16" rowPosition2="9" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="11402" damage="59" myRowPosition="9" myColumnPosition="17" enemyRowPosition="14" enemyColumnPosition="9"/>  
+  <move name="蛇精" id="8" time="11408" rowPosition1="3" columnPosition1="13" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="11415" damage="15" myRowPosition="2" myColumnPosition="13" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="三娃" id="3" time="11422" rowPosition1="14" columnPosition1="9" rowPosition2="14" columnPosition2="8"/>  
+  <shoot name="三娃" id="3" time="11431" damage="79" myRowPosition="14" myColumnPosition="8" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="10" time="11438" rowPosition1="4" columnPosition1="15" rowPosition2="4" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="11445" damage="59" myRowPosition="4" myColumnPosition="14" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <shoot name="二娃" id="2" time="11452" damage="45" myRowPosition="8" myColumnPosition="0" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="大娃" id="1" time="11459" rowPosition1="5" columnPosition1="2" rowPosition2="5" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="11466" damage="42" myRowPosition="5" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="12292" rowPosition1="2" columnPosition1="0" rowPosition2="1" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="12299" damage="16" myRowPosition="1" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="12306" rowPosition1="14" columnPosition1="13" rowPosition2="14" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="14" time="12313" damage="52" myRowPosition="14" myColumnPosition="14" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="12319" rowPosition1="15" columnPosition1="5" rowPosition2="14" columnPosition2="5"/>  
+  <shoot name="七娃" id="7" time="12326" damage="21" myRowPosition="14" myColumnPosition="5" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="六娃" id="6" time="12333" rowPosition1="9" columnPosition1="2" rowPosition2="8" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="12339" damage="54" myRowPosition="8" myColumnPosition="2" enemyRowPosition="9" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="12346" rowPosition1="12" columnPosition1="15" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="12353" damage="65" myRowPosition="11" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="11" time="12359" rowPosition1="9" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="12366" damage="52" myRowPosition="8" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="四娃" id="4" time="12373" rowPosition1="13" columnPosition1="7" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="12379" damage="20" myRowPosition="14" myColumnPosition="7" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="12386" rowPosition1="11" columnPosition1="5" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="12393" damage="49" myRowPosition="12" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <shoot name="蝎子精" id="9" time="12399" damage="13" myRowPosition="7" myColumnPosition="10" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="12" time="12409" rowPosition1="9" columnPosition1="17" rowPosition2="8" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="12416" damage="73" myRowPosition="8" myColumnPosition="17" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="蛇精" id="8" time="12422" rowPosition1="2" columnPosition1="13" rowPosition2="2" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="12429" damage="13" myRowPosition="2" myColumnPosition="12" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="三娃" id="3" time="12438" rowPosition1="14" columnPosition1="8" rowPosition2="13" columnPosition2="8"/>  
+  <shoot name="三娃" id="3" time="12445" damage="61" myRowPosition="13" myColumnPosition="8" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="10" time="12452" rowPosition1="4" columnPosition1="14" rowPosition2="4" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="10" time="12459" damage="71" myRowPosition="4" myColumnPosition="13" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="12466" rowPosition1="8" columnPosition1="0" rowPosition2="8" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="12473" damage="22" myRowPosition="8" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="大娃" id="1" time="12480" rowPosition1="5" columnPosition1="3" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="12487" damage="48" myRowPosition="5" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="13308" rowPosition1="1" columnPosition1="0" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="13316" damage="4" myRowPosition="1" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="14" time="13323" rowPosition1="14" columnPosition1="14" rowPosition2="15" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="14" time="13329" damage="51" myRowPosition="15" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="13336" rowPosition1="14" columnPosition1="5" rowPosition2="13" columnPosition2="5"/>  
+  <shoot name="七娃" id="7" time="13343" damage="67" myRowPosition="13" myColumnPosition="5" enemyRowPosition="15" enemyColumnPosition="14"/>  
+  <shoot name="六娃" id="6" time="13350" damage="74" myRowPosition="8" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="13361" rowPosition1="11" columnPosition1="15" rowPosition2="12" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="13372" damage="65" myRowPosition="12" myColumnPosition="15" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="11" time="13378" rowPosition1="8" columnPosition1="10" rowPosition2="8" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="13382" damage="70" myRowPosition="8" myColumnPosition="11" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="四娃" id="4" time="13387" rowPosition1="14" columnPosition1="7" rowPosition2="14" columnPosition2="8"/>  
+  <shoot name="四娃" id="4" time="13395" damage="54" myRowPosition="14" myColumnPosition="8" enemyRowPosition="15" enemyColumnPosition="14"/>  
+  <shoot name="五娃" id="5" time="13401" damage="81" myRowPosition="12" myColumnPosition="5" enemyRowPosition="7" enemyColumnPosition="10"/>  
+  <move name="蝎子精" id="9" time="13408" rowPosition1="7" columnPosition1="10" rowPosition2="8" columnPosition2="10"/>  
+  <shoot name="蝎子精" id="9" time="13414" damage="13" myRowPosition="8" myColumnPosition="10" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="12" time="13423" rowPosition1="8" columnPosition1="17" rowPosition2="8" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="13430" damage="72" myRowPosition="8" myColumnPosition="18" enemyRowPosition="13" enemyColumnPosition="8"/>  
+  <move name="蛇精" id="8" time="13436" rowPosition1="2" columnPosition1="12" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="13444" damage="14" myRowPosition="2" myColumnPosition="13" enemyRowPosition="1" enemyColumnPosition="1"/>  
+  <move name="三娃" id="3" time="13453" rowPosition1="13" columnPosition1="8" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="13460" damage="60" myRowPosition="13" myColumnPosition="7" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="13467" rowPosition1="4" columnPosition1="13" rowPosition2="4" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="13474" damage="65" myRowPosition="4" myColumnPosition="14" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <shoot name="二娃" id="2" time="13481" damage="34" myRowPosition="8" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="大娃" id="1" time="13494" rowPosition1="5" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="13501" damage="48" myRowPosition="6" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="14324" rowPosition1="1" columnPosition1="1" rowPosition2="2" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="14331" damage="4" myRowPosition="2" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="14" time="14338" rowPosition1="15" columnPosition1="14" rowPosition2="14" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="14" time="14345" damage="50" myRowPosition="14" myColumnPosition="14" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="14353" rowPosition1="13" columnPosition1="5" rowPosition2="14" columnPosition2="5"/>  
+  <shoot name="七娃" id="7" time="14360" damage="2" myRowPosition="14" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="14367" rowPosition1="8" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="14374" damage="62" myRowPosition="7" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="15" time="14381" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="14388" damage="63" myRowPosition="12" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="11" time="14394" rowPosition1="8" columnPosition1="11" rowPosition2="7" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="14401" damage="57" myRowPosition="7" myColumnPosition="11" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="14408" rowPosition1="12" columnPosition1="5" rowPosition2="11" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="14415" damage="81" myRowPosition="11" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="10"/>  
+  <move name="四娃" id="4" time="14421" rowPosition1="14" columnPosition1="8" rowPosition2="15" columnPosition2="8"/>  
+  <shoot name="四娃" id="4" time="14428" damage="20" myRowPosition="15" myColumnPosition="8" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="蝎子精" id="9" time="14435" rowPosition1="8" columnPosition1="10" rowPosition2="8" columnPosition2="9"/>  
+  <shoot name="蝎子精" id="9" time="14442" damage="14" myRowPosition="8" myColumnPosition="9" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="小喽啰" id="12" time="14449" rowPosition1="8" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="14455" damage="60" myRowPosition="7" myColumnPosition="18" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="蛇精" id="8" time="14462" rowPosition1="2" columnPosition1="13" rowPosition2="2" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="14470" damage="14" myRowPosition="2" myColumnPosition="14" enemyRowPosition="2" enemyColumnPosition="1"/>  
+  <move name="三娃" id="3" time="14477" rowPosition1="13" columnPosition1="7" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="三娃" id="3" time="14484" damage="71" myRowPosition="14" myColumnPosition="7" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="二娃" id="2" time="14491" rowPosition1="8" columnPosition1="1" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="14498" damage="33" myRowPosition="7" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="10" time="14505" rowPosition1="4" columnPosition1="14" rowPosition2="5" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="14512" damage="69" myRowPosition="5" myColumnPosition="14" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="14520" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="14526" damage="50" myRowPosition="6" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="爷爷" id="0" time="15340" rowPosition1="2" columnPosition1="1" rowPosition2="3" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="15348" damage="9" myRowPosition="3" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="14" time="15355" rowPosition1="14" columnPosition1="14" rowPosition2="14" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="14" time="15362" damage="54" myRowPosition="14" myColumnPosition="13" enemyRowPosition="15" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="15369" rowPosition1="14" columnPosition1="5" rowPosition2="14" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="15376" damage="22" myRowPosition="14" myColumnPosition="6" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <shoot name="六娃" id="6" time="15383" damage="53" myRowPosition="7" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="15" time="15394" rowPosition1="12" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="15401" damage="64" myRowPosition="11" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="11" time="15408" rowPosition1="7" columnPosition1="11" rowPosition2="6" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="15415" damage="54" myRowPosition="6" myColumnPosition="11" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="五娃" id="5" time="15422" rowPosition1="11" columnPosition1="5" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="15429" damage="64" myRowPosition="12" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="四娃" id="4" time="15436" rowPosition1="15" columnPosition1="8" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="15443" damage="20" myRowPosition="15" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="13"/>  
+  <move name="蝎子精" id="9" time="15450" rowPosition1="8" columnPosition1="9" rowPosition2="7" columnPosition2="9"/>  
+  <shoot name="蝎子精" id="9" time="15457" damage="13" myRowPosition="7" myColumnPosition="9" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="12" time="15464" rowPosition1="7" columnPosition1="18" rowPosition2="8" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="15471" damage="56" myRowPosition="8" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="15478" rowPosition1="2" columnPosition1="14" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="15486" damage="15" myRowPosition="2" myColumnPosition="13" enemyRowPosition="3" enemyColumnPosition="1"/>  
+  <move name="二娃" id="2" time="15506" rowPosition1="7" columnPosition1="1" rowPosition2="7" columnPosition2="0"/>  
+  <shoot name="二娃" id="2" time="15514" damage="44" myRowPosition="7" myColumnPosition="0" enemyRowPosition="7" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="10" time="15521" rowPosition1="5" columnPosition1="14" rowPosition2="6" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="15529" damage="63" myRowPosition="6" myColumnPosition="14" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="15536" rowPosition1="6" columnPosition1="3" rowPosition2="5" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="15544" damage="47" myRowPosition="5" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="9"/>  
+  <move name="爷爷" id="0" time="16357" rowPosition1="3" columnPosition1="1" rowPosition2="2" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="16365" damage="16" myRowPosition="2" myColumnPosition="1" enemyRowPosition="7" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="14" time="16374" rowPosition1="14" columnPosition1="13" rowPosition2="14" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="14" time="16386" damage="64" myRowPosition="14" myColumnPosition="12" enemyRowPosition="15" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="16396" rowPosition1="7" columnPosition1="2" rowPosition2="8" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="16403" damage="76" myRowPosition="8" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="16411" rowPosition1="14" columnPosition1="6" rowPosition2="13" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="16418" damage="80" myRowPosition="13" myColumnPosition="6" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="11" time="16425" rowPosition1="6" columnPosition1="11" rowPosition2="5" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="16432" damage="56" myRowPosition="5" myColumnPosition="11" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="16439" rowPosition1="11" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="16446" damage="51" myRowPosition="12" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="四娃" id="4" time="16453" rowPosition1="15" columnPosition1="7" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="16460" damage="20" myRowPosition="14" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="12"/>  
+  <move name="五娃" id="5" time="16468" rowPosition1="12" columnPosition1="5" rowPosition2="13" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="16475" damage="64" myRowPosition="13" myColumnPosition="5" enemyRowPosition="7" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="12" time="16482" rowPosition1="8" columnPosition1="18" rowPosition2="9" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="16489" damage="55" myRowPosition="9" myColumnPosition="18" enemyRowPosition="8" enemyColumnPosition="2"/>  
+  <move name="蝎子精" id="9" time="16497" rowPosition1="7" columnPosition1="9" rowPosition2="8" columnPosition2="9"/>  
+  <shoot name="蝎子精" id="9" time="16504" damage="12" myRowPosition="8" myColumnPosition="9" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="16512" rowPosition1="2" columnPosition1="13" rowPosition2="2" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="16518" damage="13" myRowPosition="2" myColumnPosition="14" enemyRowPosition="2" enemyColumnPosition="1"/>  
+  <move name="二娃" id="2" time="16526" rowPosition1="7" columnPosition1="0" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="16533" damage="29" myRowPosition="7" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="10" time="16541" rowPosition1="6" columnPosition1="14" rowPosition2="6" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="16548" damage="69" myRowPosition="6" myColumnPosition="15" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="16555" rowPosition1="5" columnPosition1="3" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="16563" damage="54" myRowPosition="5" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="11"/>  
+  <move name="爷爷" id="0" time="17374" rowPosition1="2" columnPosition1="1" rowPosition2="2" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="17382" damage="1" myRowPosition="2" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="14" time="17394" rowPosition1="14" columnPosition1="12" rowPosition2="14" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="14" time="17401" damage="74" myRowPosition="14" myColumnPosition="11" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="17412" rowPosition1="8" columnPosition1="2" rowPosition2="8" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="17420" damage="74" myRowPosition="8" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="17427" rowPosition1="13" columnPosition1="6" rowPosition2="12" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="17434" damage="10" myRowPosition="12" myColumnPosition="6" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="11" time="17442" rowPosition1="5" columnPosition1="11" rowPosition2="4" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="17449" damage="57" myRowPosition="4" myColumnPosition="11" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="15" time="17456" rowPosition1="12" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="17463" damage="71" myRowPosition="11" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="17471" rowPosition1="14" columnPosition1="7" rowPosition2="14" columnPosition2="8"/>  
+  <shoot name="四娃" id="4" time="17478" damage="20" myRowPosition="14" myColumnPosition="8" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="五娃" id="5" time="17486" rowPosition1="13" columnPosition1="5" rowPosition2="14" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="17494" damage="49" myRowPosition="14" myColumnPosition="5" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="12" time="17501" rowPosition1="9" columnPosition1="18" rowPosition2="8" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="17509" damage="63" myRowPosition="8" myColumnPosition="18" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="蝎子精" id="9" time="17516" rowPosition1="8" columnPosition1="9" rowPosition2="8" columnPosition2="8"/>  
+  <shoot name="蝎子精" id="9" time="17524" damage="14" myRowPosition="8" myColumnPosition="8" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="蛇精" id="8" time="17532" rowPosition1="2" columnPosition1="14" rowPosition2="3" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="17540" damage="14" myRowPosition="3" myColumnPosition="14" enemyRowPosition="2" enemyColumnPosition="0"/>  
+  <move name="二娃" id="2" time="17548" rowPosition1="7" columnPosition1="1" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="二娃" id="2" time="17555" damage="28" myRowPosition="6" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="10" time="17563" rowPosition1="6" columnPosition1="15" rowPosition2="7" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="17570" damage="52" myRowPosition="7" myColumnPosition="15" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="17578" rowPosition1="5" columnPosition1="2" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="17586" damage="59" myRowPosition="4" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="8"/>  
+  <move name="爷爷" id="0" time="18390" rowPosition1="2" columnPosition1="0" rowPosition2="3" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="18397" damage="16" myRowPosition="3" myColumnPosition="0" enemyRowPosition="4" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="14" time="18408" rowPosition1="14" columnPosition1="11" rowPosition2="14" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="14" time="18415" damage="66" myRowPosition="14" myColumnPosition="10" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="六娃" id="6" time="18427" rowPosition1="8" columnPosition1="1" rowPosition2="9" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="18435" damage="55" myRowPosition="9" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="11"/>  
+  <move name="七娃" id="7" time="18443" rowPosition1="12" columnPosition1="6" rowPosition2="13" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="18451" damage="76" myRowPosition="13" myColumnPosition="6" enemyRowPosition="14" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="11" time="18458" rowPosition1="4" columnPosition1="11" rowPosition2="3" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="11" time="18465" damage="66" myRowPosition="3" myColumnPosition="11" enemyRowPosition="4" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="15" time="18472" rowPosition1="11" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="18480" damage="62" myRowPosition="12" myColumnPosition="14" enemyRowPosition="14" enemyColumnPosition="8"/>  
+  <move name="四娃" id="4" time="18488" rowPosition1="14" columnPosition1="8" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="18495" damage="54" myRowPosition="14" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="10"/>  
+  <move name="五娃" id="5" time="18503" rowPosition1="14" columnPosition1="5" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="18510" damage="81" myRowPosition="14" myColumnPosition="4" enemyRowPosition="14" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="12" time="18518" rowPosition1="8" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="18526" damage="62" myRowPosition="7" myColumnPosition="18" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="蛇精" id="8" time="18547" rowPosition1="3" columnPosition1="14" rowPosition2="3" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="18555" damage="14" myRowPosition="3" myColumnPosition="15" enemyRowPosition="4" enemyColumnPosition="2"/>  
+  <move name="二娃" id="2" time="18563" rowPosition1="6" columnPosition1="1" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="二娃" id="2" time="18570" damage="31" myRowPosition="6" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="10" time="18578" rowPosition1="7" columnPosition1="15" rowPosition2="7" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="18585" damage="61" myRowPosition="7" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="18593" rowPosition1="4" columnPosition1="2" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="18601" damage="54" myRowPosition="3" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="11"/>  
+  <move name="爷爷" id="0" time="19405" rowPosition1="3" columnPosition1="0" rowPosition2="3" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="19412" damage="1" myRowPosition="3" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="14" time="19423" rowPosition1="14" columnPosition1="10" rowPosition2="14" columnPosition2="11"/>  
+  <shoot name="小喽啰" id="14" time="19430" damage="70" myRowPosition="14" myColumnPosition="11" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="六娃" id="6" time="19442" rowPosition1="9" columnPosition1="1" rowPosition2="9" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="19449" damage="68" myRowPosition="9" myColumnPosition="2" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="七娃" id="7" time="19458" rowPosition1="13" columnPosition1="6" rowPosition2="14" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="19466" damage="81" myRowPosition="14" myColumnPosition="6" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="11" time="19474" rowPosition1="3" columnPosition1="11" rowPosition2="3" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="19481" damage="72" myRowPosition="3" myColumnPosition="10" enemyRowPosition="3" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="15" time="19489" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="19497" damage="67" myRowPosition="12" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="四娃" id="4" time="19504" rowPosition1="14" columnPosition1="7" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="19515" damage="54" myRowPosition="13" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="五娃" id="5" time="19523" rowPosition1="14" columnPosition1="4" rowPosition2="14" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="19532" damage="81" myRowPosition="14" myColumnPosition="3" enemyRowPosition="14" enemyColumnPosition="11"/>  
+  <move name="小喽啰" id="12" time="19540" rowPosition1="7" columnPosition1="18" rowPosition2="7" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="19548" damage="73" myRowPosition="7" myColumnPosition="17" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="19563" rowPosition1="3" columnPosition1="15" rowPosition2="3" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="19570" damage="14" myRowPosition="3" myColumnPosition="14" enemyRowPosition="3" enemyColumnPosition="2"/>  
+  <move name="二娃" id="2" time="19578" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="19586" damage="44" myRowPosition="6" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="19593" rowPosition1="7" columnPosition1="16" rowPosition2="8" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="19601" damage="68" myRowPosition="8" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="19609" rowPosition1="3" columnPosition1="2" rowPosition2="3" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="19617" damage="53" myRowPosition="3" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="20427" rowPosition1="3" columnPosition1="1" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="20435" damage="16" myRowPosition="3" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="20457" rowPosition1="9" columnPosition1="2" rowPosition2="10" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="20464" damage="77" myRowPosition="10" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="七娃" id="7" time="20474" rowPosition1="14" columnPosition1="6" rowPosition2="15" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="20481" damage="87" myRowPosition="15" myColumnPosition="6" enemyRowPosition="12" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="11" time="20490" rowPosition1="3" columnPosition1="10" rowPosition2="2" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="20498" damage="50" myRowPosition="2" myColumnPosition="10" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="20505" rowPosition1="12" columnPosition1="15" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="20516" damage="57" myRowPosition="11" myColumnPosition="15" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="四娃" id="4" time="20525" rowPosition1="13" columnPosition1="7" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="20533" damage="20" myRowPosition="14" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="五娃" id="5" time="20540" rowPosition1="14" columnPosition1="3" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="20548" damage="81" myRowPosition="14" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="12" time="20556" rowPosition1="7" columnPosition1="17" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="20564" damage="65" myRowPosition="7" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="20583" rowPosition1="3" columnPosition1="14" rowPosition2="4" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="20592" damage="15" myRowPosition="4" myColumnPosition="14" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="20600" rowPosition1="6" columnPosition1="3" rowPosition2="5" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="20608" damage="32" myRowPosition="5" myColumnPosition="3" enemyRowPosition="2" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="20616" rowPosition1="8" columnPosition1="16" rowPosition2="8" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="20624" damage="53" myRowPosition="8" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="大娃" id="1" time="20632" rowPosition1="3" columnPosition1="3" rowPosition2="2" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="20640" damage="51" myRowPosition="2" myColumnPosition="3" enemyRowPosition="2" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="21443" rowPosition1="3" columnPosition1="2" rowPosition2="2" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="21451" damage="16" myRowPosition="2" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="21474" rowPosition1="10" columnPosition1="2" rowPosition2="11" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="21482" damage="69" myRowPosition="11" myColumnPosition="2" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="七娃" id="7" time="21491" rowPosition1="15" columnPosition1="6" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="21499" damage="8" myRowPosition="15" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="11" time="21506" rowPosition1="2" columnPosition1="10" rowPosition2="3" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="21514" damage="62" myRowPosition="3" myColumnPosition="10" enemyRowPosition="2" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="21525" rowPosition1="11" columnPosition1="15" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="21533" damage="51" myRowPosition="11" myColumnPosition="14" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <shoot name="四娃" id="4" time="21541" damage="20" myRowPosition="14" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="21557" rowPosition1="14" columnPosition1="4" rowPosition2="14" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="21564" damage="49" myRowPosition="14" myColumnPosition="5" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="21573" rowPosition1="7" columnPosition1="18" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="21581" damage="52" myRowPosition="6" myColumnPosition="18" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="21600" rowPosition1="4" columnPosition1="14" rowPosition2="5" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="21608" damage="15" myRowPosition="5" myColumnPosition="14" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="21616" rowPosition1="5" columnPosition1="3" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="21624" damage="26" myRowPosition="6" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="21632" rowPosition1="8" columnPosition1="15" rowPosition2="8" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="21640" damage="68" myRowPosition="8" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <shoot name="大娃" id="1" time="21649" damage="58" myRowPosition="2" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="22462" rowPosition1="2" columnPosition1="2" rowPosition2="1" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="22471" damage="1" myRowPosition="1" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="22492" rowPosition1="11" columnPosition1="2" rowPosition2="11" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="22501" damage="57" myRowPosition="11" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="七娃" id="7" time="22509" rowPosition1="15" columnPosition1="7" rowPosition2="16" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="22517" damage="69" myRowPosition="16" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="22526" rowPosition1="3" columnPosition1="10" rowPosition2="4" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="22535" damage="54" myRowPosition="4" myColumnPosition="10" enemyRowPosition="2" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="22543" rowPosition1="11" columnPosition1="14" rowPosition2="11" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="22551" damage="54" myRowPosition="11" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="四娃" id="4" time="22560" rowPosition1="14" columnPosition1="7" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="22568" damage="54" myRowPosition="13" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="五娃" id="5" time="22577" rowPosition1="14" columnPosition1="5" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="22585" damage="49" myRowPosition="14" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="12" time="22593" rowPosition1="6" columnPosition1="18" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="22601" damage="60" myRowPosition="6" myColumnPosition="17" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="22617" rowPosition1="5" columnPosition1="14" rowPosition2="6" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="22625" damage="14" myRowPosition="6" myColumnPosition="14" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="22633" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="4"/>  
+  <shoot name="二娃" id="2" time="22642" damage="21" myRowPosition="6" myColumnPosition="4" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="22650" rowPosition1="8" columnPosition1="16" rowPosition2="7" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="22659" damage="63" myRowPosition="7" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="22667" rowPosition1="2" columnPosition1="3" rowPosition2="2" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="22675" damage="53" myRowPosition="2" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <shoot name="爷爷" id="0" time="23481" damage="1" myRowPosition="1" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="23510" rowPosition1="11" columnPosition1="3" rowPosition2="11" columnPosition2="4"/>  
+  <shoot name="六娃" id="6" time="23519" damage="52" myRowPosition="11" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="七娃" id="7" time="23527" rowPosition1="16" columnPosition1="7" rowPosition2="16" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="23536" damage="20" myRowPosition="16" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="11" time="23544" rowPosition1="4" columnPosition1="10" rowPosition2="5" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="23552" damage="67" myRowPosition="5" myColumnPosition="10" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="小喽啰" id="15" time="23560" rowPosition1="11" columnPosition1="15" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="23568" damage="63" myRowPosition="11" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="7"/>  
+  <move name="四娃" id="4" time="23577" rowPosition1="13" columnPosition1="7" rowPosition2="12" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="23586" damage="20" myRowPosition="12" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="23594" rowPosition1="14" columnPosition1="4" rowPosition2="15" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="23603" damage="64" myRowPosition="15" myColumnPosition="4" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="23611" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="23619" damage="54" myRowPosition="6" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="蛇精" id="8" time="23634" rowPosition1="6" columnPosition1="14" rowPosition2="6" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="23642" damage="15" myRowPosition="6" myColumnPosition="15" enemyRowPosition="6" enemyColumnPosition="4"/>  
+  <move name="二娃" id="2" time="23651" rowPosition1="6" columnPosition1="4" rowPosition2="7" columnPosition2="4"/>  
+  <shoot name="二娃" id="2" time="23659" damage="34" myRowPosition="7" myColumnPosition="4" enemyRowPosition="5" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="23668" rowPosition1="7" columnPosition1="16" rowPosition2="7" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="10" time="23676" damage="51" myRowPosition="7" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="23684" rowPosition1="2" columnPosition1="2" rowPosition2="2" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="23693" damage="51" myRowPosition="2" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="24490" rowPosition1="1" columnPosition1="2" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="24498" damage="16" myRowPosition="1" myColumnPosition="1" enemyRowPosition="5" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="24530" rowPosition1="11" columnPosition1="4" rowPosition2="11" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="24539" damage="69" myRowPosition="11" myColumnPosition="3" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="七娃" id="7" time="24547" rowPosition1="16" columnPosition1="6" rowPosition2="17" columnPosition2="6"/>  
+  <shoot name="七娃" id="7" time="24555" damage="76" myRowPosition="17" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="24564" rowPosition1="5" columnPosition1="10" rowPosition2="4" columnPosition2="10"/>  
+  <shoot name="小喽啰" id="11" time="24572" damage="51" myRowPosition="4" myColumnPosition="10" enemyRowPosition="7" enemyColumnPosition="4"/>  
+  <move name="小喽啰" id="15" time="24580" rowPosition1="11" columnPosition1="14" rowPosition2="10" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="24589" damage="57" myRowPosition="10" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="7"/>  
+  <move name="四娃" id="4" time="24598" rowPosition1="12" columnPosition1="7" rowPosition2="12" columnPosition2="6"/>  
+  <shoot name="四娃" id="4" time="24606" damage="54" myRowPosition="12" myColumnPosition="6" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="24615" rowPosition1="15" columnPosition1="4" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="24623" damage="100" myRowPosition="15" myColumnPosition="5" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="24633" rowPosition1="6" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="24641" damage="56" myRowPosition="7" myColumnPosition="18" enemyRowPosition="7" enemyColumnPosition="4"/>  
+  <move name="蛇精" id="8" time="24652" rowPosition1="6" columnPosition1="15" rowPosition2="6" columnPosition2="16"/>  
+  <shoot name="蛇精" id="8" time="24660" damage="14" myRowPosition="6" myColumnPosition="16" enemyRowPosition="7" enemyColumnPosition="4"/>  
+  <move name="二娃" id="2" time="24669" rowPosition1="7" columnPosition1="4" rowPosition2="7" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="24677" damage="33" myRowPosition="7" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <move name="小喽啰" id="10" time="24686" rowPosition1="7" columnPosition1="17" rowPosition2="7" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="24695" damage="51" myRowPosition="7" myColumnPosition="16" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="24703" rowPosition1="2" columnPosition1="3" rowPosition2="1" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="24712" damage="49" myRowPosition="1" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <move name="爷爷" id="0" time="25509" rowPosition1="1" columnPosition1="1" rowPosition2="0" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="25519" damage="16" myRowPosition="0" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="10"/>  
+  <move name="六娃" id="6" time="25551" rowPosition1="11" columnPosition1="3" rowPosition2="10" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="25561" damage="53" myRowPosition="10" myColumnPosition="3" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="七娃" id="7" time="25569" rowPosition1="17" columnPosition1="6" rowPosition2="17" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="25578" damage="56" myRowPosition="17" myColumnPosition="7" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="25588" rowPosition1="4" columnPosition1="10" rowPosition2="4" columnPosition2="9"/>  
+  <shoot name="小喽啰" id="11" time="25597" damage="61" myRowPosition="4" myColumnPosition="9" enemyRowPosition="1" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="25606" rowPosition1="10" columnPosition1="14" rowPosition2="11" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="25618" damage="74" myRowPosition="11" myColumnPosition="14" enemyRowPosition="12" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="25628" rowPosition1="12" columnPosition1="6" rowPosition2="13" columnPosition2="6"/>  
+  <shoot name="四娃" id="4" time="25636" damage="54" myRowPosition="13" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="25645" rowPosition1="15" columnPosition1="5" rowPosition2="15" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="25654" damage="81" myRowPosition="15" myColumnPosition="6" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="25662" rowPosition1="7" columnPosition1="18" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="25671" damage="54" myRowPosition="6" myColumnPosition="18" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="25679" rowPosition1="6" columnPosition1="16" rowPosition2="6" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="25688" damage="14" myRowPosition="6" myColumnPosition="15" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="25697" rowPosition1="7" columnPosition1="3" rowPosition2="8" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="25705" damage="25" myRowPosition="8" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="10" time="25714" rowPosition1="7" columnPosition1="16" rowPosition2="7" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="25723" damage="56" myRowPosition="7" myColumnPosition="15" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="25731" rowPosition1="1" columnPosition1="3" rowPosition2="1" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="25740" damage="50" myRowPosition="1" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="9"/>  
+  <move name="爷爷" id="0" time="26528" rowPosition1="0" columnPosition1="1" rowPosition2="0" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="26537" damage="4" myRowPosition="0" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="9"/>  
+  <move name="六娃" id="6" time="26571" rowPosition1="10" columnPosition1="3" rowPosition2="10" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="26580" damage="58" myRowPosition="10" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="9"/>  
+  <move name="七娃" id="7" time="26589" rowPosition1="17" columnPosition1="7" rowPosition2="16" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="26597" damage="35" myRowPosition="16" myColumnPosition="7" enemyRowPosition="11" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="26607" rowPosition1="4" columnPosition1="9" rowPosition2="4" columnPosition2="8"/>  
+  <shoot name="小喽啰" id="11" time="26616" damage="59" myRowPosition="4" myColumnPosition="8" enemyRowPosition="1" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="15" time="26628" rowPosition1="11" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="26637" damage="60" myRowPosition="12" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="26646" rowPosition1="13" columnPosition1="6" rowPosition2="13" columnPosition2="5"/>  
+  <shoot name="四娃" id="4" time="26655" damage="54" myRowPosition="13" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="26664" rowPosition1="15" columnPosition1="6" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="五娃" id="5" time="26673" damage="64" myRowPosition="15" myColumnPosition="7" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="26682" rowPosition1="6" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="26690" damage="74" myRowPosition="7" myColumnPosition="18" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <shoot name="蛇精" id="8" time="26699" damage="15" myRowPosition="6" myColumnPosition="15" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="26718" rowPosition1="8" columnPosition1="3" rowPosition2="7" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="26728" damage="47" myRowPosition="7" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="10" time="26737" rowPosition1="7" columnPosition1="15" rowPosition2="8" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="26746" damage="70" myRowPosition="8" myColumnPosition="15" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="26755" rowPosition1="1" columnPosition1="2" rowPosition2="1" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="26764" damage="43" myRowPosition="1" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="8"/>  
+  <move name="爷爷" id="0" time="27549" rowPosition1="0" columnPosition1="2" rowPosition2="0" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="27558" damage="1" myRowPosition="0" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="8"/>  
+  <move name="六娃" id="6" time="27591" rowPosition1="10" columnPosition1="2" rowPosition2="9" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="27600" damage="65" myRowPosition="9" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="27609" rowPosition1="16" columnPosition1="7" rowPosition2="17" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="27618" damage="74" myRowPosition="17" myColumnPosition="7" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="27627" rowPosition1="4" columnPosition1="8" rowPosition2="5" columnPosition2="8"/>  
+  <shoot name="小喽啰" id="11" time="27637" damage="73" myRowPosition="5" myColumnPosition="8" enemyRowPosition="1" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="27646" rowPosition1="12" columnPosition1="14" rowPosition2="13" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="27655" damage="61" myRowPosition="13" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="5"/>  
+  <move name="四娃" id="4" time="27664" rowPosition1="13" columnPosition1="5" rowPosition2="13" columnPosition2="6"/>  
+  <shoot name="四娃" id="4" time="27673" damage="54" myRowPosition="13" myColumnPosition="6" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="27682" rowPosition1="15" columnPosition1="7" rowPosition2="15" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="27691" damage="81" myRowPosition="15" myColumnPosition="6" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="27700" rowPosition1="7" columnPosition1="18" rowPosition2="7" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="27709" damage="55" myRowPosition="7" myColumnPosition="19" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="27718" rowPosition1="6" columnPosition1="15" rowPosition2="5" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="27727" damage="15" myRowPosition="5" myColumnPosition="15" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="27736" rowPosition1="7" columnPosition1="3" rowPosition2="8" columnPosition2="3"/>  
+  <shoot name="二娃" id="2" time="27746" damage="28" myRowPosition="8" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="8"/>  
+  <move name="小喽啰" id="10" time="27755" rowPosition1="8" columnPosition1="15" rowPosition2="8" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="27764" damage="74" myRowPosition="8" myColumnPosition="14" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="27773" rowPosition1="1" columnPosition1="3" rowPosition2="2" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="27782" damage="58" myRowPosition="2" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="8"/>  
+  <move name="爷爷" id="0" time="28568" rowPosition1="0" columnPosition1="1" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="28577" damage="4" myRowPosition="1" myColumnPosition="1" enemyRowPosition="5" enemyColumnPosition="8"/>  
+  <move name="六娃" id="6" time="28609" rowPosition1="9" columnPosition1="2" rowPosition2="8" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="28619" damage="68" myRowPosition="8" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="8"/>  
+  <move name="七娃" id="7" time="28627" rowPosition1="17" columnPosition1="7" rowPosition2="17" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="28636" damage="7" myRowPosition="17" myColumnPosition="8" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="11" time="28645" rowPosition1="5" columnPosition1="8" rowPosition2="5" columnPosition2="9"/>  
+  <shoot name="小喽啰" id="11" time="28654" damage="52" myRowPosition="5" myColumnPosition="9" enemyRowPosition="2" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="15" time="28663" rowPosition1="13" columnPosition1="14" rowPosition2="14" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="28672" damage="50" myRowPosition="14" myColumnPosition="14" enemyRowPosition="13" enemyColumnPosition="6"/>  
+  <move name="四娃" id="4" time="28682" rowPosition1="13" columnPosition1="6" rowPosition2="13" columnPosition2="7"/>  
+  <shoot name="四娃" id="4" time="28692" damage="54" myRowPosition="13" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="28701" rowPosition1="15" columnPosition1="6" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="五娃" id="5" time="28710" damage="81" myRowPosition="15" myColumnPosition="7" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="28719" rowPosition1="7" columnPosition1="19" rowPosition2="6" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="28728" damage="50" myRowPosition="6" myColumnPosition="19" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="28737" rowPosition1="5" columnPosition1="15" rowPosition2="5" columnPosition2="16"/>  
+  <shoot name="蛇精" id="8" time="28746" damage="15" myRowPosition="5" myColumnPosition="16" enemyRowPosition="2" enemyColumnPosition="3"/>  
+  <shoot name="二娃" id="2" time="28755" damage="38" myRowPosition="8" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="9"/>  
+  <move name="小喽啰" id="10" time="28772" rowPosition1="8" columnPosition1="14" rowPosition2="8" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="10" time="28781" damage="64" myRowPosition="8" myColumnPosition="13" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="28791" rowPosition1="2" columnPosition1="3" rowPosition2="3" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="28801" damage="47" myRowPosition="3" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="9"/>  
+  <move name="爷爷" id="0" time="29587" rowPosition1="1" columnPosition1="1" rowPosition2="0" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="29596" damage="16" myRowPosition="0" myColumnPosition="1" enemyRowPosition="5" enemyColumnPosition="16"/>  
+  <move name="六娃" id="6" time="29631" rowPosition1="8" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="29640" damage="59" myRowPosition="7" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="29649" rowPosition1="17" columnPosition1="8" rowPosition2="17" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="29658" damage="61" myRowPosition="17" myColumnPosition="9" enemyRowPosition="14" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="29682" rowPosition1="14" columnPosition1="14" rowPosition2="13" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="29691" damage="54" myRowPosition="13" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="7"/>  
+  <move name="五娃" id="5" time="29722" rowPosition1="15" columnPosition1="7" rowPosition2="15" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="29731" damage="49" myRowPosition="15" myColumnPosition="6" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="29740" rowPosition1="6" columnPosition1="19" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="29750" damage="64" myRowPosition="6" myColumnPosition="18" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="29759" rowPosition1="5" columnPosition1="16" rowPosition2="4" columnPosition2="16"/>  
+  <shoot name="蛇精" id="8" time="29768" damage="15" myRowPosition="4" myColumnPosition="16" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="二娃" id="2" time="29777" rowPosition1="8" columnPosition1="3" rowPosition2="8" columnPosition2="4"/>  
+  <shoot name="二娃" id="2" time="29786" damage="24" myRowPosition="8" myColumnPosition="4" enemyRowPosition="8" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="10" time="29795" rowPosition1="8" columnPosition1="13" rowPosition2="9" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="10" time="29805" damage="64" myRowPosition="9" myColumnPosition="13" enemyRowPosition="7" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="29814" rowPosition1="3" columnPosition1="3" rowPosition2="3" columnPosition2="4"/>  
+  <shoot name="大娃" id="1" time="29823" damage="59" myRowPosition="3" myColumnPosition="4" enemyRowPosition="4" enemyColumnPosition="16"/>  
+  <shoot name="爷爷" id="0" time="30607" damage="4" myRowPosition="0" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="16"/>  
+  <move name="六娃" id="6" time="30651" rowPosition1="7" columnPosition1="2" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="30661" damage="75" myRowPosition="7" myColumnPosition="1" enemyRowPosition="9" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="30670" rowPosition1="17" columnPosition1="9" rowPosition2="17" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="30679" damage="11" myRowPosition="17" myColumnPosition="8" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="30700" rowPosition1="13" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="30710" damage="61" myRowPosition="12" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="6"/>  
+  <move name="五娃" id="5" time="30742" rowPosition1="15" columnPosition1="6" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="30751" damage="49" myRowPosition="15" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="30760" rowPosition1="6" columnPosition1="18" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="30769" damage="68" myRowPosition="6" myColumnPosition="17" enemyRowPosition="3" enemyColumnPosition="4"/>  
+  <move name="蛇精" id="8" time="30779" rowPosition1="4" columnPosition1="16" rowPosition2="4" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="30788" damage="13" myRowPosition="4" myColumnPosition="15" enemyRowPosition="3" enemyColumnPosition="4"/>  
+  <move name="小喽啰" id="10" time="30819" rowPosition1="9" columnPosition1="13" rowPosition2="8" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="10" time="30830" damage="68" myRowPosition="8" myColumnPosition="13" enemyRowPosition="17" enemyColumnPosition="8"/>  
+  <move name="大娃" id="1" time="30839" rowPosition1="3" columnPosition1="4" rowPosition2="3" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="30848" damage="55" myRowPosition="3" myColumnPosition="3" enemyRowPosition="4" enemyColumnPosition="15"/>  
+  <shoot name="爷爷" id="0" time="31619" damage="4" myRowPosition="0" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="15"/>  
+  <move name="六娃" id="6" time="31674" rowPosition1="7" columnPosition1="1" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="31683" damage="70" myRowPosition="6" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="31693" rowPosition1="17" columnPosition1="8" rowPosition2="16" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="31702" damage="56" myRowPosition="16" myColumnPosition="8" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="31720" rowPosition1="12" columnPosition1="14" rowPosition2="13" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="31729" damage="59" myRowPosition="13" myColumnPosition="14" enemyRowPosition="16" enemyColumnPosition="8"/>  
+  <move name="五娃" id="5" time="31762" rowPosition1="15" columnPosition1="5" rowPosition2="16" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="31772" damage="100" myRowPosition="16" myColumnPosition="5" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="31781" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="31791" damage="62" myRowPosition="6" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="1"/>  
+  <move name="蛇精" id="8" time="31800" rowPosition1="4" columnPosition1="15" rowPosition2="3" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="31809" damage="15" myRowPosition="3" myColumnPosition="15" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="31841" rowPosition1="8" columnPosition1="13" rowPosition2="8" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="10" time="31850" damage="53" myRowPosition="8" myColumnPosition="12" enemyRowPosition="16" enemyColumnPosition="8"/>  
+  <move name="大娃" id="1" time="31860" rowPosition1="3" columnPosition1="3" rowPosition2="4" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="31869" damage="54" myRowPosition="4" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="15"/>  
+  <shoot name="爷爷" id="0" time="32632" damage="16" myRowPosition="0" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="15"/>  
+  <move name="六娃" id="6" time="32694" rowPosition1="6" columnPosition1="1" rowPosition2="5" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="32703" damage="69" myRowPosition="5" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="32712" rowPosition1="16" columnPosition1="8" rowPosition2="17" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="32721" damage="92" myRowPosition="17" myColumnPosition="8" enemyRowPosition="13" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="32739" rowPosition1="13" columnPosition1="14" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="32748" damage="70" myRowPosition="12" myColumnPosition="14" enemyRowPosition="17" enemyColumnPosition="8"/>  
+  <move name="五娃" id="5" time="32784" rowPosition1="16" columnPosition1="5" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="32793" damage="81" myRowPosition="15" myColumnPosition="5" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="32803" rowPosition1="6" columnPosition1="18" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="32813" damage="64" myRowPosition="6" myColumnPosition="17" enemyRowPosition="4" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="32822" rowPosition1="3" columnPosition1="15" rowPosition2="2" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="32831" damage="15" myRowPosition="2" myColumnPosition="15" enemyRowPosition="4" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="32861" rowPosition1="8" columnPosition1="12" rowPosition2="9" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="10" time="32870" damage="69" myRowPosition="9" myColumnPosition="12" enemyRowPosition="4" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="32880" rowPosition1="4" columnPosition1="3" rowPosition2="5" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="32889" damage="56" myRowPosition="5" myColumnPosition="3" enemyRowPosition="2" enemyColumnPosition="15"/>  
+  <move name="爷爷" id="0" time="33643" rowPosition1="0" columnPosition1="1" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="33653" damage="16" myRowPosition="1" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="15"/>  
+  <move name="六娃" id="6" time="33716" rowPosition1="5" columnPosition1="1" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="33726" damage="79" myRowPosition="5" myColumnPosition="2" enemyRowPosition="9" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="33735" rowPosition1="17" columnPosition1="8" rowPosition2="17" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="33745" damage="30" myRowPosition="17" myColumnPosition="9" enemyRowPosition="12" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="15" time="33757" rowPosition1="12" columnPosition1="14" rowPosition2="12" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="15" time="33766" damage="59" myRowPosition="12" myColumnPosition="15" enemyRowPosition="17" enemyColumnPosition="9"/>  
+  <move name="五娃" id="5" time="33806" rowPosition1="15" columnPosition1="5" rowPosition2="15" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="33815" damage="100" myRowPosition="15" myColumnPosition="4" enemyRowPosition="9" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="12" time="33825" rowPosition1="6" columnPosition1="17" rowPosition2="5" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="33834" damage="52" myRowPosition="5" myColumnPosition="17" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="33844" rowPosition1="2" columnPosition1="15" rowPosition2="2" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="33853" damage="13" myRowPosition="2" myColumnPosition="14" enemyRowPosition="1" enemyColumnPosition="1"/>  
+  <move name="小喽啰" id="10" time="33884" rowPosition1="9" columnPosition1="12" rowPosition2="8" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="10" time="33895" damage="65" myRowPosition="8" myColumnPosition="12" enemyRowPosition="17" enemyColumnPosition="9"/>  
+  <shoot name="大娃" id="1" time="33903" damage="42" myRowPosition="5" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="12"/>  
+  <move name="爷爷" id="0" time="34668" rowPosition1="1" columnPosition1="1" rowPosition2="1" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="34678" damage="16" myRowPosition="1" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="六娃" id="6" time="34738" rowPosition1="5" columnPosition1="2" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="34748" damage="50" myRowPosition="4" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="34758" rowPosition1="17" columnPosition1="9" rowPosition2="16" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="34767" damage="9" myRowPosition="16" myColumnPosition="9" enemyRowPosition="12" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="15" time="34777" rowPosition1="12" columnPosition1="15" rowPosition2="12" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="15" time="34787" damage="57" myRowPosition="12" myColumnPosition="14" enemyRowPosition="16" enemyColumnPosition="9"/>  
+  <move name="五娃" id="5" time="34826" rowPosition1="15" columnPosition1="4" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="34836" damage="49" myRowPosition="15" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="12" time="34846" rowPosition1="5" columnPosition1="17" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="34856" damage="53" myRowPosition="6" myColumnPosition="17" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="34865" rowPosition1="2" columnPosition1="14" rowPosition2="3" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="34875" damage="15" myRowPosition="3" myColumnPosition="14" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="34906" rowPosition1="8" columnPosition1="12" rowPosition2="9" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="10" time="34916" damage="63" myRowPosition="9" myColumnPosition="12" enemyRowPosition="16" enemyColumnPosition="9"/>  
+  <move name="大娃" id="1" time="34926" rowPosition1="5" columnPosition1="3" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="大娃" id="1" time="34936" damage="56" myRowPosition="6" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="14"/>  
+  <move name="爷爷" id="0" time="35691" rowPosition1="1" columnPosition1="0" rowPosition2="2" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="35702" damage="1" myRowPosition="2" myColumnPosition="0" enemyRowPosition="3" enemyColumnPosition="14"/>  
+  <move name="六娃" id="6" time="35759" rowPosition1="4" columnPosition1="2" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="35769" damage="75" myRowPosition="3" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="14"/>  
+  <move name="七娃" id="7" time="35780" rowPosition1="16" columnPosition1="9" rowPosition2="15" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="35789" damage="15" myRowPosition="15" myColumnPosition="9" enemyRowPosition="9" enemyColumnPosition="12"/>  
+  <move name="五娃" id="5" time="35848" rowPosition1="15" columnPosition1="5" rowPosition2="15" columnPosition2="6"/>  
+  <shoot name="五娃" id="5" time="35858" damage="49" myRowPosition="15" myColumnPosition="6" enemyRowPosition="9" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="12" time="35868" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="35878" damage="56" myRowPosition="6" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="35888" rowPosition1="3" columnPosition1="14" rowPosition2="3" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="35897" damage="13" myRowPosition="3" myColumnPosition="13" enemyRowPosition="3" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="10" time="35927" rowPosition1="9" columnPosition1="12" rowPosition2="10" columnPosition2="12"/>  
+  <shoot name="小喽啰" id="10" time="35937" damage="66" myRowPosition="10" myColumnPosition="12" enemyRowPosition="15" enemyColumnPosition="9"/>  
+  <move name="大娃" id="1" time="35947" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="35956" damage="51" myRowPosition="6" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="36713" rowPosition1="2" columnPosition1="0" rowPosition2="1" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="36724" damage="9" myRowPosition="1" myColumnPosition="0" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="36782" rowPosition1="3" columnPosition1="2" rowPosition2="3" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="36792" damage="50" myRowPosition="3" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="36802" rowPosition1="15" columnPosition1="9" rowPosition2="15" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="36812" damage="7" myRowPosition="15" myColumnPosition="8" enemyRowPosition="10" enemyColumnPosition="12"/>  
+  <move name="五娃" id="5" time="36872" rowPosition1="15" columnPosition1="6" rowPosition2="15" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="36881" damage="64" myRowPosition="15" myColumnPosition="5" enemyRowPosition="10" enemyColumnPosition="12"/>  
+  <move name="小喽啰" id="12" time="36891" rowPosition1="6" columnPosition1="16" rowPosition2="7" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="36901" damage="60" myRowPosition="7" myColumnPosition="16" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="36911" rowPosition1="3" columnPosition1="13" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="36921" damage="15" myRowPosition="2" myColumnPosition="13" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="36949" rowPosition1="10" columnPosition1="12" rowPosition2="10" columnPosition2="13"/>  
+  <shoot name="小喽啰" id="10" time="36959" damage="51" myRowPosition="10" myColumnPosition="13" enemyRowPosition="15" enemyColumnPosition="8"/>  
+  <move name="大娃" id="1" time="36972" rowPosition1="6" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="36981" damage="55" myRowPosition="7" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="37736" rowPosition1="1" columnPosition1="0" rowPosition2="0" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="37746" damage="16" myRowPosition="0" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="37804" rowPosition1="3" columnPosition1="3" rowPosition2="4" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="37814" damage="73" myRowPosition="4" myColumnPosition="3" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="37824" rowPosition1="15" columnPosition1="8" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="37834" damage="91" myRowPosition="15" myColumnPosition="7" enemyRowPosition="10" enemyColumnPosition="13"/>  
+  <move name="五娃" id="5" time="37893" rowPosition1="15" columnPosition1="5" rowPosition2="16" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="37903" damage="49" myRowPosition="16" myColumnPosition="5" enemyRowPosition="10" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="12" time="37913" rowPosition1="7" columnPosition1="16" rowPosition2="7" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="37923" damage="64" myRowPosition="7" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="37933" rowPosition1="2" columnPosition1="13" rowPosition2="3" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="37943" damage="14" myRowPosition="3" myColumnPosition="13" enemyRowPosition="4" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="37974" rowPosition1="10" columnPosition1="13" rowPosition2="10" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="37984" damage="57" myRowPosition="10" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="7"/>  
+  <move name="大娃" id="1" time="37994" rowPosition1="7" columnPosition1="2" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="38004" damage="57" myRowPosition="7" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="38759" rowPosition1="0" columnPosition1="0" rowPosition2="1" columnPosition2="0"/>  
+  <shoot name="爷爷" id="0" time="38769" damage="4" myRowPosition="1" myColumnPosition="0" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="38825" rowPosition1="4" columnPosition1="3" rowPosition2="3" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="38835" damage="58" myRowPosition="3" myColumnPosition="3" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="38845" rowPosition1="15" columnPosition1="7" rowPosition2="14" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="38855" damage="1" myRowPosition="14" myColumnPosition="7" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="38916" rowPosition1="16" columnPosition1="5" rowPosition2="16" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="38926" damage="100" myRowPosition="16" myColumnPosition="4" enemyRowPosition="10" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="38936" rowPosition1="7" columnPosition1="17" rowPosition2="8" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="38946" damage="57" myRowPosition="8" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="1"/>  
+  <move name="蛇精" id="8" time="38956" rowPosition1="3" columnPosition1="13" rowPosition2="3" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="38965" damage="14" myRowPosition="3" myColumnPosition="12" enemyRowPosition="3" enemyColumnPosition="3"/>  
+  <move name="小喽啰" id="10" time="38995" rowPosition1="10" columnPosition1="14" rowPosition2="10" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="39006" damage="61" myRowPosition="10" myColumnPosition="15" enemyRowPosition="14" enemyColumnPosition="7"/>  
+  <move name="大娃" id="1" time="39016" rowPosition1="7" columnPosition1="1" rowPosition2="7" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="39027" damage="42" myRowPosition="7" myColumnPosition="0" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="爷爷" id="0" time="39780" rowPosition1="1" columnPosition1="0" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="39791" damage="9" myRowPosition="1" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="六娃" id="6" time="39846" rowPosition1="3" columnPosition1="3" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="39856" damage="79" myRowPosition="3" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="39866" rowPosition1="14" columnPosition1="7" rowPosition2="15" columnPosition2="7"/>  
+  <shoot name="七娃" id="7" time="39876" damage="96" myRowPosition="15" myColumnPosition="7" enemyRowPosition="10" enemyColumnPosition="15"/>  
+  <move name="五娃" id="5" time="39938" rowPosition1="16" columnPosition1="4" rowPosition2="15" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="39948" damage="49" myRowPosition="15" myColumnPosition="4" enemyRowPosition="10" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="12" time="39959" rowPosition1="8" columnPosition1="17" rowPosition2="8" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="39969" damage="72" myRowPosition="8" myColumnPosition="16" enemyRowPosition="15" enemyColumnPosition="7"/>  
+  <move name="蛇精" id="8" time="39980" rowPosition1="3" columnPosition1="12" rowPosition2="3" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="39990" damage="14" myRowPosition="3" myColumnPosition="13" enemyRowPosition="3" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="10" time="40019" rowPosition1="10" columnPosition1="15" rowPosition2="9" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="40030" damage="55" myRowPosition="9" myColumnPosition="15" enemyRowPosition="15" enemyColumnPosition="7"/>  
+  <move name="大娃" id="1" time="40041" rowPosition1="7" columnPosition1="0" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="40051" damage="50" myRowPosition="7" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="40805" rowPosition1="1" columnPosition1="1" rowPosition2="1" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="40815" damage="16" myRowPosition="1" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="40868" rowPosition1="3" columnPosition1="2" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="40879" damage="79" myRowPosition="4" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="40889" rowPosition1="15" columnPosition1="7" rowPosition2="15" columnPosition2="8"/>  
+  <shoot name="七娃" id="7" time="40899" damage="62" myRowPosition="15" myColumnPosition="8" enemyRowPosition="9" enemyColumnPosition="15"/>  
+  <move name="五娃" id="5" time="40961" rowPosition1="15" columnPosition1="4" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="40971" damage="100" myRowPosition="14" myColumnPosition="4" enemyRowPosition="9" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="12" time="40982" rowPosition1="8" columnPosition1="16" rowPosition2="7" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="12" time="40992" damage="53" myRowPosition="7" myColumnPosition="16" enemyRowPosition="15" enemyColumnPosition="8"/>  
+  <move name="蛇精" id="8" time="41002" rowPosition1="3" columnPosition1="13" rowPosition2="3" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="41012" damage="15" myRowPosition="3" myColumnPosition="12" enemyRowPosition="4" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="10" time="41044" rowPosition1="9" columnPosition1="15" rowPosition2="9" columnPosition2="14"/>  
+  <shoot name="小喽啰" id="10" time="41054" damage="74" myRowPosition="9" myColumnPosition="14" enemyRowPosition="15" enemyColumnPosition="8"/>  
+  <move name="大娃" id="1" time="41065" rowPosition1="7" columnPosition1="1" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="41075" damage="53" myRowPosition="7" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="爷爷" id="0" time="41828" rowPosition1="1" columnPosition1="2" rowPosition2="1" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="41839" damage="1" myRowPosition="1" myColumnPosition="1" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="六娃" id="6" time="41891" rowPosition1="4" columnPosition1="2" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="41902" damage="59" myRowPosition="5" myColumnPosition="2" enemyRowPosition="3" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="41913" rowPosition1="15" columnPosition1="8" rowPosition2="15" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="41923" damage="16" myRowPosition="15" myColumnPosition="9" enemyRowPosition="9" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="41984" rowPosition1="14" columnPosition1="4" rowPosition2="13" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="41994" damage="64" myRowPosition="13" myColumnPosition="4" enemyRowPosition="9" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="42005" rowPosition1="7" columnPosition1="16" rowPosition2="7" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="42016" damage="67" myRowPosition="7" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="42026" rowPosition1="3" columnPosition1="12" rowPosition2="2" columnPosition2="12"/>  
+  <shoot name="蛇精" id="8" time="42036" damage="13" myRowPosition="2" myColumnPosition="12" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="10" time="42068" rowPosition1="9" columnPosition1="14" rowPosition2="9" columnPosition2="15"/>  
+  <shoot name="小喽啰" id="10" time="42079" damage="74" myRowPosition="9" myColumnPosition="15" enemyRowPosition="15" enemyColumnPosition="9"/>  
+  <move name="大娃" id="1" time="42089" rowPosition1="7" columnPosition1="2" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="42099" damage="56" myRowPosition="7" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="12"/>  
+  <move name="爷爷" id="0" time="42854" rowPosition1="1" columnPosition1="1" rowPosition2="2" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="42866" damage="4" myRowPosition="2" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="12"/>  
+  <move name="六娃" id="6" time="42915" rowPosition1="5" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="42925" damage="56" myRowPosition="6" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="12"/>  
+  <move name="七娃" id="7" time="42935" rowPosition1="15" columnPosition1="9" rowPosition2="16" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="42946" damage="21" myRowPosition="16" myColumnPosition="9" enemyRowPosition="9" enemyColumnPosition="15"/>  
+  <move name="五娃" id="5" time="43006" rowPosition1="13" columnPosition1="4" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="43017" damage="100" myRowPosition="12" myColumnPosition="4" enemyRowPosition="9" enemyColumnPosition="15"/>  
+  <move name="小喽啰" id="12" time="43027" rowPosition1="7" columnPosition1="17" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="43037" damage="55" myRowPosition="6" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="1"/>  
+  <move name="蛇精" id="8" time="43051" rowPosition1="2" columnPosition1="12" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="43061" damage="14" myRowPosition="2" myColumnPosition="13" enemyRowPosition="2" enemyColumnPosition="1"/>  
+  <move name="小喽啰" id="10" time="43091" rowPosition1="9" columnPosition1="15" rowPosition2="9" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="43102" damage="53" myRowPosition="9" myColumnPosition="16" enemyRowPosition="16" enemyColumnPosition="9"/>  
+  <move name="大娃" id="1" time="43113" rowPosition1="7" columnPosition1="1" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="43123" damage="51" myRowPosition="6" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="43878" rowPosition1="2" columnPosition1="1" rowPosition2="3" columnPosition2="1"/>  
+  <shoot name="爷爷" id="0" time="43888" damage="16" myRowPosition="3" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="43939" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="43950" damage="51" myRowPosition="6" myColumnPosition="3" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="七娃" id="7" time="43960" rowPosition1="16" columnPosition1="9" rowPosition2="17" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="43971" damage="46" myRowPosition="17" myColumnPosition="9" enemyRowPosition="9" enemyColumnPosition="16"/>  
+  <move name="五娃" id="5" time="44028" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="44039" damage="49" myRowPosition="12" myColumnPosition="5" enemyRowPosition="9" enemyColumnPosition="16"/>  
+  <move name="小喽啰" id="12" time="44050" rowPosition1="6" columnPosition1="17" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="44060" damage="64" myRowPosition="6" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <move name="蛇精" id="8" time="44071" rowPosition1="2" columnPosition1="13" rowPosition2="2" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="44081" damage="14" myRowPosition="2" myColumnPosition="14" enemyRowPosition="3" enemyColumnPosition="1"/>  
+  <move name="小喽啰" id="10" time="44115" rowPosition1="9" columnPosition1="16" rowPosition2="10" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="44125" damage="59" myRowPosition="10" myColumnPosition="16" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="44136" rowPosition1="6" columnPosition1="1" rowPosition2="5" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="44146" damage="44" myRowPosition="5" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="爷爷" id="0" time="44900" rowPosition1="3" columnPosition1="1" rowPosition2="3" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="44911" damage="16" myRowPosition="3" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="六娃" id="6" time="44962" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="44972" damage="75" myRowPosition="6" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="七娃" id="7" time="44983" rowPosition1="17" columnPosition1="9" rowPosition2="16" columnPosition2="9"/>  
+  <shoot name="七娃" id="7" time="44994" damage="24" myRowPosition="16" myColumnPosition="9" enemyRowPosition="10" enemyColumnPosition="16"/>  
+  <move name="五娃" id="5" time="45053" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="45064" damage="100" myRowPosition="12" myColumnPosition="4" enemyRowPosition="10" enemyColumnPosition="16"/>  
+  <move name="小喽啰" id="12" time="45074" rowPosition1="6" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="45085" damage="68" myRowPosition="7" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="45096" rowPosition1="2" columnPosition1="14" rowPosition2="2" columnPosition2="13"/>  
+  <shoot name="蛇精" id="8" time="45106" damage="15" myRowPosition="2" myColumnPosition="13" enemyRowPosition="3" enemyColumnPosition="2"/>  
+  <move name="小喽啰" id="10" time="45137" rowPosition1="10" columnPosition1="16" rowPosition2="9" columnPosition2="16"/>  
+  <shoot name="小喽啰" id="10" time="45148" damage="56" myRowPosition="9" myColumnPosition="16" enemyRowPosition="12" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="45158" rowPosition1="5" columnPosition1="1" rowPosition2="5" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="45169" damage="40" myRowPosition="5" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="爷爷" id="0" time="45923" rowPosition1="3" columnPosition1="2" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="45934" damage="16" myRowPosition="4" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="六娃" id="6" time="45985" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="45996" damage="72" myRowPosition="6" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="五娃" id="5" time="46075" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="46086" damage="49" myRowPosition="12" myColumnPosition="5" enemyRowPosition="2" enemyColumnPosition="13"/>  
+  <move name="小喽啰" id="12" time="46097" rowPosition1="7" columnPosition1="18" rowPosition2="7" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="46108" damage="74" myRowPosition="7" myColumnPosition="19" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="蛇精" id="8" time="46119" rowPosition1="2" columnPosition1="13" rowPosition2="2" columnPosition2="14"/>  
+  <shoot name="蛇精" id="8" time="46130" damage="14" myRowPosition="2" myColumnPosition="14" enemyRowPosition="4" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="46182" rowPosition1="5" columnPosition1="0" rowPosition2="6" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="46193" damage="52" myRowPosition="6" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="爷爷" id="0" time="46946" rowPosition1="4" columnPosition1="2" rowPosition2="5" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="46957" damage="4" myRowPosition="5" myColumnPosition="2" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <shoot name="六娃" id="6" time="47010" damage="53" myRowPosition="6" myColumnPosition="1" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="五娃" id="5" time="47098" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="47109" damage="100" myRowPosition="12" myColumnPosition="4" enemyRowPosition="2" enemyColumnPosition="14"/>  
+  <move name="小喽啰" id="12" time="47120" rowPosition1="7" columnPosition1="19" rowPosition2="8" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="47131" damage="66" myRowPosition="8" myColumnPosition="19" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="蛇精" id="8" time="47142" rowPosition1="2" columnPosition1="14" rowPosition2="2" columnPosition2="15"/>  
+  <shoot name="蛇精" id="8" time="47153" damage="13" myRowPosition="2" myColumnPosition="15" enemyRowPosition="5" enemyColumnPosition="2"/>  
+  <move name="大娃" id="1" time="47205" rowPosition1="6" columnPosition1="0" rowPosition2="7" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="47216" damage="56" myRowPosition="7" myColumnPosition="0" enemyRowPosition="2" enemyColumnPosition="15"/>  
+  <move name="爷爷" id="0" time="47969" rowPosition1="5" columnPosition1="2" rowPosition2="4" columnPosition2="2"/>  
+  <shoot name="爷爷" id="0" time="47980" damage="9" myRowPosition="4" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="六娃" id="6" time="48023" rowPosition1="6" columnPosition1="1" rowPosition2="5" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="48034" damage="75" myRowPosition="5" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="五娃" id="5" time="48122" rowPosition1="12" columnPosition1="4" rowPosition2="12" columnPosition2="5"/>  
+  <shoot name="五娃" id="5" time="48133" damage="100" myRowPosition="12" myColumnPosition="5" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="小喽啰" id="12" time="48144" rowPosition1="8" columnPosition1="19" rowPosition2="8" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="48155" damage="69" myRowPosition="8" myColumnPosition="18" enemyRowPosition="12" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="48228" rowPosition1="7" columnPosition1="0" rowPosition2="8" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="48239" damage="51" myRowPosition="8" myColumnPosition="0" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="48993" rowPosition1="4" columnPosition1="2" rowPosition2="4" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="49003" damage="4" myRowPosition="4" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="49046" rowPosition1="5" columnPosition1="1" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="49057" damage="72" myRowPosition="6" myColumnPosition="1" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="49145" rowPosition1="12" columnPosition1="5" rowPosition2="12" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="49156" damage="49" myRowPosition="12" myColumnPosition="4" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="49166" rowPosition1="8" columnPosition1="18" rowPosition2="8" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="49177" damage="74" myRowPosition="8" myColumnPosition="19" enemyRowPosition="8" enemyColumnPosition="0"/>  
+  <shoot name="大娃" id="1" time="49253" damage="46" myRowPosition="8" myColumnPosition="0" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="爷爷" id="0" time="50015" rowPosition1="4" columnPosition1="3" rowPosition2="5" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="50026" damage="9" myRowPosition="5" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="六娃" id="6" time="50074" rowPosition1="6" columnPosition1="1" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="50083" damage="58" myRowPosition="6" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="五娃" id="5" time="50169" rowPosition1="12" columnPosition1="4" rowPosition2="13" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="50181" damage="49" myRowPosition="13" myColumnPosition="4" enemyRowPosition="8" enemyColumnPosition="19"/>  
+  <move name="小喽啰" id="12" time="50191" rowPosition1="8" columnPosition1="19" rowPosition2="8" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="50203" damage="61" myRowPosition="8" myColumnPosition="18" enemyRowPosition="5" enemyColumnPosition="3"/>  
+  <shoot name="大娃" id="1" time="50267" damage="52" myRowPosition="8" myColumnPosition="0" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="51041" rowPosition1="5" columnPosition1="3" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="51052" damage="16" myRowPosition="6" myColumnPosition="3" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="51095" rowPosition1="6" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="51105" damage="71" myRowPosition="7" myColumnPosition="2" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="51194" rowPosition1="13" columnPosition1="4" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="51205" damage="49" myRowPosition="14" myColumnPosition="4" enemyRowPosition="8" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="51216" rowPosition1="8" columnPosition1="18" rowPosition2="7" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="51227" damage="73" myRowPosition="7" myColumnPosition="18" enemyRowPosition="6" enemyColumnPosition="3"/>  
+  <shoot name="大娃" id="1" time="51280" damage="48" myRowPosition="8" myColumnPosition="0" enemyRowPosition="7" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="52065" rowPosition1="6" columnPosition1="3" rowPosition2="7" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="52076" damage="16" myRowPosition="7" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="52119" rowPosition1="7" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="52130" damage="59" myRowPosition="6" myColumnPosition="2" enemyRowPosition="7" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="52219" rowPosition1="14" columnPosition1="4" rowPosition2="14" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="52231" damage="81" myRowPosition="14" myColumnPosition="3" enemyRowPosition="7" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="52242" rowPosition1="7" columnPosition1="18" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="52253" damage="69" myRowPosition="6" myColumnPosition="18" enemyRowPosition="7" enemyColumnPosition="3"/>  
+  <move name="大娃" id="1" time="52293" rowPosition1="8" columnPosition1="0" rowPosition2="7" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="52304" damage="40" myRowPosition="7" myColumnPosition="0" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="53088" rowPosition1="7" columnPosition1="3" rowPosition2="8" columnPosition2="3"/>  
+  <shoot name="爷爷" id="0" time="53100" damage="1" myRowPosition="8" myColumnPosition="3" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="53142" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="53153" damage="70" myRowPosition="6" myColumnPosition="1" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="53243" rowPosition1="14" columnPosition1="3" rowPosition2="14" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="53254" damage="49" myRowPosition="14" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="53265" rowPosition1="6" columnPosition1="18" rowPosition2="6" columnPosition2="19"/>  
+  <shoot name="小喽啰" id="12" time="53276" damage="54" myRowPosition="6" myColumnPosition="19" enemyRowPosition="8" enemyColumnPosition="3"/>  
+  <shoot name="大娃" id="1" time="53317" damage="52" myRowPosition="7" myColumnPosition="0" enemyRowPosition="6" enemyColumnPosition="19"/>  
+  <move name="爷爷" id="0" time="54113" rowPosition1="8" columnPosition1="3" rowPosition2="8" columnPosition2="4"/>  
+  <shoot name="爷爷" id="0" time="54124" damage="4" myRowPosition="8" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="19"/>  
+  <move name="六娃" id="6" time="54165" rowPosition1="6" columnPosition1="1" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="54176" damage="63" myRowPosition="6" myColumnPosition="2" enemyRowPosition="6" enemyColumnPosition="19"/>  
+  <move name="五娃" id="5" time="54268" rowPosition1="14" columnPosition1="4" rowPosition2="13" columnPosition2="4"/>  
+  <shoot name="五娃" id="5" time="54279" damage="100" myRowPosition="13" myColumnPosition="4" enemyRowPosition="6" enemyColumnPosition="19"/>  
+  <move name="小喽啰" id="12" time="54290" rowPosition1="6" columnPosition1="19" rowPosition2="6" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="54301" damage="63" myRowPosition="6" myColumnPosition="18" enemyRowPosition="8" enemyColumnPosition="4"/>  
+  <move name="大娃" id="1" time="54331" rowPosition1="7" columnPosition1="0" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="54343" damage="54" myRowPosition="7" myColumnPosition="1" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="55137" rowPosition1="8" columnPosition1="4" rowPosition2="8" columnPosition2="5"/>  
+  <shoot name="爷爷" id="0" time="55149" damage="9" myRowPosition="8" myColumnPosition="5" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="55190" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="3"/>  
+  <shoot name="六娃" id="6" time="55201" damage="57" myRowPosition="6" myColumnPosition="3" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="55293" rowPosition1="13" columnPosition1="4" rowPosition2="13" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="55305" damage="81" myRowPosition="13" myColumnPosition="3" enemyRowPosition="6" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="55316" rowPosition1="6" columnPosition1="18" rowPosition2="5" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="55327" damage="54" myRowPosition="5" myColumnPosition="18" enemyRowPosition="8" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="55358" rowPosition1="7" columnPosition1="1" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="55370" damage="59" myRowPosition="7" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="18"/>  
+  <move name="爷爷" id="0" time="56162" rowPosition1="8" columnPosition1="5" rowPosition2="9" columnPosition2="5"/>  
+  <shoot name="爷爷" id="0" time="56174" damage="1" myRowPosition="9" myColumnPosition="5" enemyRowPosition="5" enemyColumnPosition="18"/>  
+  <move name="六娃" id="6" time="56214" rowPosition1="6" columnPosition1="3" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="56226" damage="56" myRowPosition="6" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="18"/>  
+  <move name="五娃" id="5" time="56317" rowPosition1="13" columnPosition1="3" rowPosition2="12" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="56328" damage="49" myRowPosition="12" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="18"/>  
+  <move name="小喽啰" id="12" time="56340" rowPosition1="5" columnPosition1="18" rowPosition2="5" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="56351" damage="63" myRowPosition="5" myColumnPosition="17" enemyRowPosition="9" enemyColumnPosition="5"/>  
+  <move name="大娃" id="1" time="56382" rowPosition1="7" columnPosition1="2" rowPosition2="8" columnPosition2="2"/>  
+  <shoot name="大娃" id="1" time="56394" damage="51" myRowPosition="8" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="爷爷" id="0" time="57189" rowPosition1="9" columnPosition1="5" rowPosition2="9" columnPosition2="6"/>  
+  <shoot name="爷爷" id="0" time="57201" damage="4" myRowPosition="9" myColumnPosition="6" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="六娃" id="6" time="57239" rowPosition1="6" columnPosition1="2" rowPosition2="7" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="57250" damage="74" myRowPosition="7" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="五娃" id="5" time="57341" rowPosition1="12" columnPosition1="3" rowPosition2="12" columnPosition2="2"/>  
+  <shoot name="五娃" id="5" time="57352" damage="81" myRowPosition="12" myColumnPosition="2" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="小喽啰" id="12" time="57364" rowPosition1="5" columnPosition1="17" rowPosition2="6" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="57375" damage="74" myRowPosition="6" myColumnPosition="17" enemyRowPosition="9" enemyColumnPosition="6"/>  
+  <move name="大娃" id="1" time="57406" rowPosition1="8" columnPosition1="2" rowPosition2="8" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="57418" damage="51" myRowPosition="8" myColumnPosition="1" enemyRowPosition="6" enemyColumnPosition="17"/>  
+  <move name="爷爷" id="0" time="58214" rowPosition1="9" columnPosition1="6" rowPosition2="8" columnPosition2="6"/>  
+  <shoot name="爷爷" id="0" time="58226" damage="16" myRowPosition="8" myColumnPosition="6" enemyRowPosition="6" enemyColumnPosition="17"/>  
+  <move name="六娃" id="6" time="58268" rowPosition1="7" columnPosition1="2" rowPosition2="6" columnPosition2="2"/>  
+  <shoot name="六娃" id="6" time="58279" damage="78" myRowPosition="6" myColumnPosition="2" enemyRowPosition="6" enemyColumnPosition="17"/>  
+  <move name="五娃" id="5" time="58365" rowPosition1="12" columnPosition1="2" rowPosition2="12" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="58377" damage="64" myRowPosition="12" myColumnPosition="3" enemyRowPosition="6" enemyColumnPosition="17"/>  
+  <move name="小喽啰" id="12" time="58388" rowPosition1="6" columnPosition1="17" rowPosition2="5" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="58399" damage="55" myRowPosition="5" myColumnPosition="17" enemyRowPosition="8" enemyColumnPosition="6"/>  
+  <move name="大娃" id="1" time="58428" rowPosition1="8" columnPosition1="1" rowPosition2="9" columnPosition2="1"/>  
+  <shoot name="大娃" id="1" time="58439" damage="42" myRowPosition="9" myColumnPosition="1" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="爷爷" id="0" time="59238" rowPosition1="8" columnPosition1="6" rowPosition2="7" columnPosition2="6"/>  
+  <shoot name="爷爷" id="0" time="59250" damage="16" myRowPosition="7" myColumnPosition="6" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="六娃" id="6" time="59302" rowPosition1="6" columnPosition1="2" rowPosition2="6" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="59314" damage="65" myRowPosition="6" myColumnPosition="1" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="五娃" id="5" time="59390" rowPosition1="12" columnPosition1="3" rowPosition2="11" columnPosition2="3"/>  
+  <shoot name="五娃" id="5" time="59402" damage="64" myRowPosition="11" myColumnPosition="3" enemyRowPosition="5" enemyColumnPosition="17"/>  
+  <move name="小喽啰" id="12" time="59413" rowPosition1="5" columnPosition1="17" rowPosition2="4" columnPosition2="17"/>  
+  <shoot name="小喽啰" id="12" time="59424" damage="53" myRowPosition="4" myColumnPosition="17" enemyRowPosition="7" enemyColumnPosition="6"/>  
+  <move name="大娃" id="1" time="59451" rowPosition1="9" columnPosition1="1" rowPosition2="9" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="59462" damage="48" myRowPosition="9" myColumnPosition="0" enemyRowPosition="4" enemyColumnPosition="17"/>  
+  <move name="爷爷" id="0" time="60262" rowPosition1="7" columnPosition1="6" rowPosition2="7" columnPosition2="7"/>  
+  <shoot name="爷爷" id="0" time="60273" damage="16" myRowPosition="7" myColumnPosition="7" enemyRowPosition="4" enemyColumnPosition="17"/>  
+  <move name="六娃" id="6" time="60330" rowPosition1="6" columnPosition1="1" rowPosition2="7" columnPosition2="1"/>  
+  <shoot name="六娃" id="6" time="60342" damage="54" myRowPosition="7" myColumnPosition="1" enemyRowPosition="4" enemyColumnPosition="17"/>  
+  <move name="五娃" id="5" time="60413" rowPosition1="11" columnPosition1="3" rowPosition2="11" columnPosition2="2"/>  
+  <shoot name="五娃" id="5" time="60425" damage="100" myRowPosition="11" myColumnPosition="2" enemyRowPosition="4" enemyColumnPosition="17"/>  
+  <move name="小喽啰" id="12" time="60436" rowPosition1="4" columnPosition1="17" rowPosition2="4" columnPosition2="18"/>  
+  <shoot name="小喽啰" id="12" time="60447" damage="64" myRowPosition="4" myColumnPosition="18" enemyRowPosition="7" enemyColumnPosition="7"/>  
+  <move name="大娃" id="1" time="60473" rowPosition1="9" columnPosition1="0" rowPosition2="10" columnPosition2="0"/>  
+  <shoot name="大娃" id="1" time="60484" damage="47" myRowPosition="10" myColumnPosition="0" enemyRowPosition="4" enemyColumnPosition="18"/>  
+  <end winner="爷爷" id="0" time="61288"/>  
+  <end winner="六娃" id="6" time="61355"/>  
+  <end winner="五娃" id="5" time="61438"/>  
+  <end winner="大娃" id="1" time="61496"/>
 </root>
