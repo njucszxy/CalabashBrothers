@@ -1,6 +1,7 @@
 package info;
 
 import com.sun.javafx.runtime.SystemProperties;
+import gui.FreshThread;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -20,17 +21,34 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Commander {
-    public static List<Creature> creatures;
     public static List<Thread> threads;
-    public static BattleField battleField;
     public static Controller controller;
+    public static Database database;
+    public static Thread freshThread;
+    public static long startTime;
+
+
 
     private static int currentRunTime = -1;
 
     public static void initCommander(Controller c,FormationType formationTypeCB,FormationType formationTypeMO)
     {
+
+        //init startTime
+        startTime = -1;
+
+        //init Database
+        database = new Database();
+        database.gameOn = true;
+
+        //init moveInfos
+        database.moveInfos = new ArrayList<>();
+
         //init Controller
         controller = c;
 
@@ -38,7 +56,7 @@ public class Commander {
         currentRunTime = controller.getRunTimes();
 
         //init battlefield
-        battleField = new BattleField();
+        database.battleField = new BattleField();
 
         List<PositionInfo> positionInfos = new ArrayList<PositionInfo>();
         for(int i = 0;i < 16;i++)
@@ -70,72 +88,56 @@ public class Commander {
         }
 
         //init creatures
-        creatures = new ArrayList<Creature>();
-        creatures.add(new GrandPa(positionInfos.get(0).RowPosition,positionInfos.get(0).columnPosition));
-        creatures.add(new RedBoy(positionInfos.get(1).RowPosition,positionInfos.get(1).columnPosition));
-        creatures.add(new OrangeBoy(positionInfos.get(2).RowPosition,positionInfos.get(2).columnPosition));
-        creatures.add(new YellowBoy(positionInfos.get(3).RowPosition,positionInfos.get(3).columnPosition));
-        creatures.add(new GreenBoy(positionInfos.get(4).RowPosition,positionInfos.get(4).columnPosition));
-        creatures.add(new CyanBoy(positionInfos.get(5).RowPosition,positionInfos.get(5).columnPosition));
-        creatures.add(new BlueBoy(positionInfos.get(6).RowPosition,positionInfos.get(6).columnPosition));
-        creatures.add(new PurpleBoy(positionInfos.get(7).RowPosition,positionInfos.get(7).columnPosition));
-        creatures.add(new Snake(positionInfos.get(8).RowPosition,positionInfos.get(8).columnPosition));
-        creatures.add(new Scorpion(positionInfos.get(9).RowPosition,positionInfos.get(9).columnPosition));
-        creatures.add(new Footman(positionInfos.get(10).RowPosition,positionInfos.get(10).columnPosition));
-        creatures.add(new Footman(positionInfos.get(11).RowPosition,positionInfos.get(11).columnPosition));
-        creatures.add(new Footman(positionInfos.get(12).RowPosition,positionInfos.get(12).columnPosition));
-        creatures.add(new Footman(positionInfos.get(13).RowPosition,positionInfos.get(13).columnPosition));
-        creatures.add(new Footman(positionInfos.get(14).RowPosition,positionInfos.get(14).columnPosition));
-        creatures.add(new Footman(positionInfos.get(15).RowPosition,positionInfos.get(15 ).columnPosition));
+        database.creatures = new ArrayList<Creature>();
+        database.creatures.add(new GrandPa(positionInfos.get(0).RowPosition,positionInfos.get(0).columnPosition));
+        database.creatures.add(new RedBoy(positionInfos.get(1).RowPosition,positionInfos.get(1).columnPosition));
+        database.creatures.add(new OrangeBoy(positionInfos.get(2).RowPosition,positionInfos.get(2).columnPosition));
+        database.creatures.add(new YellowBoy(positionInfos.get(3).RowPosition,positionInfos.get(3).columnPosition));
+        database.creatures.add(new GreenBoy(positionInfos.get(4).RowPosition,positionInfos.get(4).columnPosition));
+        database.creatures.add(new CyanBoy(positionInfos.get(5).RowPosition,positionInfos.get(5).columnPosition));
+        database.creatures.add(new BlueBoy(positionInfos.get(6).RowPosition,positionInfos.get(6).columnPosition));
+        database.creatures.add(new PurpleBoy(positionInfos.get(7).RowPosition,positionInfos.get(7).columnPosition));
+        database.creatures.add(new Snake(positionInfos.get(8).RowPosition,positionInfos.get(8).columnPosition));
+        database.creatures.add(new Scorpion(positionInfos.get(9).RowPosition,positionInfos.get(9).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(10).RowPosition,positionInfos.get(10).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(11).RowPosition,positionInfos.get(11).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(12).RowPosition,positionInfos.get(12).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(13).RowPosition,positionInfos.get(13).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(14).RowPosition,positionInfos.get(14).columnPosition));
+        database.creatures.add(new Footman(positionInfos.get(15).RowPosition,positionInfos.get(15 ).columnPosition));
 
-        battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).creatureIndex = 0;
-        paintCreature("爷爷",positionInfos.get(0).RowPosition,positionInfos.get(0).columnPosition);
-        battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).creatureIndex = 1;
-        paintCreature("大娃",positionInfos.get(1).RowPosition,positionInfos.get(1).columnPosition);
-        battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).creatureIndex = 2;
-        paintCreature("二娃",positionInfos.get(2).RowPosition,positionInfos.get(2).columnPosition);
-        battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).creatureIndex = 3;
-        paintCreature("三娃",positionInfos.get(3).RowPosition,positionInfos.get(3).columnPosition);
-        battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).creatureIndex = 4;
-        paintCreature("四娃",positionInfos.get(4).RowPosition,positionInfos.get(4).columnPosition);
-        battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).creatureIndex = 5;
-        paintCreature("五娃",positionInfos.get(5).RowPosition,positionInfos.get(5).columnPosition);
-        battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).creatureIndex = 6;
-        paintCreature("六娃",positionInfos.get(6).RowPosition,positionInfos.get(6).columnPosition);
-        battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).creatureIndex = 7;
-        paintCreature("七娃",positionInfos.get(7).RowPosition,positionInfos.get(7).columnPosition);
-        battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).creatureIndex = 8;
-        paintCreature("蛇精",positionInfos.get(8).RowPosition,positionInfos.get(8).columnPosition);
-        battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).creatureIndex = 9;
-        paintCreature("蝎子精",positionInfos.get(9).RowPosition,positionInfos.get(9).columnPosition);
-        battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).creatureIndex = 10;
-        paintCreature("小喽啰",positionInfos.get(10).RowPosition,positionInfos.get(10).columnPosition);
-        battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).creatureIndex = 11;
-        paintCreature("小喽啰",positionInfos.get(11).RowPosition,positionInfos.get(11).columnPosition);
-        battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).creatureIndex = 12;
-        paintCreature("小喽啰",positionInfos.get(12).RowPosition,positionInfos.get(12).columnPosition);
-        battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).creatureIndex = 13;
-        paintCreature("小喽啰",positionInfos.get(13).RowPosition,positionInfos.get(13).columnPosition);
-        battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).creatureIndex = 14;
-        paintCreature("小喽啰",positionInfos.get(14).RowPosition,positionInfos.get(14).columnPosition);
-        battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).isUsed = true;
-        battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).creatureIndex = 15;
-        paintCreature("小喽啰",positionInfos.get(15).RowPosition,positionInfos.get(15).columnPosition);
+        database.battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(0).RowPosition*20 + positionInfos.get(0).columnPosition).creatureIndex = 0;
+        database.battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(1).RowPosition*20 + positionInfos.get(1).columnPosition).creatureIndex = 1;
+        database.battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(2).RowPosition*20 + positionInfos.get(2).columnPosition).creatureIndex = 2;
+        database.battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(3).RowPosition*20 + positionInfos.get(3).columnPosition).creatureIndex = 3;
+        database.battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(4).RowPosition*20 + positionInfos.get(4).columnPosition).creatureIndex = 4;
+        database.battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(5).RowPosition*20 + positionInfos.get(5).columnPosition).creatureIndex = 5;
+        database.battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(6).RowPosition*20 + positionInfos.get(6).columnPosition).creatureIndex = 6;
+        database.battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(7).RowPosition*20 + positionInfos.get(7).columnPosition).creatureIndex = 7;
+        database.battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(8).RowPosition*20 + positionInfos.get(8).columnPosition).creatureIndex = 8;
+        database.battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(9).RowPosition*20 + positionInfos.get(9).columnPosition).creatureIndex = 9;
+        database.battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(10).RowPosition*20 + positionInfos.get(10).columnPosition).creatureIndex = 10;
+        database.battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(11).RowPosition*20 + positionInfos.get(11).columnPosition).creatureIndex = 11;
+        database.battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(12).RowPosition*20 + positionInfos.get(12).columnPosition).creatureIndex = 12;
+        database.battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(13).RowPosition*20 + positionInfos.get(13).columnPosition).creatureIndex = 13;
+        database.battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(14).RowPosition*20 + positionInfos.get(14).columnPosition).creatureIndex = 14;
+        database.battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).isUsed = true;
+        database.battleField.lands.get(positionInfos.get(15).RowPosition*20 + positionInfos.get(15).columnPosition).creatureIndex = 15;
 
         //record position
         try{
@@ -146,9 +148,9 @@ public class Commander {
             {
                 Element tempElement = initElement.addElement("creature" );
                 tempElement.addAttribute("id",""+i);
-                tempElement.addAttribute("name",creatures.get(i).name);
-                tempElement.addAttribute("rowPosition","" + creatures.get(i).rowPosition);
-                tempElement.addAttribute("columnPosition","" + creatures.get(i).columnPosition);
+                tempElement.addAttribute("name",database.creatures.get(i).name);
+                tempElement.addAttribute("rowPosition","" + database.creatures.get(i).rowPosition);
+                tempElement.addAttribute("columnPosition","" + database.creatures.get(i).columnPosition);
             }
             OutputFormat format = OutputFormat.createPrettyPrint();
             format.setEncoding("UTF-8");
@@ -174,7 +176,8 @@ public class Commander {
 
         threads = new ArrayList<Thread>();
         for(int i = 0;i < 16;i++)
-            threads.add(new Thread(creatures.get(i)));
+            threads.add(new Thread(database.creatures.get(i)));
+        freshThread = new Thread(new FreshThread(database,controller));
     }
     private static void printText(String text)
     {
@@ -188,311 +191,188 @@ public class Commander {
     {
         controller.paintImage( name,rowPosition,columnPosition);
     }
-    public synchronized static int oneStep(Creature creature)
+    public static synchronized int oneStep(Creature creature)
     {
-        int currentCreatureIndex = 0;
-        for(int i = 0;i < 16;i++)
-        {
-            if(creatures.get(i) == creature)
-            {
-                currentCreatureIndex = i;
-                break;
-            }
-        }
+        if(startTime == -1)
+            startTime = System.currentTimeMillis();
 
-        //is alive ?
-        if(!creatures.get(currentCreatureIndex).isAlive)
-            return -1;
-
-        //Tell status
-        /*
-            TODO delete println
-            */
-        //System.out.println("I'm " + creatures.get(currentCreatureIndex).name + " at " + creatures.get(currentCreatureIndex).rowPosition + "," + creatures.get(currentCreatureIndex).columnPosition);
-
-        //if succeed
-        boolean success = true;
-        for(int i = 0;i < 16;i++)
-        {
-            if((creatures.get(i).camp != creatures.get(currentCreatureIndex).camp) && creatures.get(i).isAlive)
-            {
-                success = false;
-                break;
-            }
-        }
-        if(success)
-        {
-            /*
-            TODO delete println
-            */
-            //System.out.println("I'm " + creatures.get(currentCreatureIndex).name + " ,WE HAVE WON !");
-
-            //record winner
-            try
-            {
-                SAXReader reader = new SAXReader();
-                String currentDir = System.getProperty("user.dir");
-                File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
-                //if(!file.exists())
-                //    printText("File dosen't exist\n");
-                Document document = reader.read(file);
-                Element rootElement = document.getRootElement();
-                Element round = rootElement.addElement("end");
-                round.addAttribute("winner",creatures.get(currentCreatureIndex).name);
-                round.addAttribute("id","" + currentCreatureIndex);
-                OutputFormat format = OutputFormat.createPrettyPrint();
-                format.setEncoding("UTF-8");
-                XMLWriter writer = new XMLWriter(new FileOutputStream(file),format);
-                writer.write(document);
-            }
-            catch (DocumentException e)
-            {
-                printText("Document Exception while recording winner\n");
-            }
-            catch (FileNotFoundException e)
-            {
-                printText("File not found while recording winner\n");
-            }
-            catch (UnsupportedEncodingException e)
-            {
-                printText("UnsupportedEncoding while recording winner\n");
-            }
-            catch (IOException e)
-            {
-                printText("IO Exception while recording winner\n");
-            }
-
-            printText("I'm " + creatures.get(currentCreatureIndex).name + " ,WE HAVE WON !\n");
-            return 0;
-        }
-
-        //find next enemy
-        int minDistance = 40;
-        int enemyRowPosition = 20;
-        int enemyColumnPosition = 20;
-        for(int i = 0;i < 16;i++)
-        {
-            if((creatures.get(i).camp != creatures.get(currentCreatureIndex).camp) && creatures.get(i).isAlive)
-            {
-                int temp = Math.abs(creatures.get(currentCreatureIndex).rowPosition - creatures.get(i).rowPosition) + Math.abs(creatures.get(currentCreatureIndex).columnPosition - creatures.get(i).columnPosition);
-                if(temp < minDistance)
-                {
-                    minDistance = temp;
-                    enemyRowPosition = creatures.get(i).rowPosition;
-                    enemyColumnPosition = creatures.get(i).columnPosition;
+            int currentCreatureIndex = 0;
+            for (int i = 0; i < 16; i++) {
+                if (database.creatures.get(i) == creature) {
+                    currentCreatureIndex = i;
+                    break;
                 }
             }
-        }
 
-        //find next position
-        int moveUp = 1;
-        int moveRight = 1;
-        if(enemyRowPosition == creatures.get(currentCreatureIndex).rowPosition)
-            moveUp = 0;
-        else if(enemyRowPosition > creatures.get(currentCreatureIndex).rowPosition)
-            moveUp = -1;
-        if(enemyColumnPosition == creatures.get(currentCreatureIndex).columnPosition)
-            moveRight = 0;
-        else if(enemyColumnPosition < creatures.get(currentCreatureIndex).columnPosition)
-            moveRight = -1;
-        int nextRowPosition = -1;
-        int nextColumnPosition = -1;
-        int nextRowPositionTemp;
-        int nextColumnPositionTemp;
-        int nextLandIndexTemp;
-        if(moveUp == 1)
-        {
-            nextRowPositionTemp = creatures.get(currentCreatureIndex).rowPosition - 1;
-            nextColumnPositionTemp = creatures.get(currentCreatureIndex).columnPosition;
-            nextLandIndexTemp = nextRowPositionTemp*20 + nextColumnPositionTemp;
-            if((!battleField.lands.get((nextLandIndexTemp)).isUsed) || (creatures.get(battleField.lands.get(nextLandIndexTemp).creatureIndex).camp != creatures.get(currentCreatureIndex).camp))
-            {
-                nextRowPosition = creatures.get(currentCreatureIndex).rowPosition - 1;
-                nextColumnPosition = creatures.get(currentCreatureIndex).columnPosition;
-            }
-        }
-        else if(moveUp == 0)
-        {
-            if(moveRight == 1)
-            {
-                nextRowPositionTemp = creatures.get(currentCreatureIndex).rowPosition;
-                nextColumnPositionTemp = creatures.get(currentCreatureIndex).columnPosition + 1;
-                nextLandIndexTemp = nextRowPositionTemp*20 + nextColumnPositionTemp;
-                if((!battleField.lands.get((nextLandIndexTemp)).isUsed) || (creatures.get(battleField.lands.get(nextLandIndexTemp).creatureIndex).camp != creatures.get(currentCreatureIndex).camp))
-                {
-                    nextRowPosition = creatures.get(currentCreatureIndex).rowPosition;
-                    nextColumnPosition = creatures.get(currentCreatureIndex).columnPosition + 1;
-                }
-            }
-            else if(moveRight == 0)
-                ;
-            else if(moveRight == -1)
-            {
-                nextRowPositionTemp = creatures.get(currentCreatureIndex).rowPosition;
-                nextColumnPositionTemp = creatures.get(currentCreatureIndex).columnPosition - 1;
-                nextLandIndexTemp = nextRowPositionTemp*20 + nextColumnPositionTemp;
-                if((!battleField.lands.get((nextLandIndexTemp)).isUsed) || (creatures.get(battleField.lands.get(nextLandIndexTemp).creatureIndex).camp != creatures.get(currentCreatureIndex).camp))
-                {
-                    nextRowPosition = creatures.get(currentCreatureIndex).rowPosition;
-                    nextColumnPosition = creatures.get(currentCreatureIndex).columnPosition - 1;
-                }
-            }
-        }
-        else if(moveUp == -1)
-        {
-            nextRowPositionTemp = creatures.get(currentCreatureIndex).rowPosition + 1;
-            nextColumnPositionTemp = creatures.get(currentCreatureIndex).columnPosition;
-            nextLandIndexTemp = nextRowPositionTemp*20 + nextColumnPositionTemp;
-            if((!battleField.lands.get((nextLandIndexTemp)).isUsed) || (creatures.get(battleField.lands.get(nextLandIndexTemp).creatureIndex).camp != creatures.get(currentCreatureIndex).camp))
-            {
-                nextRowPosition = creatures.get(currentCreatureIndex).rowPosition + 1;
-                nextColumnPosition = creatures.get(currentCreatureIndex).columnPosition;
-            }
-        }
-
-        //move
-        if(nextRowPosition == -1 && nextColumnPosition == -1)
-            return 1;
-        int nextLandIndex = nextRowPosition*20 + nextColumnPosition;
-        if(battleField.lands.get(nextLandIndex).isUsed)
-        {
-            //fight
-            int enemyIndex = battleField.lands.get(nextLandIndex).creatureIndex;
-            int myPower = PowerPattern.getPowerNum(creatures.get(currentCreatureIndex).powerPattern,creatures.get(currentCreatureIndex).powerTop,creatures.get(currentCreatureIndex).powerBottom);
-            int enemyPower = PowerPattern.getPowerNum(creatures.get(enemyIndex).powerPattern,creatures.get(enemyIndex).powerTop,creatures.get(enemyIndex).powerBottom);
-            boolean result = true;
-            if(myPower > enemyPower)
-                ;
-            else if(myPower == enemyPower)
-                result = PowerPattern.getRandomResult();
-            else
-                result = false;
-
-            //show status
-            //System.out.println("I'm " + creatures.get(currentCreatureIndex).name + " at " + creatures.get(currentCreatureIndex).rowPosition + "," + creatures.get(currentCreatureIndex).columnPosition);
-            //System.out.println("Enemy is " + creatures.get(enemyIndex).name + " at " + creatures.get(enemyIndex).rowPosition + "," + creatures.get(enemyIndex).columnPosition);
-
-            //kill
-            if(result)
-            {
-                creatures.get(enemyIndex).isAlive = false;
-                printText(creatures.get(currentCreatureIndex).name + " attack " + creatures.get(enemyIndex).name + " : " + creatures.get(enemyIndex).name + " died, " + myPower + " vs " + enemyPower + "\n");
-                battleField.lands.get(creatures.get(enemyIndex).rowPosition*20 + creatures.get(enemyIndex).columnPosition).isUsed = false;
-                clearLand(nextRowPosition,nextColumnPosition);
-                controller.paintRemains(nextRowPosition,nextColumnPosition);
-            }
-            else
-            {
-                creatures.get(currentCreatureIndex).isAlive = false;
-                printText(creatures.get(currentCreatureIndex).name + " attack " + creatures.get(enemyIndex).name + " : " + creatures.get(currentCreatureIndex).name + " died, " + myPower + " vs " + enemyPower + "\n");
-                battleField.lands.get(creatures.get(currentCreatureIndex).rowPosition*20 + creatures.get(currentCreatureIndex).columnPosition).isUsed = false;
-                clearLand(creatures.get(currentCreatureIndex).rowPosition,creatures.get(currentCreatureIndex).columnPosition);
-                controller.paintRemains(creatures.get(currentCreatureIndex).rowPosition,creatures.get(currentCreatureIndex).columnPosition);
-            }
-
-            //record battle
-            try
-            {
-                SAXReader reader = new SAXReader();
-                String currentDir = System.getProperty("user.dir");
-                File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
-                //if(!file.exists())
-                //    printText("File dosen't exist\n");
-                Document document = reader.read(file);
-                Element rootElement = document.getRootElement();
-                Element round = rootElement.addElement("kill");
-                round.addAttribute("creature1",creatures.get(currentCreatureIndex).name);
-                round.addAttribute("id1",""+currentCreatureIndex);
-                round.addAttribute("rowPosition1",""+creatures.get(currentCreatureIndex).rowPosition);
-                round.addAttribute("columnPosition1",""+creatures.get(currentCreatureIndex).columnPosition);
-                round.addAttribute("creature2",creatures.get(enemyIndex).name);
-                round.addAttribute("id2",""+enemyIndex);
-                round.addAttribute("rowPosition2",""+creatures.get(enemyIndex).rowPosition);
-                round.addAttribute("columnPosition2",""+creatures.get(enemyIndex).columnPosition);
-                if(result)
-                    round.addAttribute("killed",creatures.get(enemyIndex).name);
-                else
-                    round.addAttribute("killed",creatures.get(currentCreatureIndex).name);
-                OutputFormat format = OutputFormat.createPrettyPrint();
-                format.setEncoding("UTF-8");
-                XMLWriter writer = new XMLWriter(new FileOutputStream(file),format);
-                writer.write(document);
-            }
-            catch (DocumentException e)
-            {
-                printText("Document Exception while recording battle\n");
-            }
-            catch (FileNotFoundException e)
-            {
-                printText("File not found while recording battle\n");
-            }
-            catch (UnsupportedEncodingException e)
-            {
-                printText("UnsupportedEncoding while recording battle\n");
-            }
-            catch (IOException e)
-            {
-                printText("IO Exception while recording battle\n");
-            }
-
-            if(!result)
+            //is alive ?
+            if (!database.creatures.get(currentCreatureIndex).isAlive) {
                 return -1;
-        }
+            }
 
-        //record move
-        try
-        {
+            //if succeed
+            boolean success = true;
+            for (int i = 0; i < 16; i++) {
+                if ((database.creatures.get(i).camp != database.creatures.get(currentCreatureIndex).camp) && database.creatures.get(i).isAlive) {
+                    success = false;
+                    break;
+                }
+            }
+            if (success) {
+                database.gameOn = false;
+
+                //record winner
+                try {
+                    SAXReader reader = new SAXReader();
+                    String currentDir = System.getProperty("user.dir");
+                    File file = new File(currentDir + "/" + currentRunTime + ".xml");
+                    Document document = reader.read(file);
+                    Element rootElement = document.getRootElement();
+                    Element round = rootElement.addElement("end");
+                    round.addAttribute("winner", database.creatures.get(currentCreatureIndex).name);
+                    round.addAttribute("id", "" + currentCreatureIndex);
+                    round.addAttribute("time","" + (System.currentTimeMillis() - startTime));
+                    OutputFormat format = OutputFormat.createPrettyPrint();
+                    format.setEncoding("UTF-8");
+                    XMLWriter writer = new XMLWriter(new FileOutputStream(file), format);
+                    writer.write(document);
+                } catch (DocumentException e) {
+                    printText("Document Exception while recording winner\n");
+                } catch (FileNotFoundException e) {
+                    printText("File not found while recording winner\n");
+                } catch (UnsupportedEncodingException e) {
+                    printText("UnsupportedEncoding while recording winner\n");
+                } catch (IOException e) {
+                    printText("IO Exception while recording winner\n");
+                }
+
+                printText("I'm " + database.creatures.get(currentCreatureIndex).name + " ,WE HAVE WON !\n");
+
+                return 0;
+            }
+
+            //find next enemy
+            int minDistance = 40;
+            int enemyRowPosition = 20;
+            int enemyColumnPosition = 20;
+            for (int i = 0; i < 16; i++) {
+                if ((database.creatures.get(i).camp != database.creatures.get(currentCreatureIndex).camp) && database.creatures.get(i).isAlive) {
+                    int temp = Math.abs(database.creatures.get(currentCreatureIndex).rowPosition - database.creatures.get(i).rowPosition) + Math.abs(database.creatures.get(currentCreatureIndex).columnPosition - database.creatures.get(i).columnPosition);
+                    if (temp < minDistance) {
+                        minDistance = temp;
+                        enemyRowPosition = database.creatures.get(i).rowPosition;
+                        enemyColumnPosition = database.creatures.get(i).columnPosition;
+                    }
+                }
+            }
+
+            //find next position
+            Random RandomNumber = new Random();
+            int ran = Math.abs(RandomNumber.nextInt()) % 4 + 1;
+            int nextRowPosition = database.creatures.get(currentCreatureIndex).rowPosition;
+            int nextColumnPosition = database.creatures.get(currentCreatureIndex).columnPosition;
+            switch (ran) {
+                case 1:
+                    nextRowPosition++;
+                    break;
+                case 2:
+                    nextColumnPosition++;
+                    break;
+                case 3:
+                    nextRowPosition--;
+                    break;
+                case 4:
+                    nextColumnPosition--;
+                    break;
+                default:
+                    break;
+            }
+            boolean moveResult = true;
+            if (nextRowPosition == database.creatures.get(currentCreatureIndex).rowPosition && nextColumnPosition == database.creatures.get(currentCreatureIndex).columnPosition)
+                moveResult = false;
+            else if (nextRowPosition >= 20 || nextRowPosition < 0 || nextColumnPosition >= 20 || nextColumnPosition < 0)
+                moveResult = false;
+            else if (database.battleField.lands.get(nextRowPosition * 20 + nextColumnPosition).isUsed)
+                moveResult = false;
+            if (moveResult) {
+                //record move
+                try {
+                    SAXReader reader = new SAXReader();
+                    String currentDir = System.getProperty("user.dir");
+                    File file = new File(currentDir + "/" + currentRunTime + ".xml");
+                    Document document = reader.read(file);
+                    Element rootElement = document.getRootElement();
+                    Element round = rootElement.addElement("move");
+                    round.addAttribute("name", database.creatures.get(currentCreatureIndex).name);
+                    round.addAttribute("id", "" + currentCreatureIndex);
+                    round.addAttribute("time","" + (System.currentTimeMillis() - startTime));
+                    round.addAttribute("rowPosition1", "" + database.creatures.get(currentCreatureIndex).rowPosition);
+                    round.addAttribute("columnPosition1", "" + database.creatures.get(currentCreatureIndex).columnPosition);
+                    round.addAttribute("rowPosition2", "" + nextRowPosition);
+                    round.addAttribute("columnPosition2", "" + nextColumnPosition);
+                    OutputFormat format = OutputFormat.createPrettyPrint();
+                    format.setEncoding("UTF-8");
+                    XMLWriter writer = new XMLWriter(new FileOutputStream(file), format);
+                    writer.write(document);
+                } catch (DocumentException e) {
+                    printText("Document Exception while recording move\n");
+                } catch (FileNotFoundException e) {
+                    printText("File not found while recording move\n");
+                } catch (UnsupportedEncodingException e) {
+                    printText("UnsupportedEncoding while recording move\n");
+                } catch (IOException e) {
+                    printText("IO Exception while recording move\n");
+                }
+
+
+                database.battleField.lands.get(database.creatures.get(currentCreatureIndex).rowPosition * 20 + database.creatures.get(currentCreatureIndex).columnPosition).isUsed = false;
+                database.creatures.get(currentCreatureIndex).rowPosition = nextRowPosition;
+                database.creatures.get(currentCreatureIndex).columnPosition = nextColumnPosition;
+                database.battleField.lands.get(database.creatures.get(currentCreatureIndex).rowPosition * 20 + database.creatures.get(currentCreatureIndex).columnPosition).isUsed = true;
+            }
+
+
+        //shoot
+        int myPower = PowerPattern.getPowerNum(database.creatures.get(currentCreatureIndex).powerPattern, database.creatures.get(currentCreatureIndex).powerTop, database.creatures.get(currentCreatureIndex).powerBottom);
+        Bullet bullet = new Bullet(myPower, database.creatures.get(currentCreatureIndex).rowPosition, database.creatures.get(currentCreatureIndex).columnPosition, database.creatures.get(currentCreatureIndex).rowPosition - enemyRowPosition, database.creatures.get(currentCreatureIndex).columnPosition - enemyColumnPosition, database.creatures.get(currentCreatureIndex).camp);
+        database.bullets.add(bullet);
+
+        //record shoot
+        try {
             SAXReader reader = new SAXReader();
             String currentDir = System.getProperty("user.dir");
-            File file = new File(currentDir+ "/"  + currentRunTime + ".xml");
-            //if(!file.exists())
-            //    printText("File dosen't exist\n");
+            File file = new File(currentDir + "/" + currentRunTime + ".xml");
             Document document = reader.read(file);
             Element rootElement = document.getRootElement();
-            Element round = rootElement.addElement("move");
-            round.addAttribute("name",creatures.get(currentCreatureIndex).name);
-            round.addAttribute("id",""+currentCreatureIndex);
-            round.addAttribute("rowPosition1",""+creatures.get(currentCreatureIndex).rowPosition);
-            round.addAttribute("columnPosition1",""+creatures.get(currentCreatureIndex).columnPosition);
-            round.addAttribute("rowPosition2",""+nextRowPosition);
-            round.addAttribute("columnPosition2",""+nextColumnPosition);
+            Element round = rootElement.addElement("shoot");
+            round.addAttribute("name", database.creatures.get(currentCreatureIndex).name);
+            round.addAttribute("id", "" + currentCreatureIndex);
+            round.addAttribute("time","" + (System.currentTimeMillis() - startTime));
+            round.addAttribute("damage","" + myPower);
+            round.addAttribute("myRowPosition", "" + database.creatures.get(currentCreatureIndex).rowPosition);
+            round.addAttribute("myColumnPosition", "" + database.creatures.get(currentCreatureIndex).columnPosition);
+            round.addAttribute("enemyRowPosition", "" + enemyRowPosition);
+            round.addAttribute("enemyColumnPosition", "" + enemyColumnPosition);
             OutputFormat format = OutputFormat.createPrettyPrint();
             format.setEncoding("UTF-8");
-            XMLWriter writer = new XMLWriter(new FileOutputStream(file),format);
+            XMLWriter writer = new XMLWriter(new FileOutputStream(file), format);
             writer.write(document);
-        }
-        catch (DocumentException e)
-        {
+        } catch (DocumentException e) {
             printText("Document Exception while recording move\n");
-        }
-        catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e) {
             printText("File not found while recording move\n");
-        }
-        catch (UnsupportedEncodingException e)
-        {
+        } catch (UnsupportedEncodingException e) {
             printText("UnsupportedEncoding while recording move\n");
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             printText("IO Exception while recording move\n");
         }
 
-        battleField.lands.get(creatures.get(currentCreatureIndex).rowPosition*20 + creatures.get(currentCreatureIndex).columnPosition).isUsed = false;
-        clearLand(creatures.get(currentCreatureIndex).rowPosition,creatures.get(currentCreatureIndex).columnPosition);
-        battleField.lands.get(nextLandIndex).isUsed = true;
-        battleField.lands.get(nextLandIndex).creatureIndex = currentCreatureIndex;
-        paintCreature(creatures.get(currentCreatureIndex).name,nextRowPosition,nextColumnPosition);
-        creatures.get(currentCreatureIndex).rowPosition = nextRowPosition;
-        creatures.get(currentCreatureIndex).columnPosition = nextColumnPosition;
-        paintCreature(creatures.get(currentCreatureIndex).name,nextRowPosition,nextColumnPosition);
 
-        return 2;
+            return 2;
     }
     public static void runCommander()
     {
-        //for(int i = 0;i < 16;i++)
-        //    threads.get(i).start();
+        freshThread.start();
+
         threads.get(0).start();
         threads.get(8).start();
         threads.get(1).start();
@@ -509,5 +389,6 @@ public class Commander {
         threads.get(14).start();
         threads.get(7).start();
         threads.get(15).start();
+
     }
 }

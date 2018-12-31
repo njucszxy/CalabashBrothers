@@ -3,12 +3,15 @@ package lives;
 import info.Camp;
 import info.Commander;
 
+import static java.lang.Thread.yield;
+
 public class Creature implements Runnable{
     //battle attributes
     public int powerTop = -1;
     public int powerBottom = -1;
     public int powerPattern = -1;
     public boolean isAlive = true;
+    public int healthPoint = 1000;
 
     //non-battle attributes
     public String name = new String("Undefined");
@@ -44,18 +47,17 @@ public class Creature implements Runnable{
     {
         while(this.isAlive)
         {
-            int result = Commander.oneStep(this);
-            if(result == 0)
-            {
-                //System.out.println(this.name + " End With Game Over");
-                return;
-            }
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            int result = Commander.oneStep(this) ;
+            if(result == 0)
+            {
+                return;
+            }
+            yield();
         }
-        //System.out.println(this.name + " End With isAlive == false");
     }
 }

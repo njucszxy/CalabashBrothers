@@ -8,6 +8,9 @@ import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
@@ -15,7 +18,10 @@ import javafx.stage.Stage;
 import info.*;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +47,11 @@ public class Controller {
     ChoiceBox choiceBoxMO;
 
     private Color colorBattleField = Color.web("#FFFFFF",0);
+    private Color colorBulletMO = Color.web("#FFB6C1");
+    private Color colorBulletCB = Color.web("#00BFFF");
     private GraphicsContext gc1;
     private GraphicsContext gc2;
-    private double gapX,gapY;
+    public double gapX,gapY;
 
     private List<String> savedFiles = new ArrayList<String>();
     private int runTimes = 0;
@@ -51,6 +59,8 @@ public class Controller {
 
     private FormationType formationTypeCB = FormationType.Snake;
     private FormationType formationTypeMO = FormationType.Snake;
+
+    private ImageManager imageManager = new ImageManager();
 
     public void initController(Stage primaryStage)
     {
@@ -182,7 +192,7 @@ public class Controller {
             paintImage(name,positionInfos.get(i).RowPosition,positionInfos.get(i).columnPosition);
         }
     }
-    private void paintBackground()
+    public void paintBackground()
     {
         try {
             BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/background.jpg"));
@@ -202,29 +212,32 @@ public class Controller {
     {
         gc1.clearRect(rowPosition*gapY,columnPosition*gapX,gapY,gapX);
     }
+    public void clearAll()
+    {
+        gc1.clearRect(0,0,layer1.getWidth(),layer1.getHeight());
+        gc2.clearRect(0,0,layer2.getWidth(),layer2.getHeight());
+    }
+    public void clearLayer1()
+    {
+        gc1.clearRect(0,0,layer1.getWidth(),layer1.getHeight());
+    }
     public void paintImage(String name,int rowPosition,int columnPosition)
     {
-        try {
-            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/" + name + ".jpg"));
-            gc1.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
-        }
-        catch (IOException e)
-        {
-            textArea.appendText("Error painting background" + "\n");
-            e.printStackTrace();
-        }
+            gc1.drawImage(imageManager.getImage(name),rowPosition*gapY, columnPosition*gapX, gapY, gapX);
     }
     public void paintRemains(int rowPosition,int columnPosition)
     {
-        try {
-            BufferedImage image = ImageIO.read(getClass().getResourceAsStream("/resource/尸体.jpg"));
-            gc2.drawImage(SwingFXUtils.toFXImage(image,null), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
-        }
-        catch (IOException e)
+        gc2.drawImage(imageManager.getImage("尸体"), rowPosition*gapY, columnPosition*gapX, gapY, gapX);
+    }
+    public void paintBullet(double rowPosition,double columnPosition,Camp camp)
+    {
+        if(camp == Camp.CB)
         {
-            textArea.appendText("Error painting background" + "\n");
-            e.printStackTrace();
+            gc1.setFill(colorBulletCB);
         }
+        else
+            gc1.setFill(colorBulletMO);
+        gc1.fillOval(rowPosition*gapX,columnPosition*gapY,0.25*gapX,0.25*gapY);
     }
     public void printText(String text)
     {
