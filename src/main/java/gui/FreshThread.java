@@ -1,6 +1,7 @@
 package gui;
 
 import info.Commander;
+import info.Concurrent;
 import info.Database;
 
 import static java.lang.Thread.yield;
@@ -15,6 +16,7 @@ public class FreshThread implements Runnable {
         this.controller = controller;
     }
 
+    @Concurrent()
     public void run()
     {
         while(true)

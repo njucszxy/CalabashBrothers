@@ -3,6 +3,34 @@
 葫芦七兄弟和老爷爷在一片草地上与蛇精、蝎子精率领的小喽啰们展开大战
 
 
+### 面向对象机制
+
++ 继承
+  所有生物均继承自Creature.java
+  
++ 封装
+  Controller.java为图形化界面的控制器，包含UI组件等私有成员，对内隐藏绘图的具体实现，对外提供绘制图形的接口
+  
++ 多态
+  Creature.java的每个子类重写方法getSimpleName()用于控制台排阵型时输出信息
+  
++ 静态成员、方法
+  Commander.java定义了所有生物需要访问的上帝类，使用static来定义其静态成员与静态方法
+  
++ 泛型
+  Database.java中使用了List<Creature>与List<Bullet>来管理生物、弹幕数据信息
+  
++ 注解
+  Concurrent.java中自定义了注解类型Concurrent，用于标记可能出现并发运行时错误的方法
+  
++ IO
+  使用dom4j包创建Document来操作.xml文件，使用element和attribute来记录和修改信息
+  
++ 异常处理
+  在程序IO和其他地点出现异常情况时将异常信息捕捉并输出到程序下方的TextArea中
+ 
+
+
 
 ### 功能
 

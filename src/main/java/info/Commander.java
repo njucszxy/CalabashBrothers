@@ -191,6 +191,7 @@ public class Commander {
     {
         controller.paintImage( name,rowPosition,columnPosition);
     }
+    @Concurrent()
     public static synchronized int oneStep(Creature creature)
     {
         if(startTime == -1)

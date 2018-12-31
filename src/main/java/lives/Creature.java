@@ -3,6 +3,11 @@ package lives;
 import info.Camp;
 import info.Commander;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 import static java.lang.Thread.yield;
 
 public class Creature implements Runnable{
